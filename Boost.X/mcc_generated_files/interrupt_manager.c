@@ -1,20 +1,22 @@
 /**
-  Generated Pin Manager File
+  Generated Interrupt Manager Source File
 
   @Company:
     Microchip Technology Inc.
 
   @File Name:
-    pin_manager.c
+    interrupt_manager.c
 
   @Summary:
-    This is the Pin Manager file generated using MPLAB(c) Code Configurator (MCC).
+    This is the Interrupt Manager file generated using MPLAB(c) Code 
+    Configurator (MCC).
 
   @Description:
-    This source file provides implementations for pin APIs for all pins selected 
-    in the GUI.
+    This source file provides implementations for global interrupt handling.
+    For individual peripheral handlers please see the peripheral driver for
+    all modules selected in the GUI.
     Generation Information :
-        MCC Library       :  MPLAB(c) Code Configurator - 4.65
+        MCC Library       :  MCP19XXX - v1.1
         Device            :  MCP19215
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.45
@@ -42,35 +44,23 @@ SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY
 TO MICROCHIP FOR THIS SOFTWARE. 
 */
 
-#include <xc.h>
-#include "pin_manager.h"
-#include "stdbool.h"
+#include "interrupt_manager.h"
+#include "mcc.h"
 
-
-void PIN_MANAGER_Initialize(void)
+void interrupt INTERRUPT_InterruptManager (void)
 {
-    /**
-    LATx registers
-    */   
-    PORTGPB = 0x00;    
-    PORTGPA = 0x00;    
-
-    /**
-    TRISx registers
-    */    
-    TRISGPA = 0xAF;
-    TRISGPB = 0x73;
-
-
-    /**
-    WPUx registers
-    */ 
-    WPUGPA = 0xEF;
-    WPUGPB = 0xF3;
-    OPTION_REGbits.nRAPUI = 0;
-}       
-
-
+    // interrupt handler
+	
+	//Other interrupt
+    if(INTCONbits.T0IE == 1 && INTCONbits.T0IF == 1)
+    {
+        TMR0_ISR();
+    }
+    else
+    {
+        //Unhandled Interrupt
+    }
+}
 /**
  End of File
 */

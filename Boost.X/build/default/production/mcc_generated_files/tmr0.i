@@ -1,14 +1,5 @@
 
-# 1 "mcc_generated_files/mcc.c"
-
-
-# 47
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config MCLRE = ON
-#pragma config CP = OFF
-#pragma config BOREN = ON
-#pragma config WRT = OFF
+# 1 "mcc_generated_files/tmr0.c"
 
 # 18 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\xc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -2649,12 +2640,6 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 56 "mcc_generated_files/calibration.h"
-void init_Calibration(void);
-
-# 99 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-
 # 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdint.h"
 typedef signed char int8_t;
 
@@ -2744,42 +2729,6 @@ typedef uint16_t uintptr_t;
 # 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
 typedef unsigned char bool;
 
-# 109 "mcc_generated_files/interrupt_manager.h"
-void interrupt INTERRUPT_InterruptManager(void);
-
-# 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
-typedef unsigned char bool;
-
-# 92 "mcc_generated_files/vin.h"
-void VIN_Initialize(void);
-
-# 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
-typedef unsigned char bool;
-
-# 92 "mcc_generated_files/ivout2.h"
-void IVOUT2_Initialize(void);
-
-# 117
-void IVOUT2_SetOutput(uint8_t voutTarget);
-
-# 141
-void IVOUT2_StopOutput();
-
-# 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
-typedef unsigned char bool;
-
-# 92 "mcc_generated_files/ivout1.h"
-void IVOUT1_Initialize(void);
-
-# 117
-void IVOUT1_SetOutput(uint8_t voutTarget);
-
-# 141
-void IVOUT1_StopOutput();
-
-# 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
-typedef unsigned char bool;
-
 # 94 "mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
 
@@ -2804,53 +2753,80 @@ extern void (*TMR0_InterruptHandler)(void);
 # 270
 void TMR0_DefaultInterruptHandler(void);
 
-# 71 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
+# 51 "mcc_generated_files/tmr0.c"
+volatile uint8_t timer0ReloadVal;
+void (*TMR0_InterruptHandler)(void);
 
-# 84
-void OSCILLATOR_Initialize(void);
-
-# 98
-void SYSTEM_CONFIGURATION_Initialize(void);
-
-# 56 "mcc_generated_files/mcc.c"
-void SYSTEM_Initialize(void)
+# 57
+void TMR0_Initialize(void)
 {
-PIN_MANAGER_Initialize();
-SYSTEM_CONFIGURATION_Initialize();
-OSCILLATOR_Initialize();
-VIN_Initialize();
-TMR0_Initialize();
-IVOUT2_Initialize();
-IVOUT1_Initialize();
+
+
+
+OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | 0xD8 & 0x3F);
+
+
+TMR0 = 0x38;
+
+
+timer0ReloadVal= 56;
+
+
+INTCONbits.T0IF = 0;
+
+
+INTCONbits.T0IE = 1;
+
+
+TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
 }
 
-void OSCILLATOR_Initialize(void)
+uint8_t TMR0_ReadTimer(void)
 {
+uint8_t readVal;
 
-T2CON = 0x0;
+readVal = TMR0;
 
-PR2 = 0x16;
-
-TMR2 = 0x0;
-
-
-T2CONbits.TMR2ON = 1;
+return readVal;
 }
 
-void SYSTEM_CONFIGURATION_Initialize(void)
+void TMR0_WriteTimer(uint8_t timerVal)
 {
-init_Calibration();
 
-PE1 = 0x0;
+TMR0 = timerVal;
+}
 
-ABECON1 = 0x0;
+void TMR0_Reload(void)
+{
+
+TMR0 = timer0ReloadVal;
+}
+
+void TMR0_ISR(void)
+{
+
+
+INTCONbits.T0IF = 0;
+
+TMR0 = timer0ReloadVal;
+
+if(TMR0_InterruptHandler)
+{
+TMR0_InterruptHandler();
+}
 
 
 
-(INTCONbits.GIE = 1);
+PORTAbits.RA6 ^= 1;
+}
 
 
-(INTCONbits.PEIE = 1);
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+TMR0_InterruptHandler = InterruptHandler;
+}
+
+void TMR0_DefaultInterruptHandler(void){
+
+
 }
 

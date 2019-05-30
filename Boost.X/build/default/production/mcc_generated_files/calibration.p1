@@ -1,615 +1,2014 @@
-Version 4.0 HI-TECH Software Intermediate Code
+Version 3.2 HI-TECH Software Intermediate Code
 "3399 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3399:     struct {
 [s S166 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
 [n S166 . RD WR WREN . CALSEL ]
 "3398
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3398: typedef union {
 [u S165 `S166 1 ]
 [n S165 . . ]
 "3407
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3407: extern volatile PMCON1bits_t PMCON1bits __attribute__((address(0x190)));
 [v _PMCON1bits `VS165 ~T0 @X0 0 e@400 ]
 "3529
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3529: extern volatile unsigned char PMADRH __attribute__((address(0x193)));
 [v _PMADRH `Vuc ~T0 @X0 0 e@403 ]
 "3459
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3459: extern volatile unsigned char PMADRL __attribute__((address(0x192)));
 [v _PMADRL `Vuc ~T0 @X0 0 e@402 ]
 "31 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
 "3800 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3800: extern volatile unsigned char DCSCAL1 __attribute__((address(0x198)));
 [v _DCSCAL1 `Vuc ~T0 @X0 0 e@408 ]
 "3652
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3652: extern volatile unsigned char PMDATH __attribute__((address(0x195)));
 [v _PMDATH `Vuc ~T0 @X0 0 e@405 ]
 "3722
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3722: extern volatile unsigned char GMCAL1 __attribute__((address(0x196)));
 [v _GMCAL1 `Vuc ~T0 @X0 0 e@406 ]
 "3582
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3582: extern volatile unsigned char PMDATL __attribute__((address(0x194)));
 [v _PMDATL `Vuc ~T0 @X0 0 e@404 ]
 "3846
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3846: extern volatile unsigned char DCSCAL2 __attribute__((address(0x199)));
 [v _DCSCAL2 `Vuc ~T0 @X0 0 e@409 ]
 "3774
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3774: extern volatile unsigned char GMCAL2 __attribute__((address(0x197)));
 [v _GMCAL2 `Vuc ~T0 @X0 0 e@407 ]
 "3985
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3985: extern volatile unsigned char VRCAL __attribute__((address(0x19D)));
 [v _VRCAL `Vuc ~T0 @X0 0 e@413 ]
 "3939
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3939: extern volatile unsigned char DACBGRCAL __attribute__((address(0x19B)));
 [v _DACBGRCAL `Vuc ~T0 @X0 0 e@411 ]
 "3965
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3965: extern volatile unsigned char PDSCAL __attribute__((address(0x19C)));
 [v _PDSCAL `Vuc ~T0 @X0 0 e@412 ]
 "3892
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3892: extern volatile unsigned char ADBT __attribute__((address(0x19A)));
 [v _ADBT `Vuc ~T0 @X0 0 e@410 ]
 "2151
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2151: extern volatile unsigned char TTCAL __attribute__((address(0x09B)));
 [v _TTCAL `Vuc ~T0 @X0 0 e@155 ]
 "3575
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3575: extern volatile unsigned short PMDAT __attribute__((address(0x194)));
 [v _PMDAT `Vus ~T0 @X0 0 e@404 ]
 "4005
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4005: extern volatile unsigned char OSCCAL __attribute__((address(0x19E)));
 [v _OSCCAL `Vuc ~T0 @X0 0 e@414 ]
 "3748
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3748: extern volatile unsigned char EACAL2 __attribute__((address(0x196)));
 [v _EACAL2 `Vuc ~T0 @X0 0 e@406 ]
 "3866
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3866: extern volatile unsigned char DACCAL2 __attribute__((address(0x199)));
 [v _DACCAL2 `Vuc ~T0 @X0 0 e@409 ]
 "3820
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3820: extern volatile unsigned char DACCAL1 __attribute__((address(0x198)));
 [v _DACCAL1 `Vuc ~T0 @X0 0 e@408 ]
 "3913
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3913: extern volatile unsigned char EACAL1 __attribute__((address(0x19A)));
 [v _EACAL1 `Vuc ~T0 @X0 0 e@410 ]
+[; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
+[; ;xc.h: 20: extern double __fpnormalize(double);
+[; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
+[; ;pic.h: 9: extern unsigned char __osccal_val(void);
+[; ;mcp19215.h: 52: extern volatile unsigned char INDF __at(0x000);
 "54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 54: __asm("INDF equ 00h");
+[; ;mcp19215.h: 54: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
+[; ;mcp19215.h: 59: extern volatile unsigned char TMR0 __at(0x001);
 "61
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 61: __asm("TMR0 equ 01h");
+[; ;mcp19215.h: 61: asm("TMR0 equ 01h");
 [; <" TMR0 equ 01h ;# ">
+[; ;mcp19215.h: 66: extern volatile unsigned char PCL __at(0x002);
 "68
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 68: __asm("PCL equ 02h");
+[; ;mcp19215.h: 68: asm("PCL equ 02h");
 [; <" PCL equ 02h ;# ">
+[; ;mcp19215.h: 73: extern volatile unsigned char STATUS __at(0x003);
 "75
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 75: __asm("STATUS equ 03h");
+[; ;mcp19215.h: 75: asm("STATUS equ 03h");
 [; <" STATUS equ 03h ;# ">
+[; ;mcp19215.h: 78: typedef union {
+[; ;mcp19215.h: 79: struct {
+[; ;mcp19215.h: 80: unsigned C :1;
+[; ;mcp19215.h: 81: unsigned DC :1;
+[; ;mcp19215.h: 82: unsigned Z :1;
+[; ;mcp19215.h: 83: unsigned nPD :1;
+[; ;mcp19215.h: 84: unsigned nTO :1;
+[; ;mcp19215.h: 85: unsigned RP :2;
+[; ;mcp19215.h: 86: unsigned IRP :1;
+[; ;mcp19215.h: 87: };
+[; ;mcp19215.h: 88: struct {
+[; ;mcp19215.h: 89: unsigned :5;
+[; ;mcp19215.h: 90: unsigned RP0 :1;
+[; ;mcp19215.h: 91: unsigned RP1 :1;
+[; ;mcp19215.h: 92: };
+[; ;mcp19215.h: 93: struct {
+[; ;mcp19215.h: 94: unsigned CARRY :1;
+[; ;mcp19215.h: 95: unsigned :1;
+[; ;mcp19215.h: 96: unsigned ZERO :1;
+[; ;mcp19215.h: 97: };
+[; ;mcp19215.h: 98: } STATUSbits_t;
+[; ;mcp19215.h: 99: extern volatile STATUSbits_t STATUSbits __at(0x003);
+[; ;mcp19215.h: 159: extern volatile unsigned char FSR __at(0x004);
 "161
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 161: __asm("FSR equ 04h");
+[; ;mcp19215.h: 161: asm("FSR equ 04h");
 [; <" FSR equ 04h ;# ">
+[; ;mcp19215.h: 166: extern volatile unsigned char PORTGPA __at(0x005);
 "168
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 168: __asm("PORTGPA equ 05h");
+[; ;mcp19215.h: 168: asm("PORTGPA equ 05h");
 [; <" PORTGPA equ 05h ;# ">
+[; ;mcp19215.h: 171: extern volatile unsigned char PORTA __at(0x005);
 "173
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 173: __asm("PORTA equ 05h");
+[; ;mcp19215.h: 173: asm("PORTA equ 05h");
 [; <" PORTA equ 05h ;# ">
+[; ;mcp19215.h: 176: typedef union {
+[; ;mcp19215.h: 177: struct {
+[; ;mcp19215.h: 178: unsigned GPA0 :1;
+[; ;mcp19215.h: 179: unsigned GPA1 :1;
+[; ;mcp19215.h: 180: unsigned GPA2 :1;
+[; ;mcp19215.h: 181: unsigned GPA3 :1;
+[; ;mcp19215.h: 182: unsigned :1;
+[; ;mcp19215.h: 183: unsigned GPA5 :1;
+[; ;mcp19215.h: 184: unsigned GPA6 :1;
+[; ;mcp19215.h: 185: unsigned GPA7 :1;
+[; ;mcp19215.h: 186: };
+[; ;mcp19215.h: 187: struct {
+[; ;mcp19215.h: 188: unsigned GPIO0 :1;
+[; ;mcp19215.h: 189: unsigned GPIO1 :1;
+[; ;mcp19215.h: 190: unsigned GPIO2 :1;
+[; ;mcp19215.h: 191: unsigned GPIO3 :1;
+[; ;mcp19215.h: 192: unsigned :1;
+[; ;mcp19215.h: 193: unsigned GPIO5 :1;
+[; ;mcp19215.h: 194: unsigned GPIO6 :1;
+[; ;mcp19215.h: 195: unsigned GPIO7 :1;
+[; ;mcp19215.h: 196: };
+[; ;mcp19215.h: 197: struct {
+[; ;mcp19215.h: 198: unsigned RA0 :1;
+[; ;mcp19215.h: 199: unsigned RA1 :1;
+[; ;mcp19215.h: 200: unsigned RA2 :1;
+[; ;mcp19215.h: 201: unsigned RA3 :1;
+[; ;mcp19215.h: 202: unsigned :1;
+[; ;mcp19215.h: 203: unsigned RA5 :1;
+[; ;mcp19215.h: 204: unsigned RA6 :1;
+[; ;mcp19215.h: 205: unsigned RA7 :1;
+[; ;mcp19215.h: 206: };
+[; ;mcp19215.h: 207: } PORTGPAbits_t;
+[; ;mcp19215.h: 208: extern volatile PORTGPAbits_t PORTGPAbits __at(0x005);
+[; ;mcp19215.h: 316: typedef union {
+[; ;mcp19215.h: 317: struct {
+[; ;mcp19215.h: 318: unsigned GPA0 :1;
+[; ;mcp19215.h: 319: unsigned GPA1 :1;
+[; ;mcp19215.h: 320: unsigned GPA2 :1;
+[; ;mcp19215.h: 321: unsigned GPA3 :1;
+[; ;mcp19215.h: 322: unsigned :1;
+[; ;mcp19215.h: 323: unsigned GPA5 :1;
+[; ;mcp19215.h: 324: unsigned GPA6 :1;
+[; ;mcp19215.h: 325: unsigned GPA7 :1;
+[; ;mcp19215.h: 326: };
+[; ;mcp19215.h: 327: struct {
+[; ;mcp19215.h: 328: unsigned GPIO0 :1;
+[; ;mcp19215.h: 329: unsigned GPIO1 :1;
+[; ;mcp19215.h: 330: unsigned GPIO2 :1;
+[; ;mcp19215.h: 331: unsigned GPIO3 :1;
+[; ;mcp19215.h: 332: unsigned :1;
+[; ;mcp19215.h: 333: unsigned GPIO5 :1;
+[; ;mcp19215.h: 334: unsigned GPIO6 :1;
+[; ;mcp19215.h: 335: unsigned GPIO7 :1;
+[; ;mcp19215.h: 336: };
+[; ;mcp19215.h: 337: struct {
+[; ;mcp19215.h: 338: unsigned RA0 :1;
+[; ;mcp19215.h: 339: unsigned RA1 :1;
+[; ;mcp19215.h: 340: unsigned RA2 :1;
+[; ;mcp19215.h: 341: unsigned RA3 :1;
+[; ;mcp19215.h: 342: unsigned :1;
+[; ;mcp19215.h: 343: unsigned RA5 :1;
+[; ;mcp19215.h: 344: unsigned RA6 :1;
+[; ;mcp19215.h: 345: unsigned RA7 :1;
+[; ;mcp19215.h: 346: };
+[; ;mcp19215.h: 347: } PORTAbits_t;
+[; ;mcp19215.h: 348: extern volatile PORTAbits_t PORTAbits __at(0x005);
+[; ;mcp19215.h: 458: extern volatile unsigned char PORTGPB __at(0x006);
 "460
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 460: __asm("PORTGPB equ 06h");
+[; ;mcp19215.h: 460: asm("PORTGPB equ 06h");
 [; <" PORTGPB equ 06h ;# ">
+[; ;mcp19215.h: 463: extern volatile unsigned char PORTB __at(0x006);
 "465
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 465: __asm("PORTB equ 06h");
+[; ;mcp19215.h: 465: asm("PORTB equ 06h");
 [; <" PORTB equ 06h ;# ">
+[; ;mcp19215.h: 468: typedef union {
+[; ;mcp19215.h: 469: struct {
+[; ;mcp19215.h: 470: unsigned GPB0 :1;
+[; ;mcp19215.h: 471: unsigned GPB1 :1;
+[; ;mcp19215.h: 472: unsigned :2;
+[; ;mcp19215.h: 473: unsigned GPB4 :1;
+[; ;mcp19215.h: 474: unsigned GPB5 :1;
+[; ;mcp19215.h: 475: unsigned GPB6 :1;
+[; ;mcp19215.h: 476: unsigned GPB7 :1;
+[; ;mcp19215.h: 477: };
+[; ;mcp19215.h: 478: struct {
+[; ;mcp19215.h: 479: unsigned RB0 :1;
+[; ;mcp19215.h: 480: unsigned RB1 :1;
+[; ;mcp19215.h: 481: unsigned :2;
+[; ;mcp19215.h: 482: unsigned RB4 :1;
+[; ;mcp19215.h: 483: unsigned RB5 :1;
+[; ;mcp19215.h: 484: unsigned RB6 :1;
+[; ;mcp19215.h: 485: unsigned RB7 :1;
+[; ;mcp19215.h: 486: };
+[; ;mcp19215.h: 487: } PORTGPBbits_t;
+[; ;mcp19215.h: 488: extern volatile PORTGPBbits_t PORTGPBbits __at(0x006);
+[; ;mcp19215.h: 551: typedef union {
+[; ;mcp19215.h: 552: struct {
+[; ;mcp19215.h: 553: unsigned GPB0 :1;
+[; ;mcp19215.h: 554: unsigned GPB1 :1;
+[; ;mcp19215.h: 555: unsigned :2;
+[; ;mcp19215.h: 556: unsigned GPB4 :1;
+[; ;mcp19215.h: 557: unsigned GPB5 :1;
+[; ;mcp19215.h: 558: unsigned GPB6 :1;
+[; ;mcp19215.h: 559: unsigned GPB7 :1;
+[; ;mcp19215.h: 560: };
+[; ;mcp19215.h: 561: struct {
+[; ;mcp19215.h: 562: unsigned RB0 :1;
+[; ;mcp19215.h: 563: unsigned RB1 :1;
+[; ;mcp19215.h: 564: unsigned :2;
+[; ;mcp19215.h: 565: unsigned RB4 :1;
+[; ;mcp19215.h: 566: unsigned RB5 :1;
+[; ;mcp19215.h: 567: unsigned RB6 :1;
+[; ;mcp19215.h: 568: unsigned RB7 :1;
+[; ;mcp19215.h: 569: };
+[; ;mcp19215.h: 570: } PORTBbits_t;
+[; ;mcp19215.h: 571: extern volatile PORTBbits_t PORTBbits __at(0x006);
+[; ;mcp19215.h: 636: extern volatile unsigned char PIR1 __at(0x007);
 "638
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 638: __asm("PIR1 equ 07h");
+[; ;mcp19215.h: 638: asm("PIR1 equ 07h");
 [; <" PIR1 equ 07h ;# ">
+[; ;mcp19215.h: 641: typedef union {
+[; ;mcp19215.h: 642: struct {
+[; ;mcp19215.h: 643: unsigned TMR1IF :1;
+[; ;mcp19215.h: 644: unsigned TMR2IF :1;
+[; ;mcp19215.h: 645: unsigned CC1IF :1;
+[; ;mcp19215.h: 646: unsigned CC2IF :1;
+[; ;mcp19215.h: 647: unsigned SSPIF :1;
+[; ;mcp19215.h: 648: unsigned BCLIF :1;
+[; ;mcp19215.h: 649: unsigned ADIF :1;
+[; ;mcp19215.h: 650: unsigned OTIF :1;
+[; ;mcp19215.h: 651: };
+[; ;mcp19215.h: 652: } PIR1bits_t;
+[; ;mcp19215.h: 653: extern volatile PIR1bits_t PIR1bits __at(0x007);
+[; ;mcp19215.h: 698: extern volatile unsigned char PIR2 __at(0x008);
 "700
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 700: __asm("PIR2 equ 08h");
+[; ;mcp19215.h: 700: asm("PIR2 equ 08h");
 [; <" PIR2 equ 08h ;# ">
+[; ;mcp19215.h: 703: typedef union {
+[; ;mcp19215.h: 704: struct {
+[; ;mcp19215.h: 705: unsigned UVLOIF :1;
+[; ;mcp19215.h: 706: unsigned OVLOIF :1;
+[; ;mcp19215.h: 707: unsigned DRUVIF :1;
+[; ;mcp19215.h: 708: unsigned VDDUVIF :1;
+[; ;mcp19215.h: 709: unsigned :1;
+[; ;mcp19215.h: 710: unsigned IVGD2IF :1;
+[; ;mcp19215.h: 711: unsigned :1;
+[; ;mcp19215.h: 712: unsigned IVGD1IF :1;
+[; ;mcp19215.h: 713: };
+[; ;mcp19215.h: 714: } PIR2bits_t;
+[; ;mcp19215.h: 715: extern volatile PIR2bits_t PIR2bits __at(0x008);
+[; ;mcp19215.h: 750: extern volatile unsigned char PIR3 __at(0x009);
 "752
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 752: __asm("PIR3 equ 09h");
+[; ;mcp19215.h: 752: asm("PIR3 equ 09h");
 [; <" PIR3 equ 09h ;# ">
+[; ;mcp19215.h: 755: typedef union {
+[; ;mcp19215.h: 756: struct {
+[; ;mcp19215.h: 757: unsigned TXIF :1;
+[; ;mcp19215.h: 758: unsigned RCIF :1;
+[; ;mcp19215.h: 759: };
+[; ;mcp19215.h: 760: } PIR3bits_t;
+[; ;mcp19215.h: 761: extern volatile PIR3bits_t PIR3bits __at(0x009);
+[; ;mcp19215.h: 776: extern volatile unsigned char PCLATH __at(0x00A);
 "778
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 778: __asm("PCLATH equ 0Ah");
+[; ;mcp19215.h: 778: asm("PCLATH equ 0Ah");
 [; <" PCLATH equ 0Ah ;# ">
+[; ;mcp19215.h: 783: extern volatile unsigned char INTCON __at(0x00B);
 "785
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 785: __asm("INTCON equ 0Bh");
+[; ;mcp19215.h: 785: asm("INTCON equ 0Bh");
 [; <" INTCON equ 0Bh ;# ">
+[; ;mcp19215.h: 788: typedef union {
+[; ;mcp19215.h: 789: struct {
+[; ;mcp19215.h: 790: unsigned IOCF :1;
+[; ;mcp19215.h: 791: unsigned INTF :1;
+[; ;mcp19215.h: 792: unsigned T0IF :1;
+[; ;mcp19215.h: 793: unsigned IOCE :1;
+[; ;mcp19215.h: 794: unsigned INTE :1;
+[; ;mcp19215.h: 795: unsigned T0IE :1;
+[; ;mcp19215.h: 796: unsigned PEIE :1;
+[; ;mcp19215.h: 797: unsigned GIE :1;
+[; ;mcp19215.h: 798: };
+[; ;mcp19215.h: 799: } INTCONbits_t;
+[; ;mcp19215.h: 800: extern volatile INTCONbits_t INTCONbits __at(0x00B);
+[; ;mcp19215.h: 845: extern volatile unsigned short TMR1 __at(0x00C);
 "847
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 847: __asm("TMR1 equ 0Ch");
+[; ;mcp19215.h: 847: asm("TMR1 equ 0Ch");
 [; <" TMR1 equ 0Ch ;# ">
+[; ;mcp19215.h: 852: extern volatile unsigned char TMR1L __at(0x00C);
 "854
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 854: __asm("TMR1L equ 0Ch");
+[; ;mcp19215.h: 854: asm("TMR1L equ 0Ch");
 [; <" TMR1L equ 0Ch ;# ">
+[; ;mcp19215.h: 859: extern volatile unsigned char TMR1H __at(0x00D);
 "861
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 861: __asm("TMR1H equ 0Dh");
+[; ;mcp19215.h: 861: asm("TMR1H equ 0Dh");
 [; <" TMR1H equ 0Dh ;# ">
+[; ;mcp19215.h: 866: extern volatile unsigned char T1CON __at(0x00E);
 "868
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 868: __asm("T1CON equ 0Eh");
+[; ;mcp19215.h: 868: asm("T1CON equ 0Eh");
 [; <" T1CON equ 0Eh ;# ">
+[; ;mcp19215.h: 871: typedef union {
+[; ;mcp19215.h: 872: struct {
+[; ;mcp19215.h: 873: unsigned TMR1ON :1;
+[; ;mcp19215.h: 874: unsigned TMR1CS :1;
+[; ;mcp19215.h: 875: unsigned :2;
+[; ;mcp19215.h: 876: unsigned T1CKPS :2;
+[; ;mcp19215.h: 877: };
+[; ;mcp19215.h: 878: struct {
+[; ;mcp19215.h: 879: unsigned :4;
+[; ;mcp19215.h: 880: unsigned T1CKPS0 :1;
+[; ;mcp19215.h: 881: unsigned T1CKPS1 :1;
+[; ;mcp19215.h: 882: };
+[; ;mcp19215.h: 883: } T1CONbits_t;
+[; ;mcp19215.h: 884: extern volatile T1CONbits_t T1CONbits __at(0x00E);
+[; ;mcp19215.h: 914: extern volatile unsigned char TMR2 __at(0x00F);
 "916
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 916: __asm("TMR2 equ 0Fh");
+[; ;mcp19215.h: 916: asm("TMR2 equ 0Fh");
 [; <" TMR2 equ 0Fh ;# ">
+[; ;mcp19215.h: 921: extern volatile unsigned char T2CON __at(0x010);
 "923
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 923: __asm("T2CON equ 010h");
+[; ;mcp19215.h: 923: asm("T2CON equ 010h");
 [; <" T2CON equ 010h ;# ">
+[; ;mcp19215.h: 926: typedef union {
+[; ;mcp19215.h: 927: struct {
+[; ;mcp19215.h: 928: unsigned T2CKPS :2;
+[; ;mcp19215.h: 929: unsigned TMR2ON :1;
+[; ;mcp19215.h: 930: };
+[; ;mcp19215.h: 931: } T2CONbits_t;
+[; ;mcp19215.h: 932: extern volatile T2CONbits_t T2CONbits __at(0x010);
+[; ;mcp19215.h: 947: extern volatile unsigned char PR2 __at(0x011);
 "949
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 949: __asm("PR2 equ 011h");
+[; ;mcp19215.h: 949: asm("PR2 equ 011h");
 [; <" PR2 equ 011h ;# ">
+[; ;mcp19215.h: 952: typedef union {
+[; ;mcp19215.h: 953: struct {
+[; ;mcp19215.h: 954: unsigned PR2 :8;
+[; ;mcp19215.h: 955: };
+[; ;mcp19215.h: 956: } PR2bits_t;
+[; ;mcp19215.h: 957: extern volatile PR2bits_t PR2bits __at(0x011);
+[; ;mcp19215.h: 967: extern volatile unsigned char PCON __at(0x012);
 "969
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 969: __asm("PCON equ 012h");
+[; ;mcp19215.h: 969: asm("PCON equ 012h");
 [; <" PCON equ 012h ;# ">
+[; ;mcp19215.h: 974: extern volatile unsigned char PWM2PHL __at(0x013);
 "976
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 976: __asm("PWM2PHL equ 013h");
+[; ;mcp19215.h: 976: asm("PWM2PHL equ 013h");
 [; <" PWM2PHL equ 013h ;# ">
+[; ;mcp19215.h: 979: typedef union {
+[; ;mcp19215.h: 980: struct {
+[; ;mcp19215.h: 981: unsigned PWM2PHL :8;
+[; ;mcp19215.h: 982: };
+[; ;mcp19215.h: 983: } PWM2PHLbits_t;
+[; ;mcp19215.h: 984: extern volatile PWM2PHLbits_t PWM2PHLbits __at(0x013);
+[; ;mcp19215.h: 994: extern volatile unsigned char PWM2PHH __at(0x014);
 "996
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 996: __asm("PWM2PHH equ 014h");
+[; ;mcp19215.h: 996: asm("PWM2PHH equ 014h");
 [; <" PWM2PHH equ 014h ;# ">
+[; ;mcp19215.h: 999: typedef union {
+[; ;mcp19215.h: 1000: struct {
+[; ;mcp19215.h: 1001: unsigned PWM2PHH :8;
+[; ;mcp19215.h: 1002: };
+[; ;mcp19215.h: 1003: } PWM2PHHbits_t;
+[; ;mcp19215.h: 1004: extern volatile PWM2PHHbits_t PWM2PHHbits __at(0x014);
+[; ;mcp19215.h: 1014: extern volatile unsigned char PWM2RL __at(0x015);
 "1016
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1016: __asm("PWM2RL equ 015h");
+[; ;mcp19215.h: 1016: asm("PWM2RL equ 015h");
 [; <" PWM2RL equ 015h ;# ">
+[; ;mcp19215.h: 1019: typedef union {
+[; ;mcp19215.h: 1020: struct {
+[; ;mcp19215.h: 1021: unsigned PWM2RL :8;
+[; ;mcp19215.h: 1022: };
+[; ;mcp19215.h: 1023: } PWM2RLbits_t;
+[; ;mcp19215.h: 1024: extern volatile PWM2RLbits_t PWM2RLbits __at(0x015);
+[; ;mcp19215.h: 1034: extern volatile unsigned char PWM2RH __at(0x016);
 "1036
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1036: __asm("PWM2RH equ 016h");
+[; ;mcp19215.h: 1036: asm("PWM2RH equ 016h");
 [; <" PWM2RH equ 016h ;# ">
+[; ;mcp19215.h: 1039: typedef union {
+[; ;mcp19215.h: 1040: struct {
+[; ;mcp19215.h: 1041: unsigned PWM2RH :8;
+[; ;mcp19215.h: 1042: };
+[; ;mcp19215.h: 1043: } PWM2RHbits_t;
+[; ;mcp19215.h: 1044: extern volatile PWM2RHbits_t PWM2RHbits __at(0x016);
+[; ;mcp19215.h: 1054: extern volatile unsigned char PWM1RL __at(0x017);
 "1056
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1056: __asm("PWM1RL equ 017h");
+[; ;mcp19215.h: 1056: asm("PWM1RL equ 017h");
 [; <" PWM1RL equ 017h ;# ">
+[; ;mcp19215.h: 1059: typedef union {
+[; ;mcp19215.h: 1060: struct {
+[; ;mcp19215.h: 1061: unsigned PWM1RL :8;
+[; ;mcp19215.h: 1062: };
+[; ;mcp19215.h: 1063: } PWM1RLbits_t;
+[; ;mcp19215.h: 1064: extern volatile PWM1RLbits_t PWM1RLbits __at(0x017);
+[; ;mcp19215.h: 1074: extern volatile unsigned char PWM1RH __at(0x018);
 "1076
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1076: __asm("PWM1RH equ 018h");
+[; ;mcp19215.h: 1076: asm("PWM1RH equ 018h");
 [; <" PWM1RH equ 018h ;# ">
+[; ;mcp19215.h: 1079: typedef union {
+[; ;mcp19215.h: 1080: struct {
+[; ;mcp19215.h: 1081: unsigned PWM1RH :8;
+[; ;mcp19215.h: 1082: };
+[; ;mcp19215.h: 1083: } PWM1RHbits_t;
+[; ;mcp19215.h: 1084: extern volatile PWM1RHbits_t PWM1RHbits __at(0x018);
+[; ;mcp19215.h: 1094: extern volatile unsigned char OSCTUNE __at(0x01B);
 "1096
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1096: __asm("OSCTUNE equ 01Bh");
+[; ;mcp19215.h: 1096: asm("OSCTUNE equ 01Bh");
 [; <" OSCTUNE equ 01Bh ;# ">
+[; ;mcp19215.h: 1099: typedef union {
+[; ;mcp19215.h: 1100: struct {
+[; ;mcp19215.h: 1101: unsigned TUN0 :1;
+[; ;mcp19215.h: 1102: unsigned TUN1 :1;
+[; ;mcp19215.h: 1103: unsigned TUN2 :1;
+[; ;mcp19215.h: 1104: unsigned TUN3 :1;
+[; ;mcp19215.h: 1105: unsigned TUN4 :1;
+[; ;mcp19215.h: 1106: };
+[; ;mcp19215.h: 1107: } OSCTUNEbits_t;
+[; ;mcp19215.h: 1108: extern volatile OSCTUNEbits_t OSCTUNEbits __at(0x01B);
+[; ;mcp19215.h: 1138: extern volatile unsigned short ADRES __at(0x01C);
 "1140
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1140: __asm("ADRES equ 01Ch");
+[; ;mcp19215.h: 1140: asm("ADRES equ 01Ch");
 [; <" ADRES equ 01Ch ;# ">
+[; ;mcp19215.h: 1145: extern volatile unsigned char ADRESL __at(0x01C);
 "1147
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1147: __asm("ADRESL equ 01Ch");
+[; ;mcp19215.h: 1147: asm("ADRESL equ 01Ch");
 [; <" ADRESL equ 01Ch ;# ">
+[; ;mcp19215.h: 1150: typedef union {
+[; ;mcp19215.h: 1151: struct {
+[; ;mcp19215.h: 1152: unsigned ADRESL :8;
+[; ;mcp19215.h: 1153: };
+[; ;mcp19215.h: 1154: } ADRESLbits_t;
+[; ;mcp19215.h: 1155: extern volatile ADRESLbits_t ADRESLbits __at(0x01C);
+[; ;mcp19215.h: 1165: extern volatile unsigned char ADRESH __at(0x01D);
 "1167
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1167: __asm("ADRESH equ 01Dh");
+[; ;mcp19215.h: 1167: asm("ADRESH equ 01Dh");
 [; <" ADRESH equ 01Dh ;# ">
+[; ;mcp19215.h: 1170: typedef union {
+[; ;mcp19215.h: 1171: struct {
+[; ;mcp19215.h: 1172: unsigned ADRESH :8;
+[; ;mcp19215.h: 1173: };
+[; ;mcp19215.h: 1174: } ADRESHbits_t;
+[; ;mcp19215.h: 1175: extern volatile ADRESHbits_t ADRESHbits __at(0x01D);
+[; ;mcp19215.h: 1185: extern volatile unsigned char ADCON0 __at(0x01E);
 "1187
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1187: __asm("ADCON0 equ 01Eh");
+[; ;mcp19215.h: 1187: asm("ADCON0 equ 01Eh");
 [; <" ADCON0 equ 01Eh ;# ">
+[; ;mcp19215.h: 1190: typedef union {
+[; ;mcp19215.h: 1191: struct {
+[; ;mcp19215.h: 1192: unsigned ADON :1;
+[; ;mcp19215.h: 1193: unsigned GO_nDONE :1;
+[; ;mcp19215.h: 1194: unsigned CHS :6;
+[; ;mcp19215.h: 1195: };
+[; ;mcp19215.h: 1196: struct {
+[; ;mcp19215.h: 1197: unsigned :2;
+[; ;mcp19215.h: 1198: unsigned CHS0 :1;
+[; ;mcp19215.h: 1199: unsigned CHS1 :1;
+[; ;mcp19215.h: 1200: unsigned CHS2 :1;
+[; ;mcp19215.h: 1201: unsigned CHS3 :1;
+[; ;mcp19215.h: 1202: unsigned CHS4 :1;
+[; ;mcp19215.h: 1203: unsigned CHS5 :1;
+[; ;mcp19215.h: 1204: };
+[; ;mcp19215.h: 1205: } ADCON0bits_t;
+[; ;mcp19215.h: 1206: extern volatile ADCON0bits_t ADCON0bits __at(0x01E);
+[; ;mcp19215.h: 1256: extern volatile unsigned char ADCON1 __at(0x01F);
 "1258
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1258: __asm("ADCON1 equ 01Fh");
+[; ;mcp19215.h: 1258: asm("ADCON1 equ 01Fh");
 [; <" ADCON1 equ 01Fh ;# ">
+[; ;mcp19215.h: 1261: typedef union {
+[; ;mcp19215.h: 1262: struct {
+[; ;mcp19215.h: 1263: unsigned :4;
+[; ;mcp19215.h: 1264: unsigned ADCS :3;
+[; ;mcp19215.h: 1265: };
+[; ;mcp19215.h: 1266: struct {
+[; ;mcp19215.h: 1267: unsigned :4;
+[; ;mcp19215.h: 1268: unsigned ADCS0 :1;
+[; ;mcp19215.h: 1269: unsigned ADCS1 :1;
+[; ;mcp19215.h: 1270: unsigned ADCS2 :1;
+[; ;mcp19215.h: 1271: };
+[; ;mcp19215.h: 1272: } ADCON1bits_t;
+[; ;mcp19215.h: 1273: extern volatile ADCON1bits_t ADCON1bits __at(0x01F);
+[; ;mcp19215.h: 1298: extern volatile unsigned char OPTION_REG __at(0x081);
 "1300
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1300: __asm("OPTION_REG equ 081h");
+[; ;mcp19215.h: 1300: asm("OPTION_REG equ 081h");
 [; <" OPTION_REG equ 081h ;# ">
+[; ;mcp19215.h: 1303: typedef union {
+[; ;mcp19215.h: 1304: struct {
+[; ;mcp19215.h: 1305: unsigned PS :3;
+[; ;mcp19215.h: 1306: unsigned PSA :1;
+[; ;mcp19215.h: 1307: unsigned T0SE :1;
+[; ;mcp19215.h: 1308: unsigned T0CS :1;
+[; ;mcp19215.h: 1309: unsigned INTEDG :1;
+[; ;mcp19215.h: 1310: unsigned nRAPUI :1;
+[; ;mcp19215.h: 1311: };
+[; ;mcp19215.h: 1312: struct {
+[; ;mcp19215.h: 1313: unsigned PS0 :1;
+[; ;mcp19215.h: 1314: unsigned PS1 :1;
+[; ;mcp19215.h: 1315: unsigned PS2 :1;
+[; ;mcp19215.h: 1316: };
+[; ;mcp19215.h: 1317: } OPTION_REGbits_t;
+[; ;mcp19215.h: 1318: extern volatile OPTION_REGbits_t OPTION_REGbits __at(0x081);
+[; ;mcp19215.h: 1368: extern volatile unsigned char TRISGPA __at(0x085);
 "1370
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1370: __asm("TRISGPA equ 085h");
+[; ;mcp19215.h: 1370: asm("TRISGPA equ 085h");
 [; <" TRISGPA equ 085h ;# ">
+[; ;mcp19215.h: 1373: extern volatile unsigned char TRISA __at(0x085);
 "1375
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1375: __asm("TRISA equ 085h");
+[; ;mcp19215.h: 1375: asm("TRISA equ 085h");
 [; <" TRISA equ 085h ;# ">
+[; ;mcp19215.h: 1378: typedef union {
+[; ;mcp19215.h: 1379: struct {
+[; ;mcp19215.h: 1380: unsigned TRISA0 :1;
+[; ;mcp19215.h: 1381: unsigned TRISA1 :1;
+[; ;mcp19215.h: 1382: unsigned TRISA2 :1;
+[; ;mcp19215.h: 1383: unsigned TRISA3 :1;
+[; ;mcp19215.h: 1384: unsigned :1;
+[; ;mcp19215.h: 1385: unsigned TRISA5 :1;
+[; ;mcp19215.h: 1386: unsigned TRISA6 :1;
+[; ;mcp19215.h: 1387: unsigned TRISA7 :1;
+[; ;mcp19215.h: 1388: };
+[; ;mcp19215.h: 1389: } TRISGPAbits_t;
+[; ;mcp19215.h: 1390: extern volatile TRISGPAbits_t TRISGPAbits __at(0x085);
+[; ;mcp19215.h: 1428: typedef union {
+[; ;mcp19215.h: 1429: struct {
+[; ;mcp19215.h: 1430: unsigned TRISA0 :1;
+[; ;mcp19215.h: 1431: unsigned TRISA1 :1;
+[; ;mcp19215.h: 1432: unsigned TRISA2 :1;
+[; ;mcp19215.h: 1433: unsigned TRISA3 :1;
+[; ;mcp19215.h: 1434: unsigned :1;
+[; ;mcp19215.h: 1435: unsigned TRISA5 :1;
+[; ;mcp19215.h: 1436: unsigned TRISA6 :1;
+[; ;mcp19215.h: 1437: unsigned TRISA7 :1;
+[; ;mcp19215.h: 1438: };
+[; ;mcp19215.h: 1439: } TRISAbits_t;
+[; ;mcp19215.h: 1440: extern volatile TRISAbits_t TRISAbits __at(0x085);
+[; ;mcp19215.h: 1480: extern volatile unsigned char TRISGPB __at(0x086);
 "1482
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1482: __asm("TRISGPB equ 086h");
+[; ;mcp19215.h: 1482: asm("TRISGPB equ 086h");
 [; <" TRISGPB equ 086h ;# ">
+[; ;mcp19215.h: 1485: extern volatile unsigned char TRISB __at(0x086);
 "1487
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1487: __asm("TRISB equ 086h");
+[; ;mcp19215.h: 1487: asm("TRISB equ 086h");
 [; <" TRISB equ 086h ;# ">
+[; ;mcp19215.h: 1490: typedef union {
+[; ;mcp19215.h: 1491: struct {
+[; ;mcp19215.h: 1492: unsigned TRISB0 :1;
+[; ;mcp19215.h: 1493: unsigned TRISB1 :1;
+[; ;mcp19215.h: 1494: unsigned :2;
+[; ;mcp19215.h: 1495: unsigned TRISB4 :1;
+[; ;mcp19215.h: 1496: unsigned TRISB5 :1;
+[; ;mcp19215.h: 1497: unsigned TRISB6 :1;
+[; ;mcp19215.h: 1498: unsigned TRISB7 :1;
+[; ;mcp19215.h: 1499: };
+[; ;mcp19215.h: 1500: } TRISGPBbits_t;
+[; ;mcp19215.h: 1501: extern volatile TRISGPBbits_t TRISGPBbits __at(0x086);
+[; ;mcp19215.h: 1534: typedef union {
+[; ;mcp19215.h: 1535: struct {
+[; ;mcp19215.h: 1536: unsigned TRISB0 :1;
+[; ;mcp19215.h: 1537: unsigned TRISB1 :1;
+[; ;mcp19215.h: 1538: unsigned :2;
+[; ;mcp19215.h: 1539: unsigned TRISB4 :1;
+[; ;mcp19215.h: 1540: unsigned TRISB5 :1;
+[; ;mcp19215.h: 1541: unsigned TRISB6 :1;
+[; ;mcp19215.h: 1542: unsigned TRISB7 :1;
+[; ;mcp19215.h: 1543: };
+[; ;mcp19215.h: 1544: } TRISBbits_t;
+[; ;mcp19215.h: 1545: extern volatile TRISBbits_t TRISBbits __at(0x086);
+[; ;mcp19215.h: 1580: extern volatile unsigned char PIE1 __at(0x087);
 "1582
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1582: __asm("PIE1 equ 087h");
+[; ;mcp19215.h: 1582: asm("PIE1 equ 087h");
 [; <" PIE1 equ 087h ;# ">
+[; ;mcp19215.h: 1585: typedef union {
+[; ;mcp19215.h: 1586: struct {
+[; ;mcp19215.h: 1587: unsigned TMR1IE :1;
+[; ;mcp19215.h: 1588: unsigned TMR2IE :1;
+[; ;mcp19215.h: 1589: unsigned CC1IE :1;
+[; ;mcp19215.h: 1590: unsigned CC2IE :1;
+[; ;mcp19215.h: 1591: unsigned SSPIE :1;
+[; ;mcp19215.h: 1592: unsigned BCLIE :1;
+[; ;mcp19215.h: 1593: unsigned ADIE :1;
+[; ;mcp19215.h: 1594: unsigned OTIE :1;
+[; ;mcp19215.h: 1595: };
+[; ;mcp19215.h: 1596: } PIE1bits_t;
+[; ;mcp19215.h: 1597: extern volatile PIE1bits_t PIE1bits __at(0x087);
+[; ;mcp19215.h: 1642: extern volatile unsigned char PIE2 __at(0x088);
 "1644
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1644: __asm("PIE2 equ 088h");
+[; ;mcp19215.h: 1644: asm("PIE2 equ 088h");
 [; <" PIE2 equ 088h ;# ">
+[; ;mcp19215.h: 1647: typedef union {
+[; ;mcp19215.h: 1648: struct {
+[; ;mcp19215.h: 1649: unsigned UVLOIE :1;
+[; ;mcp19215.h: 1650: unsigned OVLOIE :1;
+[; ;mcp19215.h: 1651: unsigned DRUVIE :1;
+[; ;mcp19215.h: 1652: unsigned VDDUVIE :1;
+[; ;mcp19215.h: 1653: unsigned :1;
+[; ;mcp19215.h: 1654: unsigned IVGD2IE :1;
+[; ;mcp19215.h: 1655: unsigned :1;
+[; ;mcp19215.h: 1656: unsigned IVGD1IE :1;
+[; ;mcp19215.h: 1657: };
+[; ;mcp19215.h: 1658: } PIE2bits_t;
+[; ;mcp19215.h: 1659: extern volatile PIE2bits_t PIE2bits __at(0x088);
+[; ;mcp19215.h: 1694: extern volatile unsigned char PIE3 __at(0x089);
 "1696
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1696: __asm("PIE3 equ 089h");
+[; ;mcp19215.h: 1696: asm("PIE3 equ 089h");
 [; <" PIE3 equ 089h ;# ">
+[; ;mcp19215.h: 1699: typedef union {
+[; ;mcp19215.h: 1700: struct {
+[; ;mcp19215.h: 1701: unsigned TXIE :1;
+[; ;mcp19215.h: 1702: unsigned RCIE :1;
+[; ;mcp19215.h: 1703: };
+[; ;mcp19215.h: 1704: } PIE3bits_t;
+[; ;mcp19215.h: 1705: extern volatile PIE3bits_t PIE3bits __at(0x089);
+[; ;mcp19215.h: 1720: extern volatile unsigned char VINUVLO __at(0x08C);
 "1722
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1722: __asm("VINUVLO equ 08Ch");
+[; ;mcp19215.h: 1722: asm("VINUVLO equ 08Ch");
 [; <" VINUVLO equ 08Ch ;# ">
+[; ;mcp19215.h: 1725: typedef union {
+[; ;mcp19215.h: 1726: struct {
+[; ;mcp19215.h: 1727: unsigned UVLO :6;
+[; ;mcp19215.h: 1728: };
+[; ;mcp19215.h: 1729: } VINUVLObits_t;
+[; ;mcp19215.h: 1730: extern volatile VINUVLObits_t VINUVLObits __at(0x08C);
+[; ;mcp19215.h: 1740: extern volatile unsigned char VINOVLO __at(0x08D);
 "1742
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1742: __asm("VINOVLO equ 08Dh");
+[; ;mcp19215.h: 1742: asm("VINOVLO equ 08Dh");
 [; <" VINOVLO equ 08Dh ;# ">
+[; ;mcp19215.h: 1745: typedef union {
+[; ;mcp19215.h: 1746: struct {
+[; ;mcp19215.h: 1747: unsigned OVLO :6;
+[; ;mcp19215.h: 1748: };
+[; ;mcp19215.h: 1749: } VINOVLObits_t;
+[; ;mcp19215.h: 1750: extern volatile VINOVLObits_t VINOVLObits __at(0x08D);
+[; ;mcp19215.h: 1760: extern volatile unsigned char VINCON __at(0x08E);
 "1762
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1762: __asm("VINCON equ 08Eh");
+[; ;mcp19215.h: 1762: asm("VINCON equ 08Eh");
 [; <" VINCON equ 08Eh ;# ">
+[; ;mcp19215.h: 1765: typedef union {
+[; ;mcp19215.h: 1766: struct {
+[; ;mcp19215.h: 1767: unsigned OVLOINTN :1;
+[; ;mcp19215.h: 1768: unsigned OVLOINTP :1;
+[; ;mcp19215.h: 1769: unsigned OVLOOUT :1;
+[; ;mcp19215.h: 1770: unsigned OVLOEN :1;
+[; ;mcp19215.h: 1771: unsigned UVLOINTN :1;
+[; ;mcp19215.h: 1772: unsigned UVLOINTP :1;
+[; ;mcp19215.h: 1773: unsigned UVLOOUT :1;
+[; ;mcp19215.h: 1774: unsigned UVLOEN :1;
+[; ;mcp19215.h: 1775: };
+[; ;mcp19215.h: 1776: } VINCONbits_t;
+[; ;mcp19215.h: 1777: extern volatile VINCONbits_t VINCONbits __at(0x08E);
+[; ;mcp19215.h: 1822: extern volatile unsigned char CREFCON1 __at(0x08F);
 "1824
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1824: __asm("CREFCON1 equ 08Fh");
+[; ;mcp19215.h: 1824: asm("CREFCON1 equ 08Fh");
 [; <" CREFCON1 equ 08Fh ;# ">
+[; ;mcp19215.h: 1827: typedef union {
+[; ;mcp19215.h: 1828: struct {
+[; ;mcp19215.h: 1829: unsigned CREFCON1 :8;
+[; ;mcp19215.h: 1830: };
+[; ;mcp19215.h: 1831: } CREFCON1bits_t;
+[; ;mcp19215.h: 1832: extern volatile CREFCON1bits_t CREFCON1bits __at(0x08F);
+[; ;mcp19215.h: 1842: extern volatile unsigned char CREFCON2 __at(0x090);
 "1844
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1844: __asm("CREFCON2 equ 090h");
+[; ;mcp19215.h: 1844: asm("CREFCON2 equ 090h");
 [; <" CREFCON2 equ 090h ;# ">
+[; ;mcp19215.h: 1847: typedef union {
+[; ;mcp19215.h: 1848: struct {
+[; ;mcp19215.h: 1849: unsigned CREFCON2 :8;
+[; ;mcp19215.h: 1850: };
+[; ;mcp19215.h: 1851: } CREFCON2bits_t;
+[; ;mcp19215.h: 1852: extern volatile CREFCON2bits_t CREFCON2bits __at(0x090);
+[; ;mcp19215.h: 1862: extern volatile unsigned char VREFCON1 __at(0x091);
 "1864
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1864: __asm("VREFCON1 equ 091h");
+[; ;mcp19215.h: 1864: asm("VREFCON1 equ 091h");
 [; <" VREFCON1 equ 091h ;# ">
+[; ;mcp19215.h: 1867: typedef union {
+[; ;mcp19215.h: 1868: struct {
+[; ;mcp19215.h: 1869: unsigned VREFCON1 :8;
+[; ;mcp19215.h: 1870: };
+[; ;mcp19215.h: 1871: } VREFCON1bits_t;
+[; ;mcp19215.h: 1872: extern volatile VREFCON1bits_t VREFCON1bits __at(0x091);
+[; ;mcp19215.h: 1882: extern volatile unsigned char VREFCON2 __at(0x092);
 "1884
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1884: __asm("VREFCON2 equ 092h");
+[; ;mcp19215.h: 1884: asm("VREFCON2 equ 092h");
 [; <" VREFCON2 equ 092h ;# ">
+[; ;mcp19215.h: 1887: typedef union {
+[; ;mcp19215.h: 1888: struct {
+[; ;mcp19215.h: 1889: unsigned VREFCON2 :8;
+[; ;mcp19215.h: 1890: };
+[; ;mcp19215.h: 1891: } VREFCON2bits_t;
+[; ;mcp19215.h: 1892: extern volatile VREFCON2bits_t VREFCON2bits __at(0x092);
+[; ;mcp19215.h: 1902: extern volatile unsigned char CC1RL __at(0x093);
 "1904
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1904: __asm("CC1RL equ 093h");
+[; ;mcp19215.h: 1904: asm("CC1RL equ 093h");
 [; <" CC1RL equ 093h ;# ">
+[; ;mcp19215.h: 1907: typedef union {
+[; ;mcp19215.h: 1908: struct {
+[; ;mcp19215.h: 1909: unsigned CC1RL :8;
+[; ;mcp19215.h: 1910: };
+[; ;mcp19215.h: 1911: } CC1RLbits_t;
+[; ;mcp19215.h: 1912: extern volatile CC1RLbits_t CC1RLbits __at(0x093);
+[; ;mcp19215.h: 1922: extern volatile unsigned char CC1RH __at(0x094);
 "1924
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1924: __asm("CC1RH equ 094h");
+[; ;mcp19215.h: 1924: asm("CC1RH equ 094h");
 [; <" CC1RH equ 094h ;# ">
+[; ;mcp19215.h: 1927: typedef union {
+[; ;mcp19215.h: 1928: struct {
+[; ;mcp19215.h: 1929: unsigned CC1RH :8;
+[; ;mcp19215.h: 1930: };
+[; ;mcp19215.h: 1931: } CC1RHbits_t;
+[; ;mcp19215.h: 1932: extern volatile CC1RHbits_t CC1RHbits __at(0x094);
+[; ;mcp19215.h: 1942: extern volatile unsigned char CC2RL __at(0x095);
 "1944
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1944: __asm("CC2RL equ 095h");
+[; ;mcp19215.h: 1944: asm("CC2RL equ 095h");
 [; <" CC2RL equ 095h ;# ">
+[; ;mcp19215.h: 1947: typedef union {
+[; ;mcp19215.h: 1948: struct {
+[; ;mcp19215.h: 1949: unsigned CC2RL :8;
+[; ;mcp19215.h: 1950: };
+[; ;mcp19215.h: 1951: } CC2RLbits_t;
+[; ;mcp19215.h: 1952: extern volatile CC2RLbits_t CC2RLbits __at(0x095);
+[; ;mcp19215.h: 1962: extern volatile unsigned char CC2RH __at(0x096);
 "1964
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1964: __asm("CC2RH equ 096h");
+[; ;mcp19215.h: 1964: asm("CC2RH equ 096h");
 [; <" CC2RH equ 096h ;# ">
+[; ;mcp19215.h: 1967: typedef union {
+[; ;mcp19215.h: 1968: struct {
+[; ;mcp19215.h: 1969: unsigned CC2RH :8;
+[; ;mcp19215.h: 1970: };
+[; ;mcp19215.h: 1971: } CC2RHbits_t;
+[; ;mcp19215.h: 1972: extern volatile CC2RHbits_t CC2RHbits __at(0x096);
+[; ;mcp19215.h: 1982: extern volatile unsigned char CCDCON __at(0x097);
 "1984
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1984: __asm("CCDCON equ 097h");
+[; ;mcp19215.h: 1984: asm("CCDCON equ 097h");
 [; <" CCDCON equ 097h ;# ">
+[; ;mcp19215.h: 1987: typedef union {
+[; ;mcp19215.h: 1988: struct {
+[; ;mcp19215.h: 1989: unsigned CC1M :4;
+[; ;mcp19215.h: 1990: unsigned CC2M :4;
+[; ;mcp19215.h: 1991: };
+[; ;mcp19215.h: 1992: } CCDCONbits_t;
+[; ;mcp19215.h: 1993: extern volatile CCDCONbits_t CCDCONbits __at(0x097);
+[; ;mcp19215.h: 2008: extern volatile unsigned char VDDCON __at(0x098);
 "2010
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2010: __asm("VDDCON equ 098h");
+[; ;mcp19215.h: 2010: asm("VDDCON equ 098h");
 [; <" VDDCON equ 098h ;# ">
+[; ;mcp19215.h: 2013: typedef union {
+[; ;mcp19215.h: 2014: struct {
+[; ;mcp19215.h: 2015: unsigned VDDUV0 :1;
+[; ;mcp19215.h: 2016: unsigned VDDUV1 :1;
+[; ;mcp19215.h: 2017: unsigned :2;
+[; ;mcp19215.h: 2018: unsigned VDDUVINTN :1;
+[; ;mcp19215.h: 2019: unsigned VDDUVINTP :1;
+[; ;mcp19215.h: 2020: unsigned VDDUVOUT :1;
+[; ;mcp19215.h: 2021: unsigned VDDUVEN :1;
+[; ;mcp19215.h: 2022: };
+[; ;mcp19215.h: 2023: } VDDCONbits_t;
+[; ;mcp19215.h: 2024: extern volatile VDDCONbits_t VDDCONbits __at(0x098);
+[; ;mcp19215.h: 2059: extern volatile unsigned char LOOPCON1 __at(0x099);
 "2061
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2061: __asm("LOOPCON1 equ 099h");
+[; ;mcp19215.h: 2061: asm("LOOPCON1 equ 099h");
 [; <" LOOPCON1 equ 099h ;# ">
+[; ;mcp19215.h: 2064: typedef union {
+[; ;mcp19215.h: 2065: struct {
+[; ;mcp19215.h: 2066: unsigned :2;
+[; ;mcp19215.h: 2067: unsigned IVREGUL :1;
+[; ;mcp19215.h: 2068: unsigned IVGDINTN :1;
+[; ;mcp19215.h: 2069: unsigned IVGDINTP :1;
+[; ;mcp19215.h: 2070: unsigned IV_GOOD :1;
+[; ;mcp19215.h: 2071: unsigned :1;
+[; ;mcp19215.h: 2072: unsigned IVLRES :1;
+[; ;mcp19215.h: 2073: };
+[; ;mcp19215.h: 2074: } LOOPCON1bits_t;
+[; ;mcp19215.h: 2075: extern volatile LOOPCON1bits_t LOOPCON1bits __at(0x099);
+[; ;mcp19215.h: 2105: extern volatile unsigned char LOOPCON2 __at(0x09A);
 "2107
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2107: __asm("LOOPCON2 equ 09Ah");
+[; ;mcp19215.h: 2107: asm("LOOPCON2 equ 09Ah");
 [; <" LOOPCON2 equ 09Ah ;# ">
+[; ;mcp19215.h: 2110: typedef union {
+[; ;mcp19215.h: 2111: struct {
+[; ;mcp19215.h: 2112: unsigned :2;
+[; ;mcp19215.h: 2113: unsigned IVREGUL :1;
+[; ;mcp19215.h: 2114: unsigned IVGDINTN :1;
+[; ;mcp19215.h: 2115: unsigned IVGDINTP :1;
+[; ;mcp19215.h: 2116: unsigned IV_GOOD :1;
+[; ;mcp19215.h: 2117: unsigned :1;
+[; ;mcp19215.h: 2118: unsigned IVLRES :1;
+[; ;mcp19215.h: 2119: };
+[; ;mcp19215.h: 2120: } LOOPCON2bits_t;
+[; ;mcp19215.h: 2121: extern volatile LOOPCON2bits_t LOOPCON2bits __at(0x09A);
+[; ;mcp19215.h: 2151: extern volatile unsigned char TTCAL __at(0x09B);
 "2153
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2153: __asm("TTCAL equ 09Bh");
+[; ;mcp19215.h: 2153: asm("TTCAL equ 09Bh");
 [; <" TTCAL equ 09Bh ;# ">
+[; ;mcp19215.h: 2156: typedef union {
+[; ;mcp19215.h: 2157: struct {
+[; ;mcp19215.h: 2158: unsigned TTA :4;
+[; ;mcp19215.h: 2159: unsigned :3;
+[; ;mcp19215.h: 2160: unsigned TSTOT :1;
+[; ;mcp19215.h: 2161: };
+[; ;mcp19215.h: 2162: } TTCALbits_t;
+[; ;mcp19215.h: 2163: extern volatile TTCALbits_t TTCALbits __at(0x09B);
+[; ;mcp19215.h: 2178: extern volatile unsigned char SLPCRCON1 __at(0x09C);
 "2180
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2180: __asm("SLPCRCON1 equ 09Ch");
+[; ;mcp19215.h: 2180: asm("SLPCRCON1 equ 09Ch");
 [; <" SLPCRCON1 equ 09Ch ;# ">
+[; ;mcp19215.h: 2183: typedef union {
+[; ;mcp19215.h: 2184: struct {
+[; ;mcp19215.h: 2185: unsigned SLPCRCON1 :6;
+[; ;mcp19215.h: 2186: unsigned SLPBY :1;
+[; ;mcp19215.h: 2187: };
+[; ;mcp19215.h: 2188: } SLPCRCON1bits_t;
+[; ;mcp19215.h: 2189: extern volatile SLPCRCON1bits_t SLPCRCON1bits __at(0x09C);
+[; ;mcp19215.h: 2204: extern volatile unsigned char SLPCRCON2 __at(0x09D);
 "2206
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2206: __asm("SLPCRCON2 equ 09Dh");
+[; ;mcp19215.h: 2206: asm("SLPCRCON2 equ 09Dh");
 [; <" SLPCRCON2 equ 09Dh ;# ">
+[; ;mcp19215.h: 2209: typedef union {
+[; ;mcp19215.h: 2210: struct {
+[; ;mcp19215.h: 2211: unsigned SLPCRCON2 :6;
+[; ;mcp19215.h: 2212: unsigned SLPBY :1;
+[; ;mcp19215.h: 2213: };
+[; ;mcp19215.h: 2214: } SLPCRCON2bits_t;
+[; ;mcp19215.h: 2215: extern volatile SLPCRCON2bits_t SLPCRCON2bits __at(0x09D);
+[; ;mcp19215.h: 2230: extern volatile unsigned char ICOACON __at(0x09E);
 "2232
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2232: __asm("ICOACON equ 09Eh");
+[; ;mcp19215.h: 2232: asm("ICOACON equ 09Eh");
 [; <" ICOACON equ 09Eh ;# ">
+[; ;mcp19215.h: 2235: typedef union {
+[; ;mcp19215.h: 2236: struct {
+[; ;mcp19215.h: 2237: unsigned IC2OAC :4;
+[; ;mcp19215.h: 2238: unsigned IC1OAC :4;
+[; ;mcp19215.h: 2239: };
+[; ;mcp19215.h: 2240: } ICOACONbits_t;
+[; ;mcp19215.h: 2241: extern volatile ICOACONbits_t ICOACONbits __at(0x09E);
+[; ;mcp19215.h: 2256: extern volatile unsigned char ICLEBCON __at(0x09F);
 "2258
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2258: __asm("ICLEBCON equ 09Fh");
+[; ;mcp19215.h: 2258: asm("ICLEBCON equ 09Fh");
 [; <" ICLEBCON equ 09Fh ;# ">
+[; ;mcp19215.h: 2261: typedef union {
+[; ;mcp19215.h: 2262: struct {
+[; ;mcp19215.h: 2263: unsigned IC2LEBC :2;
+[; ;mcp19215.h: 2264: unsigned IC1LEBC :2;
+[; ;mcp19215.h: 2265: };
+[; ;mcp19215.h: 2266: } ICLEBCONbits_t;
+[; ;mcp19215.h: 2267: extern volatile ICLEBCONbits_t ICLEBCONbits __at(0x09F);
+[; ;mcp19215.h: 2282: extern volatile unsigned char WPUGPA __at(0x105);
 "2284
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2284: __asm("WPUGPA equ 0105h");
+[; ;mcp19215.h: 2284: asm("WPUGPA equ 0105h");
 [; <" WPUGPA equ 0105h ;# ">
+[; ;mcp19215.h: 2287: typedef union {
+[; ;mcp19215.h: 2288: struct {
+[; ;mcp19215.h: 2289: unsigned WPUGPA0 :1;
+[; ;mcp19215.h: 2290: unsigned WPUGPA1 :1;
+[; ;mcp19215.h: 2291: unsigned WPUGPA2 :1;
+[; ;mcp19215.h: 2292: unsigned WPUGPA3 :1;
+[; ;mcp19215.h: 2293: unsigned :1;
+[; ;mcp19215.h: 2294: unsigned WPUGPA5 :1;
+[; ;mcp19215.h: 2295: unsigned WPUGPA6 :1;
+[; ;mcp19215.h: 2296: unsigned WPUGPA7 :1;
+[; ;mcp19215.h: 2297: };
+[; ;mcp19215.h: 2298: struct {
+[; ;mcp19215.h: 2299: unsigned WPUA0 :1;
+[; ;mcp19215.h: 2300: unsigned WPUA1 :1;
+[; ;mcp19215.h: 2301: unsigned WPUA2 :1;
+[; ;mcp19215.h: 2302: unsigned WPUA3 :1;
+[; ;mcp19215.h: 2303: unsigned :1;
+[; ;mcp19215.h: 2304: unsigned WPUA5 :1;
+[; ;mcp19215.h: 2305: unsigned WPUA6 :1;
+[; ;mcp19215.h: 2306: unsigned WPUA7 :1;
+[; ;mcp19215.h: 2307: };
+[; ;mcp19215.h: 2308: } WPUGPAbits_t;
+[; ;mcp19215.h: 2309: extern volatile WPUGPAbits_t WPUGPAbits __at(0x105);
+[; ;mcp19215.h: 2384: extern volatile unsigned char WPUGPB __at(0x106);
 "2386
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2386: __asm("WPUGPB equ 0106h");
+[; ;mcp19215.h: 2386: asm("WPUGPB equ 0106h");
 [; <" WPUGPB equ 0106h ;# ">
+[; ;mcp19215.h: 2389: typedef union {
+[; ;mcp19215.h: 2390: struct {
+[; ;mcp19215.h: 2391: unsigned WPUGPB0 :1;
+[; ;mcp19215.h: 2392: unsigned WPUGPB1 :1;
+[; ;mcp19215.h: 2393: unsigned :2;
+[; ;mcp19215.h: 2394: unsigned WPUGPB4 :1;
+[; ;mcp19215.h: 2395: unsigned WPUGPB5 :1;
+[; ;mcp19215.h: 2396: unsigned WPUGPB6 :1;
+[; ;mcp19215.h: 2397: unsigned WPUGPB7 :1;
+[; ;mcp19215.h: 2398: };
+[; ;mcp19215.h: 2399: struct {
+[; ;mcp19215.h: 2400: unsigned WPUB0 :1;
+[; ;mcp19215.h: 2401: unsigned WPUB1 :1;
+[; ;mcp19215.h: 2402: unsigned :2;
+[; ;mcp19215.h: 2403: unsigned WPUB4 :1;
+[; ;mcp19215.h: 2404: unsigned WPUB5 :1;
+[; ;mcp19215.h: 2405: unsigned WPUB6 :1;
+[; ;mcp19215.h: 2406: unsigned WPUB7 :1;
+[; ;mcp19215.h: 2407: };
+[; ;mcp19215.h: 2408: } WPUGPBbits_t;
+[; ;mcp19215.h: 2409: extern volatile WPUGPBbits_t WPUGPBbits __at(0x106);
+[; ;mcp19215.h: 2474: extern volatile unsigned char PE1 __at(0x107);
 "2476
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2476: __asm("PE1 equ 0107h");
+[; ;mcp19215.h: 2476: asm("PE1 equ 0107h");
 [; <" PE1 equ 0107h ;# ">
+[; ;mcp19215.h: 2479: typedef union {
+[; ;mcp19215.h: 2480: struct {
+[; ;mcp19215.h: 2481: unsigned LDO_LP :1;
+[; ;mcp19215.h: 2482: unsigned LDO_LV :1;
+[; ;mcp19215.h: 2483: unsigned IS2PUEN :1;
+[; ;mcp19215.h: 2484: unsigned IS1PUEN :1;
+[; ;mcp19215.h: 2485: unsigned :2;
+[; ;mcp19215.h: 2486: unsigned PDRV2EN :1;
+[; ;mcp19215.h: 2487: unsigned PDRV1EN :1;
+[; ;mcp19215.h: 2488: };
+[; ;mcp19215.h: 2489: } PE1bits_t;
+[; ;mcp19215.h: 2490: extern volatile PE1bits_t PE1bits __at(0x107);
+[; ;mcp19215.h: 2525: extern volatile unsigned char ABECON1 __at(0x10C);
 "2527
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2527: __asm("ABECON1 equ 010Ch");
+[; ;mcp19215.h: 2527: asm("ABECON1 equ 010Ch");
 [; <" ABECON1 equ 010Ch ;# ">
+[; ;mcp19215.h: 2530: typedef union {
+[; ;mcp19215.h: 2531: struct {
+[; ;mcp19215.h: 2532: unsigned ANAOEN :1;
+[; ;mcp19215.h: 2533: unsigned EA2DIS1 :1;
+[; ;mcp19215.h: 2534: unsigned EA1DIS1 :1;
+[; ;mcp19215.h: 2535: unsigned DRUVSEL :1;
+[; ;mcp19215.h: 2536: unsigned DCHSEL :2;
+[; ;mcp19215.h: 2537: unsigned GCTRL :1;
+[; ;mcp19215.h: 2538: unsigned DIGOEN :1;
+[; ;mcp19215.h: 2539: };
+[; ;mcp19215.h: 2540: struct {
+[; ;mcp19215.h: 2541: unsigned :4;
+[; ;mcp19215.h: 2542: unsigned DCHSEL0 :1;
+[; ;mcp19215.h: 2543: unsigned DCHSEL1 :1;
+[; ;mcp19215.h: 2544: };
+[; ;mcp19215.h: 2545: } ABECON1bits_t;
+[; ;mcp19215.h: 2546: extern volatile ABECON1bits_t ABECON1bits __at(0x10C);
+[; ;mcp19215.h: 2596: extern volatile unsigned char ABECON2 __at(0x10D);
 "2598
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2598: __asm("ABECON2 equ 010Dh");
+[; ;mcp19215.h: 2598: asm("ABECON2 equ 010Dh");
 [; <" ABECON2 equ 010Dh ;# ">
+[; ;mcp19215.h: 2601: typedef union {
+[; ;mcp19215.h: 2602: struct {
+[; ;mcp19215.h: 2603: unsigned :1;
+[; ;mcp19215.h: 2604: unsigned EA2DIS2 :1;
+[; ;mcp19215.h: 2605: unsigned EA1DIS2 :1;
+[; ;mcp19215.h: 2606: unsigned :1;
+[; ;mcp19215.h: 2607: unsigned DSEL :3;
+[; ;mcp19215.h: 2608: };
+[; ;mcp19215.h: 2609: } ABECON2bits_t;
+[; ;mcp19215.h: 2610: extern volatile ABECON2bits_t ABECON2bits __at(0x10D);
+[; ;mcp19215.h: 2630: extern volatile unsigned char SSPADD __at(0x110);
 "2632
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2632: __asm("SSPADD equ 0110h");
+[; ;mcp19215.h: 2632: asm("SSPADD equ 0110h");
 [; <" SSPADD equ 0110h ;# ">
+[; ;mcp19215.h: 2635: typedef union {
+[; ;mcp19215.h: 2636: struct {
+[; ;mcp19215.h: 2637: unsigned ADD :8;
+[; ;mcp19215.h: 2638: };
+[; ;mcp19215.h: 2639: } SSPADDbits_t;
+[; ;mcp19215.h: 2640: extern volatile SSPADDbits_t SSPADDbits __at(0x110);
+[; ;mcp19215.h: 2650: extern volatile unsigned char SSPBUF __at(0x111);
 "2652
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2652: __asm("SSPBUF equ 0111h");
+[; ;mcp19215.h: 2652: asm("SSPBUF equ 0111h");
 [; <" SSPBUF equ 0111h ;# ">
+[; ;mcp19215.h: 2655: typedef union {
+[; ;mcp19215.h: 2656: struct {
+[; ;mcp19215.h: 2657: unsigned SSPBUF :8;
+[; ;mcp19215.h: 2658: };
+[; ;mcp19215.h: 2659: } SSPBUFbits_t;
+[; ;mcp19215.h: 2660: extern volatile SSPBUFbits_t SSPBUFbits __at(0x111);
+[; ;mcp19215.h: 2670: extern volatile unsigned char SSPCON1 __at(0x112);
 "2672
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2672: __asm("SSPCON1 equ 0112h");
+[; ;mcp19215.h: 2672: asm("SSPCON1 equ 0112h");
 [; <" SSPCON1 equ 0112h ;# ">
+[; ;mcp19215.h: 2675: typedef union {
+[; ;mcp19215.h: 2676: struct {
+[; ;mcp19215.h: 2677: unsigned SSPM :4;
+[; ;mcp19215.h: 2678: unsigned CKP :1;
+[; ;mcp19215.h: 2679: unsigned SSPEN :1;
+[; ;mcp19215.h: 2680: unsigned SSPOV :1;
+[; ;mcp19215.h: 2681: unsigned WCOL :1;
+[; ;mcp19215.h: 2682: };
+[; ;mcp19215.h: 2683: struct {
+[; ;mcp19215.h: 2684: unsigned SSPM0 :1;
+[; ;mcp19215.h: 2685: unsigned SSPM1 :1;
+[; ;mcp19215.h: 2686: unsigned SSPM2 :1;
+[; ;mcp19215.h: 2687: unsigned SSPM3 :1;
+[; ;mcp19215.h: 2688: };
+[; ;mcp19215.h: 2689: } SSPCON1bits_t;
+[; ;mcp19215.h: 2690: extern volatile SSPCON1bits_t SSPCON1bits __at(0x112);
+[; ;mcp19215.h: 2740: extern volatile unsigned char SSPCON2 __at(0x113);
 "2742
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2742: __asm("SSPCON2 equ 0113h");
+[; ;mcp19215.h: 2742: asm("SSPCON2 equ 0113h");
 [; <" SSPCON2 equ 0113h ;# ">
+[; ;mcp19215.h: 2745: typedef union {
+[; ;mcp19215.h: 2746: struct {
+[; ;mcp19215.h: 2747: unsigned SEN :1;
+[; ;mcp19215.h: 2748: unsigned RSEN :1;
+[; ;mcp19215.h: 2749: unsigned PEN :1;
+[; ;mcp19215.h: 2750: unsigned RCEN :1;
+[; ;mcp19215.h: 2751: unsigned ACKEN :1;
+[; ;mcp19215.h: 2752: unsigned ACKDT :1;
+[; ;mcp19215.h: 2753: unsigned ACKSTAT :1;
+[; ;mcp19215.h: 2754: unsigned GCEN :1;
+[; ;mcp19215.h: 2755: };
+[; ;mcp19215.h: 2756: } SSPCON2bits_t;
+[; ;mcp19215.h: 2757: extern volatile SSPCON2bits_t SSPCON2bits __at(0x113);
+[; ;mcp19215.h: 2802: extern volatile unsigned char SSPCON3 __at(0x114);
 "2804
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2804: __asm("SSPCON3 equ 0114h");
+[; ;mcp19215.h: 2804: asm("SSPCON3 equ 0114h");
 [; <" SSPCON3 equ 0114h ;# ">
+[; ;mcp19215.h: 2807: typedef union {
+[; ;mcp19215.h: 2808: struct {
+[; ;mcp19215.h: 2809: unsigned DHEN :1;
+[; ;mcp19215.h: 2810: unsigned AHEN :1;
+[; ;mcp19215.h: 2811: unsigned SBCDE :1;
+[; ;mcp19215.h: 2812: unsigned SDAHT :1;
+[; ;mcp19215.h: 2813: unsigned BOEN :1;
+[; ;mcp19215.h: 2814: unsigned SCIE :1;
+[; ;mcp19215.h: 2815: unsigned PCIE :1;
+[; ;mcp19215.h: 2816: unsigned ACKTIM :1;
+[; ;mcp19215.h: 2817: };
+[; ;mcp19215.h: 2818: } SSPCON3bits_t;
+[; ;mcp19215.h: 2819: extern volatile SSPCON3bits_t SSPCON3bits __at(0x114);
+[; ;mcp19215.h: 2864: extern volatile unsigned char SSPMSK __at(0x115);
 "2866
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2866: __asm("SSPMSK equ 0115h");
+[; ;mcp19215.h: 2866: asm("SSPMSK equ 0115h");
 [; <" SSPMSK equ 0115h ;# ">
+[; ;mcp19215.h: 2869: typedef union {
+[; ;mcp19215.h: 2870: struct {
+[; ;mcp19215.h: 2871: unsigned MSK :8;
+[; ;mcp19215.h: 2872: };
+[; ;mcp19215.h: 2873: } SSPMSKbits_t;
+[; ;mcp19215.h: 2874: extern volatile SSPMSKbits_t SSPMSKbits __at(0x115);
+[; ;mcp19215.h: 2884: extern volatile unsigned char SSPSTAT __at(0x116);
 "2886
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2886: __asm("SSPSTAT equ 0116h");
+[; ;mcp19215.h: 2886: asm("SSPSTAT equ 0116h");
 [; <" SSPSTAT equ 0116h ;# ">
+[; ;mcp19215.h: 2889: typedef union {
+[; ;mcp19215.h: 2890: struct {
+[; ;mcp19215.h: 2891: unsigned BF :1;
+[; ;mcp19215.h: 2892: unsigned UA :1;
+[; ;mcp19215.h: 2893: unsigned R_nW :1;
+[; ;mcp19215.h: 2894: unsigned S :1;
+[; ;mcp19215.h: 2895: unsigned P :1;
+[; ;mcp19215.h: 2896: unsigned D_nA :1;
+[; ;mcp19215.h: 2897: unsigned CKE :1;
+[; ;mcp19215.h: 2898: unsigned SMP :1;
+[; ;mcp19215.h: 2899: };
+[; ;mcp19215.h: 2900: } SSPSTATbits_t;
+[; ;mcp19215.h: 2901: extern volatile SSPSTATbits_t SSPSTATbits __at(0x116);
+[; ;mcp19215.h: 2946: extern volatile unsigned char SSPADD2 __at(0x117);
 "2948
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2948: __asm("SSPADD2 equ 0117h");
+[; ;mcp19215.h: 2948: asm("SSPADD2 equ 0117h");
 [; <" SSPADD2 equ 0117h ;# ">
+[; ;mcp19215.h: 2951: typedef union {
+[; ;mcp19215.h: 2952: struct {
+[; ;mcp19215.h: 2953: unsigned ADD2 :8;
+[; ;mcp19215.h: 2954: };
+[; ;mcp19215.h: 2955: } SSPADD2bits_t;
+[; ;mcp19215.h: 2956: extern volatile SSPADD2bits_t SSPADD2bits __at(0x117);
+[; ;mcp19215.h: 2966: extern volatile unsigned char SSPMSK2 __at(0x118);
 "2968
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2968: __asm("SSPMSK2 equ 0118h");
+[; ;mcp19215.h: 2968: asm("SSPMSK2 equ 0118h");
 [; <" SSPMSK2 equ 0118h ;# ">
+[; ;mcp19215.h: 2971: typedef union {
+[; ;mcp19215.h: 2972: struct {
+[; ;mcp19215.h: 2973: unsigned MSK2 :8;
+[; ;mcp19215.h: 2974: };
+[; ;mcp19215.h: 2975: } SSPMSK2bits_t;
+[; ;mcp19215.h: 2976: extern volatile SSPMSK2bits_t SSPMSK2bits __at(0x118);
+[; ;mcp19215.h: 2986: extern volatile unsigned char SPBRG __at(0x11B);
 "2988
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2988: __asm("SPBRG equ 011Bh");
+[; ;mcp19215.h: 2988: asm("SPBRG equ 011Bh");
 [; <" SPBRG equ 011Bh ;# ">
+[; ;mcp19215.h: 2991: typedef union {
+[; ;mcp19215.h: 2992: struct {
+[; ;mcp19215.h: 2993: unsigned SPBRG0 :1;
+[; ;mcp19215.h: 2994: unsigned SPBRG1 :1;
+[; ;mcp19215.h: 2995: unsigned SPBRG2 :1;
+[; ;mcp19215.h: 2996: unsigned SPBRG3 :1;
+[; ;mcp19215.h: 2997: unsigned SPBRG4 :1;
+[; ;mcp19215.h: 2998: unsigned SPBRG5 :1;
+[; ;mcp19215.h: 2999: unsigned SPBRG6 :1;
+[; ;mcp19215.h: 3000: unsigned SPBRG7 :1;
+[; ;mcp19215.h: 3001: };
+[; ;mcp19215.h: 3002: } SPBRGbits_t;
+[; ;mcp19215.h: 3003: extern volatile SPBRGbits_t SPBRGbits __at(0x11B);
+[; ;mcp19215.h: 3048: extern volatile unsigned char RCREG __at(0x11C);
 "3050
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3050: __asm("RCREG equ 011Ch");
+[; ;mcp19215.h: 3050: asm("RCREG equ 011Ch");
 [; <" RCREG equ 011Ch ;# ">
+[; ;mcp19215.h: 3053: typedef union {
+[; ;mcp19215.h: 3054: struct {
+[; ;mcp19215.h: 3055: unsigned USART_RCDAT :8;
+[; ;mcp19215.h: 3056: };
+[; ;mcp19215.h: 3057: } RCREGbits_t;
+[; ;mcp19215.h: 3058: extern volatile RCREGbits_t RCREGbits __at(0x11C);
+[; ;mcp19215.h: 3068: extern volatile unsigned char TXREG __at(0x11D);
 "3070
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3070: __asm("TXREG equ 011Dh");
+[; ;mcp19215.h: 3070: asm("TXREG equ 011Dh");
 [; <" TXREG equ 011Dh ;# ">
+[; ;mcp19215.h: 3073: typedef union {
+[; ;mcp19215.h: 3074: struct {
+[; ;mcp19215.h: 3075: unsigned USART_TXDAT :8;
+[; ;mcp19215.h: 3076: };
+[; ;mcp19215.h: 3077: } TXREGbits_t;
+[; ;mcp19215.h: 3078: extern volatile TXREGbits_t TXREGbits __at(0x11D);
+[; ;mcp19215.h: 3088: extern volatile unsigned char TXSTA __at(0x11E);
 "3090
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3090: __asm("TXSTA equ 011Eh");
+[; ;mcp19215.h: 3090: asm("TXSTA equ 011Eh");
 [; <" TXSTA equ 011Eh ;# ">
+[; ;mcp19215.h: 3093: typedef union {
+[; ;mcp19215.h: 3094: struct {
+[; ;mcp19215.h: 3095: unsigned TX9D :1;
+[; ;mcp19215.h: 3096: unsigned TRMT :1;
+[; ;mcp19215.h: 3097: unsigned BRGH :1;
+[; ;mcp19215.h: 3098: unsigned :1;
+[; ;mcp19215.h: 3099: unsigned SYNC :1;
+[; ;mcp19215.h: 3100: unsigned TXEN :1;
+[; ;mcp19215.h: 3101: unsigned TX9 :1;
+[; ;mcp19215.h: 3102: unsigned CSRC :1;
+[; ;mcp19215.h: 3103: };
+[; ;mcp19215.h: 3104: } TXSTAbits_t;
+[; ;mcp19215.h: 3105: extern volatile TXSTAbits_t TXSTAbits __at(0x11E);
+[; ;mcp19215.h: 3145: extern volatile unsigned char RCSTA __at(0x11F);
 "3147
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3147: __asm("RCSTA equ 011Fh");
+[; ;mcp19215.h: 3147: asm("RCSTA equ 011Fh");
 [; <" RCSTA equ 011Fh ;# ">
+[; ;mcp19215.h: 3150: typedef union {
+[; ;mcp19215.h: 3151: struct {
+[; ;mcp19215.h: 3152: unsigned RX9D :1;
+[; ;mcp19215.h: 3153: unsigned OERR :1;
+[; ;mcp19215.h: 3154: unsigned FERR :1;
+[; ;mcp19215.h: 3155: unsigned ADDEN :1;
+[; ;mcp19215.h: 3156: unsigned CREN :1;
+[; ;mcp19215.h: 3157: unsigned SREN :1;
+[; ;mcp19215.h: 3158: unsigned RX9 :1;
+[; ;mcp19215.h: 3159: unsigned SPEN :1;
+[; ;mcp19215.h: 3160: };
+[; ;mcp19215.h: 3161: } RCSTAbits_t;
+[; ;mcp19215.h: 3162: extern volatile RCSTAbits_t RCSTAbits __at(0x11F);
+[; ;mcp19215.h: 3207: extern volatile unsigned char IOCA __at(0x185);
 "3209
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3209: __asm("IOCA equ 0185h");
+[; ;mcp19215.h: 3209: asm("IOCA equ 0185h");
 [; <" IOCA equ 0185h ;# ">
+[; ;mcp19215.h: 3212: typedef union {
+[; ;mcp19215.h: 3213: struct {
+[; ;mcp19215.h: 3214: unsigned IOCA0 :1;
+[; ;mcp19215.h: 3215: unsigned IOCA1 :1;
+[; ;mcp19215.h: 3216: unsigned IOCA2 :1;
+[; ;mcp19215.h: 3217: unsigned IOCA3 :1;
+[; ;mcp19215.h: 3218: unsigned :1;
+[; ;mcp19215.h: 3219: unsigned IOCA5 :1;
+[; ;mcp19215.h: 3220: unsigned IOCA6 :1;
+[; ;mcp19215.h: 3221: unsigned IOCA7 :1;
+[; ;mcp19215.h: 3222: };
+[; ;mcp19215.h: 3223: } IOCAbits_t;
+[; ;mcp19215.h: 3224: extern volatile IOCAbits_t IOCAbits __at(0x185);
+[; ;mcp19215.h: 3264: extern volatile unsigned char IOCB __at(0x186);
 "3266
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3266: __asm("IOCB equ 0186h");
+[; ;mcp19215.h: 3266: asm("IOCB equ 0186h");
 [; <" IOCB equ 0186h ;# ">
+[; ;mcp19215.h: 3269: typedef union {
+[; ;mcp19215.h: 3270: struct {
+[; ;mcp19215.h: 3271: unsigned IOCB0 :1;
+[; ;mcp19215.h: 3272: unsigned IOCB1 :1;
+[; ;mcp19215.h: 3273: unsigned :2;
+[; ;mcp19215.h: 3274: unsigned IOCB4 :1;
+[; ;mcp19215.h: 3275: unsigned IOCB5 :1;
+[; ;mcp19215.h: 3276: unsigned IOCB6 :1;
+[; ;mcp19215.h: 3277: unsigned IOCB7 :1;
+[; ;mcp19215.h: 3278: };
+[; ;mcp19215.h: 3279: } IOCBbits_t;
+[; ;mcp19215.h: 3280: extern volatile IOCBbits_t IOCBbits __at(0x186);
+[; ;mcp19215.h: 3315: extern volatile unsigned char ANSELA __at(0x187);
 "3317
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3317: __asm("ANSELA equ 0187h");
+[; ;mcp19215.h: 3317: asm("ANSELA equ 0187h");
 [; <" ANSELA equ 0187h ;# ">
+[; ;mcp19215.h: 3320: typedef union {
+[; ;mcp19215.h: 3321: struct {
+[; ;mcp19215.h: 3322: unsigned ANSA0 :1;
+[; ;mcp19215.h: 3323: unsigned ANSA1 :1;
+[; ;mcp19215.h: 3324: unsigned ANSA2 :1;
+[; ;mcp19215.h: 3325: unsigned ANSA3 :1;
+[; ;mcp19215.h: 3326: };
+[; ;mcp19215.h: 3327: } ANSELAbits_t;
+[; ;mcp19215.h: 3328: extern volatile ANSELAbits_t ANSELAbits __at(0x187);
+[; ;mcp19215.h: 3353: extern volatile unsigned char ANSELB __at(0x188);
 "3355
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3355: __asm("ANSELB equ 0188h");
+[; ;mcp19215.h: 3355: asm("ANSELB equ 0188h");
 [; <" ANSELB equ 0188h ;# ">
+[; ;mcp19215.h: 3358: typedef union {
+[; ;mcp19215.h: 3359: struct {
+[; ;mcp19215.h: 3360: unsigned :1;
+[; ;mcp19215.h: 3361: unsigned ANSB1 :1;
+[; ;mcp19215.h: 3362: unsigned :2;
+[; ;mcp19215.h: 3363: unsigned ANSB4 :1;
+[; ;mcp19215.h: 3364: unsigned ANSB5 :1;
+[; ;mcp19215.h: 3365: unsigned ANSB6 :1;
+[; ;mcp19215.h: 3366: };
+[; ;mcp19215.h: 3367: } ANSELBbits_t;
+[; ;mcp19215.h: 3368: extern volatile ANSELBbits_t ANSELBbits __at(0x188);
+[; ;mcp19215.h: 3393: extern volatile unsigned char PMCON1 __at(0x190);
 "3395
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3395: __asm("PMCON1 equ 0190h");
+[; ;mcp19215.h: 3395: asm("PMCON1 equ 0190h");
 [; <" PMCON1 equ 0190h ;# ">
+[; ;mcp19215.h: 3398: typedef union {
+[; ;mcp19215.h: 3399: struct {
+[; ;mcp19215.h: 3400: unsigned RD :1;
+[; ;mcp19215.h: 3401: unsigned WR :1;
+[; ;mcp19215.h: 3402: unsigned WREN :1;
+[; ;mcp19215.h: 3403: unsigned :3;
+[; ;mcp19215.h: 3404: unsigned CALSEL :1;
+[; ;mcp19215.h: 3405: };
+[; ;mcp19215.h: 3406: } PMCON1bits_t;
+[; ;mcp19215.h: 3407: extern volatile PMCON1bits_t PMCON1bits __at(0x190);
+[; ;mcp19215.h: 3432: extern volatile unsigned char PMCON2 __at(0x191);
 "3434
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3434: __asm("PMCON2 equ 0191h");
+[; ;mcp19215.h: 3434: asm("PMCON2 equ 0191h");
 [; <" PMCON2 equ 0191h ;# ">
+[; ;mcp19215.h: 3437: typedef union {
+[; ;mcp19215.h: 3438: struct {
+[; ;mcp19215.h: 3439: unsigned PMCON2 :8;
+[; ;mcp19215.h: 3440: };
+[; ;mcp19215.h: 3441: } PMCON2bits_t;
+[; ;mcp19215.h: 3442: extern volatile PMCON2bits_t PMCON2bits __at(0x191);
+[; ;mcp19215.h: 3452: extern volatile unsigned short PMADR __at(0x192);
 "3454
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3454: __asm("PMADR equ 0192h");
+[; ;mcp19215.h: 3454: asm("PMADR equ 0192h");
 [; <" PMADR equ 0192h ;# ">
+[; ;mcp19215.h: 3459: extern volatile unsigned char PMADRL __at(0x192);
 "3461
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3461: __asm("PMADRL equ 0192h");
+[; ;mcp19215.h: 3461: asm("PMADRL equ 0192h");
 [; <" PMADRL equ 0192h ;# ">
+[; ;mcp19215.h: 3464: typedef union {
+[; ;mcp19215.h: 3465: struct {
+[; ;mcp19215.h: 3466: unsigned PMADRL :8;
+[; ;mcp19215.h: 3467: };
+[; ;mcp19215.h: 3468: struct {
+[; ;mcp19215.h: 3469: unsigned PMADRL0 :1;
+[; ;mcp19215.h: 3470: unsigned PMADRL1 :1;
+[; ;mcp19215.h: 3471: unsigned PMADRL2 :1;
+[; ;mcp19215.h: 3472: unsigned PMADRL3 :1;
+[; ;mcp19215.h: 3473: unsigned PMADRL4 :1;
+[; ;mcp19215.h: 3474: unsigned PMADRL5 :1;
+[; ;mcp19215.h: 3475: unsigned PMADRL6 :1;
+[; ;mcp19215.h: 3476: unsigned PMADRL7 :1;
+[; ;mcp19215.h: 3477: };
+[; ;mcp19215.h: 3478: } PMADRLbits_t;
+[; ;mcp19215.h: 3479: extern volatile PMADRLbits_t PMADRLbits __at(0x192);
+[; ;mcp19215.h: 3529: extern volatile unsigned char PMADRH __at(0x193);
 "3531
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3531: __asm("PMADRH equ 0193h");
+[; ;mcp19215.h: 3531: asm("PMADRH equ 0193h");
 [; <" PMADRH equ 0193h ;# ">
+[; ;mcp19215.h: 3534: typedef union {
+[; ;mcp19215.h: 3535: struct {
+[; ;mcp19215.h: 3536: unsigned PMADRH :4;
+[; ;mcp19215.h: 3537: };
+[; ;mcp19215.h: 3538: struct {
+[; ;mcp19215.h: 3539: unsigned PMADRH0 :1;
+[; ;mcp19215.h: 3540: unsigned PMADRH1 :1;
+[; ;mcp19215.h: 3541: unsigned PMADRH2 :1;
+[; ;mcp19215.h: 3542: unsigned PMADRH3 :1;
+[; ;mcp19215.h: 3543: };
+[; ;mcp19215.h: 3544: } PMADRHbits_t;
+[; ;mcp19215.h: 3545: extern volatile PMADRHbits_t PMADRHbits __at(0x193);
+[; ;mcp19215.h: 3575: extern volatile unsigned short PMDAT __at(0x194);
 "3577
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3577: __asm("PMDAT equ 0194h");
+[; ;mcp19215.h: 3577: asm("PMDAT equ 0194h");
 [; <" PMDAT equ 0194h ;# ">
+[; ;mcp19215.h: 3582: extern volatile unsigned char PMDATL __at(0x194);
 "3584
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3584: __asm("PMDATL equ 0194h");
+[; ;mcp19215.h: 3584: asm("PMDATL equ 0194h");
 [; <" PMDATL equ 0194h ;# ">
+[; ;mcp19215.h: 3587: typedef union {
+[; ;mcp19215.h: 3588: struct {
+[; ;mcp19215.h: 3589: unsigned PMDATL :8;
+[; ;mcp19215.h: 3590: };
+[; ;mcp19215.h: 3591: struct {
+[; ;mcp19215.h: 3592: unsigned PMDATL0 :1;
+[; ;mcp19215.h: 3593: unsigned PMDATL1 :1;
+[; ;mcp19215.h: 3594: unsigned PMDATL2 :1;
+[; ;mcp19215.h: 3595: unsigned PMDATL3 :1;
+[; ;mcp19215.h: 3596: unsigned PMDATL4 :1;
+[; ;mcp19215.h: 3597: unsigned PMDATL5 :1;
+[; ;mcp19215.h: 3598: unsigned PMDATL6 :1;
+[; ;mcp19215.h: 3599: unsigned PMDATL7 :1;
+[; ;mcp19215.h: 3600: };
+[; ;mcp19215.h: 3601: } PMDATLbits_t;
+[; ;mcp19215.h: 3602: extern volatile PMDATLbits_t PMDATLbits __at(0x194);
+[; ;mcp19215.h: 3652: extern volatile unsigned char PMDATH __at(0x195);
 "3654
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3654: __asm("PMDATH equ 0195h");
+[; ;mcp19215.h: 3654: asm("PMDATH equ 0195h");
 [; <" PMDATH equ 0195h ;# ">
+[; ;mcp19215.h: 3657: typedef union {
+[; ;mcp19215.h: 3658: struct {
+[; ;mcp19215.h: 3659: unsigned PMDATH :6;
+[; ;mcp19215.h: 3660: };
+[; ;mcp19215.h: 3661: struct {
+[; ;mcp19215.h: 3662: unsigned PMDATH0 :1;
+[; ;mcp19215.h: 3663: unsigned PMDATH1 :1;
+[; ;mcp19215.h: 3664: unsigned PMDATH2 :1;
+[; ;mcp19215.h: 3665: unsigned PMDATH3 :1;
+[; ;mcp19215.h: 3666: unsigned PMDATH4 :1;
+[; ;mcp19215.h: 3667: unsigned PMDATH5 :1;
+[; ;mcp19215.h: 3668: unsigned PMDATH6 :1;
+[; ;mcp19215.h: 3669: unsigned PMDATH7 :1;
+[; ;mcp19215.h: 3670: };
+[; ;mcp19215.h: 3671: } PMDATHbits_t;
+[; ;mcp19215.h: 3672: extern volatile PMDATHbits_t PMDATHbits __at(0x195);
+[; ;mcp19215.h: 3722: extern volatile unsigned char GMCAL1 __at(0x196);
 "3724
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3724: __asm("GMCAL1 equ 0196h");
+[; ;mcp19215.h: 3724: asm("GMCAL1 equ 0196h");
 [; <" GMCAL1 equ 0196h ;# ">
+[; ;mcp19215.h: 3727: typedef union {
+[; ;mcp19215.h: 3728: struct {
+[; ;mcp19215.h: 3729: unsigned VGMCAL :4;
+[; ;mcp19215.h: 3730: unsigned IGMCAL :4;
+[; ;mcp19215.h: 3731: };
+[; ;mcp19215.h: 3732: } GMCAL1bits_t;
+[; ;mcp19215.h: 3733: extern volatile GMCAL1bits_t GMCAL1bits __at(0x196);
+[; ;mcp19215.h: 3748: extern volatile unsigned char EACAL2 __at(0x196);
 "3750
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3750: __asm("EACAL2 equ 0196h");
+[; ;mcp19215.h: 3750: asm("EACAL2 equ 0196h");
 [; <" EACAL2 equ 0196h ;# ">
+[; ;mcp19215.h: 3753: typedef union {
+[; ;mcp19215.h: 3754: struct {
+[; ;mcp19215.h: 3755: unsigned VEACAL :4;
+[; ;mcp19215.h: 3756: unsigned IEACAL :4;
+[; ;mcp19215.h: 3757: };
+[; ;mcp19215.h: 3758: } EACAL2bits_t;
+[; ;mcp19215.h: 3759: extern volatile EACAL2bits_t EACAL2bits __at(0x196);
+[; ;mcp19215.h: 3774: extern volatile unsigned char GMCAL2 __at(0x197);
 "3776
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3776: __asm("GMCAL2 equ 0197h");
+[; ;mcp19215.h: 3776: asm("GMCAL2 equ 0197h");
 [; <" GMCAL2 equ 0197h ;# ">
+[; ;mcp19215.h: 3779: typedef union {
+[; ;mcp19215.h: 3780: struct {
+[; ;mcp19215.h: 3781: unsigned VGMCAL :4;
+[; ;mcp19215.h: 3782: unsigned IGMCAL :4;
+[; ;mcp19215.h: 3783: };
+[; ;mcp19215.h: 3784: } GMCAL2bits_t;
+[; ;mcp19215.h: 3785: extern volatile GMCAL2bits_t GMCAL2bits __at(0x197);
+[; ;mcp19215.h: 3800: extern volatile unsigned char DCSCAL1 __at(0x198);
 "3802
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3802: __asm("DCSCAL1 equ 0198h");
+[; ;mcp19215.h: 3802: asm("DCSCAL1 equ 0198h");
 [; <" DCSCAL1 equ 0198h ;# ">
+[; ;mcp19215.h: 3805: typedef union {
+[; ;mcp19215.h: 3806: struct {
+[; ;mcp19215.h: 3807: unsigned DCSCAL1 :7;
+[; ;mcp19215.h: 3808: };
+[; ;mcp19215.h: 3809: } DCSCAL1bits_t;
+[; ;mcp19215.h: 3810: extern volatile DCSCAL1bits_t DCSCAL1bits __at(0x198);
+[; ;mcp19215.h: 3820: extern volatile unsigned char DACCAL1 __at(0x198);
 "3822
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3822: __asm("DACCAL1 equ 0198h");
+[; ;mcp19215.h: 3822: asm("DACCAL1 equ 0198h");
 [; <" DACCAL1 equ 0198h ;# ">
+[; ;mcp19215.h: 3825: typedef union {
+[; ;mcp19215.h: 3826: struct {
+[; ;mcp19215.h: 3827: unsigned VDACCAL :4;
+[; ;mcp19215.h: 3828: unsigned IDACCAL :4;
+[; ;mcp19215.h: 3829: };
+[; ;mcp19215.h: 3830: } DACCAL1bits_t;
+[; ;mcp19215.h: 3831: extern volatile DACCAL1bits_t DACCAL1bits __at(0x198);
+[; ;mcp19215.h: 3846: extern volatile unsigned char DCSCAL2 __at(0x199);
 "3848
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3848: __asm("DCSCAL2 equ 0199h");
+[; ;mcp19215.h: 3848: asm("DCSCAL2 equ 0199h");
 [; <" DCSCAL2 equ 0199h ;# ">
+[; ;mcp19215.h: 3851: typedef union {
+[; ;mcp19215.h: 3852: struct {
+[; ;mcp19215.h: 3853: unsigned DCSCAL2 :7;
+[; ;mcp19215.h: 3854: };
+[; ;mcp19215.h: 3855: } DCSCAL2bits_t;
+[; ;mcp19215.h: 3856: extern volatile DCSCAL2bits_t DCSCAL2bits __at(0x199);
+[; ;mcp19215.h: 3866: extern volatile unsigned char DACCAL2 __at(0x199);
 "3868
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3868: __asm("DACCAL2 equ 0199h");
+[; ;mcp19215.h: 3868: asm("DACCAL2 equ 0199h");
 [; <" DACCAL2 equ 0199h ;# ">
+[; ;mcp19215.h: 3871: typedef union {
+[; ;mcp19215.h: 3872: struct {
+[; ;mcp19215.h: 3873: unsigned VDACCAL :4;
+[; ;mcp19215.h: 3874: unsigned IDACCAL :4;
+[; ;mcp19215.h: 3875: };
+[; ;mcp19215.h: 3876: } DACCAL2bits_t;
+[; ;mcp19215.h: 3877: extern volatile DACCAL2bits_t DACCAL2bits __at(0x199);
+[; ;mcp19215.h: 3892: extern volatile unsigned char ADBT __at(0x19A);
 "3894
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3894: __asm("ADBT equ 019Ah");
+[; ;mcp19215.h: 3894: asm("ADBT equ 019Ah");
 [; <" ADBT equ 019Ah ;# ">
+[; ;mcp19215.h: 3897: typedef union {
+[; ;mcp19215.h: 3898: struct {
+[; ;mcp19215.h: 3899: unsigned :4;
+[; ;mcp19215.h: 3900: unsigned ADBT :4;
+[; ;mcp19215.h: 3901: };
+[; ;mcp19215.h: 3902: } ADBTbits_t;
+[; ;mcp19215.h: 3903: extern volatile ADBTbits_t ADBTbits __at(0x19A);
+[; ;mcp19215.h: 3913: extern volatile unsigned char EACAL1 __at(0x19A);
 "3915
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3915: __asm("EACAL1 equ 019Ah");
+[; ;mcp19215.h: 3915: asm("EACAL1 equ 019Ah");
 [; <" EACAL1 equ 019Ah ;# ">
+[; ;mcp19215.h: 3918: typedef union {
+[; ;mcp19215.h: 3919: struct {
+[; ;mcp19215.h: 3920: unsigned VEACAL :4;
+[; ;mcp19215.h: 3921: unsigned IEACAL :4;
+[; ;mcp19215.h: 3922: };
+[; ;mcp19215.h: 3923: } EACAL1bits_t;
+[; ;mcp19215.h: 3924: extern volatile EACAL1bits_t EACAL1bits __at(0x19A);
+[; ;mcp19215.h: 3939: extern volatile unsigned char DACBGRCAL __at(0x19B);
 "3941
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3941: __asm("DACBGRCAL equ 019Bh");
+[; ;mcp19215.h: 3941: asm("DACBGRCAL equ 019Bh");
 [; <" DACBGRCAL equ 019Bh ;# ">
+[; ;mcp19215.h: 3944: typedef union {
+[; ;mcp19215.h: 3945: struct {
+[; ;mcp19215.h: 3946: unsigned BGRT :4;
+[; ;mcp19215.h: 3947: unsigned DACT :2;
+[; ;mcp19215.h: 3948: };
+[; ;mcp19215.h: 3949: } DACBGRCALbits_t;
+[; ;mcp19215.h: 3950: extern volatile DACBGRCALbits_t DACBGRCALbits __at(0x19B);
+[; ;mcp19215.h: 3965: extern volatile unsigned char PDSCAL __at(0x19C);
 "3967
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3967: __asm("PDSCAL equ 019Ch");
+[; ;mcp19215.h: 3967: asm("PDSCAL equ 019Ch");
 [; <" PDSCAL equ 019Ch ;# ">
+[; ;mcp19215.h: 3970: typedef union {
+[; ;mcp19215.h: 3971: struct {
+[; ;mcp19215.h: 3972: unsigned PDST :6;
+[; ;mcp19215.h: 3973: };
+[; ;mcp19215.h: 3974: } PDSCALbits_t;
+[; ;mcp19215.h: 3975: extern volatile PDSCALbits_t PDSCALbits __at(0x19C);
+[; ;mcp19215.h: 3985: extern volatile unsigned char VRCAL __at(0x19D);
 "3987
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3987: __asm("VRCAL equ 019Dh");
+[; ;mcp19215.h: 3987: asm("VRCAL equ 019Dh");
 [; <" VRCAL equ 019Dh ;# ">
+[; ;mcp19215.h: 3990: typedef union {
+[; ;mcp19215.h: 3991: struct {
+[; ;mcp19215.h: 3992: unsigned VRCAL :6;
+[; ;mcp19215.h: 3993: };
+[; ;mcp19215.h: 3994: } VRCALbits_t;
+[; ;mcp19215.h: 3995: extern volatile VRCALbits_t VRCALbits __at(0x19D);
+[; ;mcp19215.h: 4005: extern volatile unsigned char OSCCAL __at(0x19E);
 "4007
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4007: __asm("OSCCAL equ 019Eh");
+[; ;mcp19215.h: 4007: asm("OSCCAL equ 019Eh");
 [; <" OSCCAL equ 019Eh ;# ">
+[; ;mcp19215.h: 4010: typedef union {
+[; ;mcp19215.h: 4011: struct {
+[; ;mcp19215.h: 4012: unsigned FCALT :7;
+[; ;mcp19215.h: 4013: };
+[; ;mcp19215.h: 4014: } OSCCALbits_t;
+[; ;mcp19215.h: 4015: extern volatile OSCCALbits_t OSCCALbits __at(0x19E);
+[; ;mcp19215.h: 4025: extern volatile unsigned char ATSTCON __at(0x19F);
 "4027
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4027: __asm("ATSTCON equ 019Fh");
+[; ;mcp19215.h: 4027: asm("ATSTCON equ 019Fh");
 [; <" ATSTCON equ 019Fh ;# ">
+[; ;mcp19215.h: 4030: typedef union {
+[; ;mcp19215.h: 4031: struct {
+[; ;mcp19215.h: 4032: unsigned TMPTBY :1;
+[; ;mcp19215.h: 4033: unsigned DRUVBY :1;
+[; ;mcp19215.h: 4034: unsigned DCSG1X :1;
+[; ;mcp19215.h: 4035: unsigned :1;
+[; ;mcp19215.h: 4036: unsigned SWFRQOR :1;
+[; ;mcp19215.h: 4037: unsigned :2;
+[; ;mcp19215.h: 4038: unsigned TSTGM :1;
+[; ;mcp19215.h: 4039: };
+[; ;mcp19215.h: 4040: } ATSTCONbits_t;
+[; ;mcp19215.h: 4041: extern volatile ATSTCONbits_t ATSTCONbits __at(0x19F);
+[; ;mcp19215.h: 4077: extern volatile __bit ACKDT __at(0x89D);
+[; ;mcp19215.h: 4080: extern volatile __bit ACKEN __at(0x89C);
+[; ;mcp19215.h: 4083: extern volatile __bit ACKSTAT __at(0x89E);
+[; ;mcp19215.h: 4086: extern volatile __bit ACKTIM __at(0x8A7);
+[; ;mcp19215.h: 4089: extern volatile __bit ADCS0 __at(0xFC);
+[; ;mcp19215.h: 4092: extern volatile __bit ADCS1 __at(0xFD);
+[; ;mcp19215.h: 4095: extern volatile __bit ADCS2 __at(0xFE);
+[; ;mcp19215.h: 4098: extern volatile __bit ADDEN __at(0x8FB);
+[; ;mcp19215.h: 4101: extern volatile __bit ADIE __at(0x43E);
+[; ;mcp19215.h: 4104: extern volatile __bit ADIF __at(0x3E);
+[; ;mcp19215.h: 4107: extern volatile __bit ADON __at(0xF0);
+[; ;mcp19215.h: 4110: extern volatile __bit AHEN __at(0x8A1);
+[; ;mcp19215.h: 4113: extern volatile __bit ANAOEN __at(0x860);
+[; ;mcp19215.h: 4116: extern volatile __bit ANSA0 __at(0xC38);
+[; ;mcp19215.h: 4119: extern volatile __bit ANSA1 __at(0xC39);
+[; ;mcp19215.h: 4122: extern volatile __bit ANSA2 __at(0xC3A);
+[; ;mcp19215.h: 4125: extern volatile __bit ANSA3 __at(0xC3B);
+[; ;mcp19215.h: 4128: extern volatile __bit ANSB1 __at(0xC41);
+[; ;mcp19215.h: 4131: extern volatile __bit ANSB4 __at(0xC44);
+[; ;mcp19215.h: 4134: extern volatile __bit ANSB5 __at(0xC45);
+[; ;mcp19215.h: 4137: extern volatile __bit ANSB6 __at(0xC46);
+[; ;mcp19215.h: 4140: extern volatile __bit BCLIE __at(0x43D);
+[; ;mcp19215.h: 4143: extern volatile __bit BCLIF __at(0x3D);
+[; ;mcp19215.h: 4146: extern volatile __bit BF __at(0x8B0);
+[; ;mcp19215.h: 4149: extern volatile __bit BOEN __at(0x8A4);
+[; ;mcp19215.h: 4152: extern volatile __bit BRGH __at(0x8F2);
+[; ;mcp19215.h: 4155: extern volatile __bit CALSEL __at(0xC86);
+[; ;mcp19215.h: 4158: extern volatile __bit CARRY __at(0x18);
+[; ;mcp19215.h: 4161: extern volatile __bit CC1IE __at(0x43A);
+[; ;mcp19215.h: 4164: extern volatile __bit CC1IF __at(0x3A);
+[; ;mcp19215.h: 4167: extern volatile __bit CC2IE __at(0x43B);
+[; ;mcp19215.h: 4170: extern volatile __bit CC2IF __at(0x3B);
+[; ;mcp19215.h: 4173: extern volatile __bit CHS0 __at(0xF2);
+[; ;mcp19215.h: 4176: extern volatile __bit CHS1 __at(0xF3);
+[; ;mcp19215.h: 4179: extern volatile __bit CHS2 __at(0xF4);
+[; ;mcp19215.h: 4182: extern volatile __bit CHS3 __at(0xF5);
+[; ;mcp19215.h: 4185: extern volatile __bit CHS4 __at(0xF6);
+[; ;mcp19215.h: 4188: extern volatile __bit CHS5 __at(0xF7);
+[; ;mcp19215.h: 4191: extern volatile __bit CKE __at(0x8B6);
+[; ;mcp19215.h: 4194: extern volatile __bit CKP __at(0x894);
+[; ;mcp19215.h: 4197: extern volatile __bit CREN __at(0x8FC);
+[; ;mcp19215.h: 4200: extern volatile __bit CSRC __at(0x8F7);
+[; ;mcp19215.h: 4203: extern volatile __bit DC __at(0x19);
+[; ;mcp19215.h: 4206: extern volatile __bit DCHSEL0 __at(0x864);
+[; ;mcp19215.h: 4209: extern volatile __bit DCHSEL1 __at(0x865);
+[; ;mcp19215.h: 4212: extern volatile __bit DCSG1X __at(0xCFA);
+[; ;mcp19215.h: 4215: extern volatile __bit DHEN __at(0x8A0);
+[; ;mcp19215.h: 4218: extern volatile __bit DIGOEN __at(0x867);
+[; ;mcp19215.h: 4221: extern volatile __bit DRUVBY __at(0xCF9);
+[; ;mcp19215.h: 4224: extern volatile __bit DRUVIE __at(0x442);
+[; ;mcp19215.h: 4227: extern volatile __bit DRUVIF __at(0x42);
+[; ;mcp19215.h: 4230: extern volatile __bit DRUVSEL __at(0x863);
+[; ;mcp19215.h: 4233: extern volatile __bit D_nA __at(0x8B5);
+[; ;mcp19215.h: 4236: extern volatile __bit EA1DIS1 __at(0x862);
+[; ;mcp19215.h: 4239: extern volatile __bit EA1DIS2 __at(0x86A);
+[; ;mcp19215.h: 4242: extern volatile __bit EA2DIS1 __at(0x861);
+[; ;mcp19215.h: 4245: extern volatile __bit EA2DIS2 __at(0x869);
+[; ;mcp19215.h: 4248: extern volatile __bit FERR __at(0x8FA);
+[; ;mcp19215.h: 4251: extern volatile __bit GCEN __at(0x89F);
+[; ;mcp19215.h: 4254: extern volatile __bit GCTRL __at(0x866);
+[; ;mcp19215.h: 4257: extern volatile __bit GIE __at(0x5F);
+[; ;mcp19215.h: 4260: extern volatile __bit GO_nDONE __at(0xF1);
+[; ;mcp19215.h: 4263: extern volatile __bit GPA0 __at(0x28);
+[; ;mcp19215.h: 4266: extern volatile __bit GPA1 __at(0x29);
+[; ;mcp19215.h: 4269: extern volatile __bit GPA2 __at(0x2A);
+[; ;mcp19215.h: 4272: extern volatile __bit GPA3 __at(0x2B);
+[; ;mcp19215.h: 4275: extern volatile __bit GPA5 __at(0x2D);
+[; ;mcp19215.h: 4278: extern volatile __bit GPA6 __at(0x2E);
+[; ;mcp19215.h: 4281: extern volatile __bit GPA7 __at(0x2F);
+[; ;mcp19215.h: 4284: extern volatile __bit GPB0 __at(0x30);
+[; ;mcp19215.h: 4287: extern volatile __bit GPB1 __at(0x31);
+[; ;mcp19215.h: 4290: extern volatile __bit GPB4 __at(0x34);
+[; ;mcp19215.h: 4293: extern volatile __bit GPB5 __at(0x35);
+[; ;mcp19215.h: 4296: extern volatile __bit GPB6 __at(0x36);
+[; ;mcp19215.h: 4299: extern volatile __bit GPB7 __at(0x37);
+[; ;mcp19215.h: 4302: extern volatile __bit GPIO0 __at(0x28);
+[; ;mcp19215.h: 4305: extern volatile __bit GPIO1 __at(0x29);
+[; ;mcp19215.h: 4308: extern volatile __bit GPIO2 __at(0x2A);
+[; ;mcp19215.h: 4311: extern volatile __bit GPIO3 __at(0x2B);
+[; ;mcp19215.h: 4314: extern volatile __bit GPIO5 __at(0x2D);
+[; ;mcp19215.h: 4317: extern volatile __bit GPIO6 __at(0x2E);
+[; ;mcp19215.h: 4320: extern volatile __bit GPIO7 __at(0x2F);
+[; ;mcp19215.h: 4323: extern volatile __bit INTE __at(0x5C);
+[; ;mcp19215.h: 4326: extern volatile __bit INTEDG __at(0x40E);
+[; ;mcp19215.h: 4329: extern volatile __bit INTF __at(0x59);
+[; ;mcp19215.h: 4332: extern volatile __bit IOCA0 __at(0xC28);
+[; ;mcp19215.h: 4335: extern volatile __bit IOCA1 __at(0xC29);
+[; ;mcp19215.h: 4338: extern volatile __bit IOCA2 __at(0xC2A);
+[; ;mcp19215.h: 4341: extern volatile __bit IOCA3 __at(0xC2B);
+[; ;mcp19215.h: 4344: extern volatile __bit IOCA5 __at(0xC2D);
+[; ;mcp19215.h: 4347: extern volatile __bit IOCA6 __at(0xC2E);
+[; ;mcp19215.h: 4350: extern volatile __bit IOCA7 __at(0xC2F);
+[; ;mcp19215.h: 4353: extern volatile __bit IOCB0 __at(0xC30);
+[; ;mcp19215.h: 4356: extern volatile __bit IOCB1 __at(0xC31);
+[; ;mcp19215.h: 4359: extern volatile __bit IOCB4 __at(0xC34);
+[; ;mcp19215.h: 4362: extern volatile __bit IOCB5 __at(0xC35);
+[; ;mcp19215.h: 4365: extern volatile __bit IOCB6 __at(0xC36);
+[; ;mcp19215.h: 4368: extern volatile __bit IOCB7 __at(0xC37);
+[; ;mcp19215.h: 4371: extern volatile __bit IOCE __at(0x5B);
+[; ;mcp19215.h: 4374: extern volatile __bit IOCF __at(0x58);
+[; ;mcp19215.h: 4377: extern volatile __bit IRP __at(0x1F);
+[; ;mcp19215.h: 4380: extern volatile __bit IS1PUEN __at(0x83B);
+[; ;mcp19215.h: 4383: extern volatile __bit IS2PUEN __at(0x83A);
+[; ;mcp19215.h: 4386: extern volatile __bit IVGD1IE __at(0x447);
+[; ;mcp19215.h: 4389: extern volatile __bit IVGD1IF __at(0x47);
+[; ;mcp19215.h: 4392: extern volatile __bit IVGD2IE __at(0x445);
+[; ;mcp19215.h: 4395: extern volatile __bit IVGD2IF __at(0x45);
+[; ;mcp19215.h: 4398: extern volatile __bit LDO_LP __at(0x838);
+[; ;mcp19215.h: 4401: extern volatile __bit LDO_LV __at(0x839);
+[; ;mcp19215.h: 4404: extern volatile __bit OERR __at(0x8F9);
+[; ;mcp19215.h: 4407: extern volatile __bit OTIE __at(0x43F);
+[; ;mcp19215.h: 4410: extern volatile __bit OTIF __at(0x3F);
+[; ;mcp19215.h: 4413: extern volatile __bit OVLOEN __at(0x473);
+[; ;mcp19215.h: 4416: extern volatile __bit OVLOIE __at(0x441);
+[; ;mcp19215.h: 4419: extern volatile __bit OVLOIF __at(0x41);
+[; ;mcp19215.h: 4422: extern volatile __bit OVLOINTN __at(0x470);
+[; ;mcp19215.h: 4425: extern volatile __bit OVLOINTP __at(0x471);
+[; ;mcp19215.h: 4428: extern volatile __bit OVLOOUT __at(0x472);
+[; ;mcp19215.h: 4431: extern volatile __bit PCIE __at(0x8A6);
+[; ;mcp19215.h: 4434: extern volatile __bit PDRV1EN __at(0x83F);
+[; ;mcp19215.h: 4437: extern volatile __bit PDRV2EN __at(0x83E);
+[; ;mcp19215.h: 4440: extern volatile __bit PEIE __at(0x5E);
+[; ;mcp19215.h: 4443: extern volatile __bit PEN __at(0x89A);
+[; ;mcp19215.h: 4446: extern volatile __bit PMADRH0 __at(0xC98);
+[; ;mcp19215.h: 4449: extern volatile __bit PMADRH1 __at(0xC99);
+[; ;mcp19215.h: 4452: extern volatile __bit PMADRH2 __at(0xC9A);
+[; ;mcp19215.h: 4455: extern volatile __bit PMADRH3 __at(0xC9B);
+[; ;mcp19215.h: 4458: extern volatile __bit PMADRL0 __at(0xC90);
+[; ;mcp19215.h: 4461: extern volatile __bit PMADRL1 __at(0xC91);
+[; ;mcp19215.h: 4464: extern volatile __bit PMADRL2 __at(0xC92);
+[; ;mcp19215.h: 4467: extern volatile __bit PMADRL3 __at(0xC93);
+[; ;mcp19215.h: 4470: extern volatile __bit PMADRL4 __at(0xC94);
+[; ;mcp19215.h: 4473: extern volatile __bit PMADRL5 __at(0xC95);
+[; ;mcp19215.h: 4476: extern volatile __bit PMADRL6 __at(0xC96);
+[; ;mcp19215.h: 4479: extern volatile __bit PMADRL7 __at(0xC97);
+[; ;mcp19215.h: 4482: extern volatile __bit PMDATH0 __at(0xCA8);
+[; ;mcp19215.h: 4485: extern volatile __bit PMDATH1 __at(0xCA9);
+[; ;mcp19215.h: 4488: extern volatile __bit PMDATH2 __at(0xCAA);
+[; ;mcp19215.h: 4491: extern volatile __bit PMDATH3 __at(0xCAB);
+[; ;mcp19215.h: 4494: extern volatile __bit PMDATH4 __at(0xCAC);
+[; ;mcp19215.h: 4497: extern volatile __bit PMDATH5 __at(0xCAD);
+[; ;mcp19215.h: 4500: extern volatile __bit PMDATH6 __at(0xCAE);
+[; ;mcp19215.h: 4503: extern volatile __bit PMDATH7 __at(0xCAF);
+[; ;mcp19215.h: 4506: extern volatile __bit PMDATL0 __at(0xCA0);
+[; ;mcp19215.h: 4509: extern volatile __bit PMDATL1 __at(0xCA1);
+[; ;mcp19215.h: 4512: extern volatile __bit PMDATL2 __at(0xCA2);
+[; ;mcp19215.h: 4515: extern volatile __bit PMDATL3 __at(0xCA3);
+[; ;mcp19215.h: 4518: extern volatile __bit PMDATL4 __at(0xCA4);
+[; ;mcp19215.h: 4521: extern volatile __bit PMDATL5 __at(0xCA5);
+[; ;mcp19215.h: 4524: extern volatile __bit PMDATL6 __at(0xCA6);
+[; ;mcp19215.h: 4527: extern volatile __bit PMDATL7 __at(0xCA7);
+[; ;mcp19215.h: 4530: extern volatile __bit PS0 __at(0x408);
+[; ;mcp19215.h: 4533: extern volatile __bit PS1 __at(0x409);
+[; ;mcp19215.h: 4536: extern volatile __bit PS2 __at(0x40A);
+[; ;mcp19215.h: 4539: extern volatile __bit PSA __at(0x40B);
+[; ;mcp19215.h: 4542: extern volatile __bit RA0 __at(0x28);
+[; ;mcp19215.h: 4545: extern volatile __bit RA1 __at(0x29);
+[; ;mcp19215.h: 4548: extern volatile __bit RA2 __at(0x2A);
+[; ;mcp19215.h: 4551: extern volatile __bit RA3 __at(0x2B);
+[; ;mcp19215.h: 4554: extern volatile __bit RA5 __at(0x2D);
+[; ;mcp19215.h: 4557: extern volatile __bit RA6 __at(0x2E);
+[; ;mcp19215.h: 4560: extern volatile __bit RA7 __at(0x2F);
+[; ;mcp19215.h: 4563: extern volatile __bit RB0 __at(0x30);
+[; ;mcp19215.h: 4566: extern volatile __bit RB1 __at(0x31);
+[; ;mcp19215.h: 4569: extern volatile __bit RB4 __at(0x34);
+[; ;mcp19215.h: 4572: extern volatile __bit RB5 __at(0x35);
+[; ;mcp19215.h: 4575: extern volatile __bit RB6 __at(0x36);
+[; ;mcp19215.h: 4578: extern volatile __bit RB7 __at(0x37);
+[; ;mcp19215.h: 4581: extern volatile __bit RCEN __at(0x89B);
+[; ;mcp19215.h: 4584: extern volatile __bit RCIE __at(0x449);
+[; ;mcp19215.h: 4587: extern volatile __bit RCIF __at(0x49);
+[; ;mcp19215.h: 4590: extern volatile __bit RD __at(0xC80);
+[; ;mcp19215.h: 4593: extern volatile __bit RP0 __at(0x1D);
+[; ;mcp19215.h: 4596: extern volatile __bit RP1 __at(0x1E);
+[; ;mcp19215.h: 4599: extern volatile __bit RSEN __at(0x899);
+[; ;mcp19215.h: 4602: extern volatile __bit RX9 __at(0x8FE);
+[; ;mcp19215.h: 4605: extern volatile __bit RX9D __at(0x8F8);
+[; ;mcp19215.h: 4608: extern volatile __bit R_nW __at(0x8B2);
+[; ;mcp19215.h: 4611: extern volatile __bit SBCDE __at(0x8A2);
+[; ;mcp19215.h: 4614: extern volatile __bit SCIE __at(0x8A5);
+[; ;mcp19215.h: 4617: extern volatile __bit SDAHT __at(0x8A3);
+[; ;mcp19215.h: 4620: extern volatile __bit SEN __at(0x898);
+[; ;mcp19215.h: 4623: extern volatile __bit SMP __at(0x8B7);
+[; ;mcp19215.h: 4626: extern volatile __bit SPBRG0 __at(0x8D8);
+[; ;mcp19215.h: 4629: extern volatile __bit SPBRG1 __at(0x8D9);
+[; ;mcp19215.h: 4632: extern volatile __bit SPBRG2 __at(0x8DA);
+[; ;mcp19215.h: 4635: extern volatile __bit SPBRG3 __at(0x8DB);
+[; ;mcp19215.h: 4638: extern volatile __bit SPBRG4 __at(0x8DC);
+[; ;mcp19215.h: 4641: extern volatile __bit SPBRG5 __at(0x8DD);
+[; ;mcp19215.h: 4644: extern volatile __bit SPBRG6 __at(0x8DE);
+[; ;mcp19215.h: 4647: extern volatile __bit SPBRG7 __at(0x8DF);
+[; ;mcp19215.h: 4650: extern volatile __bit SPEN __at(0x8FF);
+[; ;mcp19215.h: 4653: extern volatile __bit SREN __at(0x8FD);
+[; ;mcp19215.h: 4656: extern volatile __bit SSPEN __at(0x895);
+[; ;mcp19215.h: 4659: extern volatile __bit SSPIE __at(0x43C);
+[; ;mcp19215.h: 4662: extern volatile __bit SSPIF __at(0x3C);
+[; ;mcp19215.h: 4665: extern volatile __bit SSPM0 __at(0x890);
+[; ;mcp19215.h: 4668: extern volatile __bit SSPM1 __at(0x891);
+[; ;mcp19215.h: 4671: extern volatile __bit SSPM2 __at(0x892);
+[; ;mcp19215.h: 4674: extern volatile __bit SSPM3 __at(0x893);
+[; ;mcp19215.h: 4677: extern volatile __bit SSPOV __at(0x896);
+[; ;mcp19215.h: 4680: extern volatile __bit SWFRQOR __at(0xCFC);
+[; ;mcp19215.h: 4683: extern volatile __bit SYNC __at(0x8F4);
+[; ;mcp19215.h: 4686: extern volatile __bit T0CS __at(0x40D);
+[; ;mcp19215.h: 4689: extern volatile __bit T0IE __at(0x5D);
+[; ;mcp19215.h: 4692: extern volatile __bit T0IF __at(0x5A);
+[; ;mcp19215.h: 4695: extern volatile __bit T0SE __at(0x40C);
+[; ;mcp19215.h: 4698: extern volatile __bit T1CKPS0 __at(0x74);
+[; ;mcp19215.h: 4701: extern volatile __bit T1CKPS1 __at(0x75);
+[; ;mcp19215.h: 4704: extern volatile __bit TMPTBY __at(0xCF8);
+[; ;mcp19215.h: 4707: extern volatile __bit TMR1CS __at(0x71);
+[; ;mcp19215.h: 4710: extern volatile __bit TMR1IE __at(0x438);
+[; ;mcp19215.h: 4713: extern volatile __bit TMR1IF __at(0x38);
+[; ;mcp19215.h: 4716: extern volatile __bit TMR1ON __at(0x70);
+[; ;mcp19215.h: 4719: extern volatile __bit TMR2IE __at(0x439);
+[; ;mcp19215.h: 4722: extern volatile __bit TMR2IF __at(0x39);
+[; ;mcp19215.h: 4725: extern volatile __bit TMR2ON __at(0x82);
+[; ;mcp19215.h: 4728: extern volatile __bit TRISA0 __at(0x428);
+[; ;mcp19215.h: 4731: extern volatile __bit TRISA1 __at(0x429);
+[; ;mcp19215.h: 4734: extern volatile __bit TRISA2 __at(0x42A);
+[; ;mcp19215.h: 4737: extern volatile __bit TRISA3 __at(0x42B);
+[; ;mcp19215.h: 4740: extern volatile __bit TRISA5 __at(0x42D);
+[; ;mcp19215.h: 4743: extern volatile __bit TRISA6 __at(0x42E);
+[; ;mcp19215.h: 4746: extern volatile __bit TRISA7 __at(0x42F);
+[; ;mcp19215.h: 4749: extern volatile __bit TRISB0 __at(0x430);
+[; ;mcp19215.h: 4752: extern volatile __bit TRISB1 __at(0x431);
+[; ;mcp19215.h: 4755: extern volatile __bit TRISB4 __at(0x434);
+[; ;mcp19215.h: 4758: extern volatile __bit TRISB5 __at(0x435);
+[; ;mcp19215.h: 4761: extern volatile __bit TRISB6 __at(0x436);
+[; ;mcp19215.h: 4764: extern volatile __bit TRISB7 __at(0x437);
+[; ;mcp19215.h: 4767: extern volatile __bit TRMT __at(0x8F1);
+[; ;mcp19215.h: 4770: extern volatile __bit TSTGM __at(0xCFF);
+[; ;mcp19215.h: 4773: extern volatile __bit TSTOT __at(0x4DF);
+[; ;mcp19215.h: 4776: extern volatile __bit TUN0 __at(0xD8);
+[; ;mcp19215.h: 4779: extern volatile __bit TUN1 __at(0xD9);
+[; ;mcp19215.h: 4782: extern volatile __bit TUN2 __at(0xDA);
+[; ;mcp19215.h: 4785: extern volatile __bit TUN3 __at(0xDB);
+[; ;mcp19215.h: 4788: extern volatile __bit TUN4 __at(0xDC);
+[; ;mcp19215.h: 4791: extern volatile __bit TX9 __at(0x8F6);
+[; ;mcp19215.h: 4794: extern volatile __bit TX9D __at(0x8F0);
+[; ;mcp19215.h: 4797: extern volatile __bit TXEN __at(0x8F5);
+[; ;mcp19215.h: 4800: extern volatile __bit TXIE __at(0x448);
+[; ;mcp19215.h: 4803: extern volatile __bit TXIF __at(0x48);
+[; ;mcp19215.h: 4806: extern volatile __bit UA __at(0x8B1);
+[; ;mcp19215.h: 4809: extern volatile __bit UVLOEN __at(0x477);
+[; ;mcp19215.h: 4812: extern volatile __bit UVLOIE __at(0x440);
+[; ;mcp19215.h: 4815: extern volatile __bit UVLOIF __at(0x40);
+[; ;mcp19215.h: 4818: extern volatile __bit UVLOINTN __at(0x474);
+[; ;mcp19215.h: 4821: extern volatile __bit UVLOINTP __at(0x475);
+[; ;mcp19215.h: 4824: extern volatile __bit UVLOOUT __at(0x476);
+[; ;mcp19215.h: 4827: extern volatile __bit VDDUV0 __at(0x4C0);
+[; ;mcp19215.h: 4830: extern volatile __bit VDDUV1 __at(0x4C1);
+[; ;mcp19215.h: 4833: extern volatile __bit VDDUVEN __at(0x4C7);
+[; ;mcp19215.h: 4836: extern volatile __bit VDDUVIE __at(0x443);
+[; ;mcp19215.h: 4839: extern volatile __bit VDDUVIF __at(0x43);
+[; ;mcp19215.h: 4842: extern volatile __bit VDDUVINTN __at(0x4C4);
+[; ;mcp19215.h: 4845: extern volatile __bit VDDUVINTP __at(0x4C5);
+[; ;mcp19215.h: 4848: extern volatile __bit VDDUVOUT __at(0x4C6);
+[; ;mcp19215.h: 4851: extern volatile __bit WCOL __at(0x897);
+[; ;mcp19215.h: 4854: extern volatile __bit WPUA0 __at(0x828);
+[; ;mcp19215.h: 4857: extern volatile __bit WPUA1 __at(0x829);
+[; ;mcp19215.h: 4860: extern volatile __bit WPUA2 __at(0x82A);
+[; ;mcp19215.h: 4863: extern volatile __bit WPUA3 __at(0x82B);
+[; ;mcp19215.h: 4866: extern volatile __bit WPUA5 __at(0x82D);
+[; ;mcp19215.h: 4869: extern volatile __bit WPUA6 __at(0x82E);
+[; ;mcp19215.h: 4872: extern volatile __bit WPUA7 __at(0x82F);
+[; ;mcp19215.h: 4875: extern volatile __bit WPUB0 __at(0x830);
+[; ;mcp19215.h: 4878: extern volatile __bit WPUB1 __at(0x831);
+[; ;mcp19215.h: 4881: extern volatile __bit WPUB4 __at(0x834);
+[; ;mcp19215.h: 4884: extern volatile __bit WPUB5 __at(0x835);
+[; ;mcp19215.h: 4887: extern volatile __bit WPUB6 __at(0x836);
+[; ;mcp19215.h: 4890: extern volatile __bit WPUB7 __at(0x837);
+[; ;mcp19215.h: 4893: extern volatile __bit WPUGPA0 __at(0x828);
+[; ;mcp19215.h: 4896: extern volatile __bit WPUGPA1 __at(0x829);
+[; ;mcp19215.h: 4899: extern volatile __bit WPUGPA2 __at(0x82A);
+[; ;mcp19215.h: 4902: extern volatile __bit WPUGPA3 __at(0x82B);
+[; ;mcp19215.h: 4905: extern volatile __bit WPUGPA5 __at(0x82D);
+[; ;mcp19215.h: 4908: extern volatile __bit WPUGPA6 __at(0x82E);
+[; ;mcp19215.h: 4911: extern volatile __bit WPUGPA7 __at(0x82F);
+[; ;mcp19215.h: 4914: extern volatile __bit WPUGPB0 __at(0x830);
+[; ;mcp19215.h: 4917: extern volatile __bit WPUGPB1 __at(0x831);
+[; ;mcp19215.h: 4920: extern volatile __bit WPUGPB4 __at(0x834);
+[; ;mcp19215.h: 4923: extern volatile __bit WPUGPB5 __at(0x835);
+[; ;mcp19215.h: 4926: extern volatile __bit WPUGPB6 __at(0x836);
+[; ;mcp19215.h: 4929: extern volatile __bit WPUGPB7 __at(0x837);
+[; ;mcp19215.h: 4932: extern volatile __bit WR __at(0xC81);
+[; ;mcp19215.h: 4935: extern volatile __bit WREN __at(0xC82);
+[; ;mcp19215.h: 4938: extern volatile __bit ZERO __at(0x1A);
+[; ;mcp19215.h: 4941: extern volatile __bit nPD __at(0x1B);
+[; ;mcp19215.h: 4944: extern volatile __bit nRAPUI __at(0x40F);
+[; ;mcp19215.h: 4947: extern volatile __bit nTO __at(0x1C);
+[; ;pic.h: 31: extern void __nop(void);
+[; ;pic.h: 78: __attribute__((__unsupported__("The " "FLASH_READ" " macro function is no longer supported. Please use the MPLAB X MCC."))) unsigned char __flash_read(unsigned short addr);
+[; ;pic.h: 80: __attribute__((__unsupported__("The " "FLASH_WRITE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_write(unsigned short addr, unsigned short data);
+[; ;pic.h: 82: __attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_erase(unsigned short addr);
+[; ;pic.h: 92: extern __nonreentrant void _delay(unsigned long);
+[; ;pic.h: 94: extern __nonreentrant void _delaywdt(unsigned long);
+[; ;pic.h: 137: extern __bank0 unsigned char __resetbits;
+[; ;pic.h: 138: extern __bank0 __bit __powerdown;
+[; ;pic.h: 139: extern __bank0 __bit __timeout;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef __int24 int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 52: typedef unsigned char uint8_t;
+[; ;stdint.h: 58: typedef unsigned int uint16_t;
+[; ;stdint.h: 65: typedef __uint24 uint24_t;
+[; ;stdint.h: 72: typedef unsigned long int uint32_t;
+[; ;stdint.h: 88: typedef signed char int_least8_t;
+[; ;stdint.h: 96: typedef signed int int_least16_t;
+[; ;stdint.h: 109: typedef __int24 int_least24_t;
+[; ;stdint.h: 118: typedef signed long int int_least32_t;
+[; ;stdint.h: 136: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 143: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 154: typedef __uint24 uint_least24_t;
+[; ;stdint.h: 162: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 181: typedef signed char int_fast8_t;
+[; ;stdint.h: 188: typedef signed int int_fast16_t;
+[; ;stdint.h: 200: typedef __int24 int_fast24_t;
+[; ;stdint.h: 208: typedef signed long int int_fast32_t;
+[; ;stdint.h: 224: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 230: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 240: typedef __uint24 uint_fast24_t;
+[; ;stdint.h: 247: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 268: typedef int32_t intmax_t;
+[; ;stdint.h: 282: typedef uint32_t uintmax_t;
+[; ;stdint.h: 289: typedef int16_t intptr_t;
+[; ;stdint.h: 294: typedef uint16_t uintptr_t;
+[; ;stdbool.h: 13: typedef unsigned char bool;
 "51 mcc_generated_files/calibration.h
-[; ;mcc_generated_files/calibration.h: 51: uint16_t TANA;
 [v _TANA `ui ~T0 @X0 1 e ]
+[; ;calibration.h: 51: uint16_t TANA;
 "52
-[; ;mcc_generated_files/calibration.h: 52: uint16_t GAIN1;
 [v _GAIN1 `ui ~T0 @X0 1 e ]
+[; ;calibration.h: 52: uint16_t GAIN1;
 "53
-[; ;mcc_generated_files/calibration.h: 53: uint16_t GAIN2;
 [v _GAIN2 `ui ~T0 @X0 1 e ]
+[; ;calibration.h: 53: uint16_t GAIN2;
+[; ;calibration.h: 56: void init_Calibration(void);
 "48 mcc_generated_files/calibration.c
-[; ;mcc_generated_files/calibration.c: 48: void init_Calibration(void)
 [v _init_Calibration `(v ~T0 @X0 1 ef ]
 "49
-[; ;mcc_generated_files/calibration.c: 49: {
 {
+[; ;calibration.c: 48: void init_Calibration(void)
+[; ;calibration.c: 49: {
 [e :U _init_Calibration ]
 [f ]
+[; ;calibration.c: 51: PMCON1bits.CALSEL = 1;
 "51
-[; ;mcc_generated_files/calibration.c: 51:  PMCON1bits.CALSEL = 1;
 [e = . . _PMCON1bits 0 4 -> -> 1 `i `uc ]
+[; ;calibration.c: 53: PMADRH = 0x20;
 "53
-[; ;mcc_generated_files/calibration.c: 53:     PMADRH = 0x20;
 [e = _PMADRH -> -> 32 `i `uc ]
+[; ;calibration.c: 55: PMADRL = 0x80;
 "55
-[; ;mcc_generated_files/calibration.c: 55:     PMADRL = 0x80;
 [e = _PMADRL -> -> 128 `i `uc ]
+[; ;calibration.c: 56: PMCON1bits.RD = 1;
 "56
-[; ;mcc_generated_files/calibration.c: 56:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 57: __nop();
 "57
-[; ;mcc_generated_files/calibration.c: 57:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 58: __nop();
 "58
-[; ;mcc_generated_files/calibration.c: 58:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 59: DCSCAL1 = (uint8_t)(PMDATH);
 "59
-[; ;mcc_generated_files/calibration.c: 59:     DCSCAL1 = (uint8_t)(PMDATH);
 [e = _DCSCAL1 _PMDATH ]
+[; ;calibration.c: 60: GMCAL1 = (uint8_t)(PMDATL);
 "60
-[; ;mcc_generated_files/calibration.c: 60:     GMCAL1 = (uint8_t)(PMDATL);
 [e = _GMCAL1 _PMDATL ]
+[; ;calibration.c: 63: PMADRL = 0x81;
 "63
-[; ;mcc_generated_files/calibration.c: 63:     PMADRL = 0x81;
 [e = _PMADRL -> -> 129 `i `uc ]
+[; ;calibration.c: 64: PMCON1bits.RD = 1;
 "64
-[; ;mcc_generated_files/calibration.c: 64:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 65: __nop();
 "65
-[; ;mcc_generated_files/calibration.c: 65:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 66: __nop();
 "66
-[; ;mcc_generated_files/calibration.c: 66:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 67: DCSCAL2 = (uint8_t)(PMDATH);
 "67
-[; ;mcc_generated_files/calibration.c: 67:     DCSCAL2 = (uint8_t)(PMDATH);
 [e = _DCSCAL2 _PMDATH ]
+[; ;calibration.c: 68: GMCAL2 = (uint8_t)(PMDATL);
 "68
-[; ;mcc_generated_files/calibration.c: 68:     GMCAL2 = (uint8_t)(PMDATL);
 [e = _GMCAL2 _PMDATL ]
+[; ;calibration.c: 71: PMADRL = 0x82;
 "71
-[; ;mcc_generated_files/calibration.c: 71:     PMADRL = 0x82;
 [e = _PMADRL -> -> 130 `i `uc ]
+[; ;calibration.c: 72: PMCON1bits.RD = 1;
 "72
-[; ;mcc_generated_files/calibration.c: 72:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 73: __nop();
 "73
-[; ;mcc_generated_files/calibration.c: 73:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 74: __nop();
 "74
-[; ;mcc_generated_files/calibration.c: 74:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 75: VRCAL = (uint8_t)(PMDATH);
 "75
-[; ;mcc_generated_files/calibration.c: 75:     VRCAL = (uint8_t)(PMDATH);
 [e = _VRCAL _PMDATH ]
+[; ;calibration.c: 76: DACBGRCAL = (uint8_t)(PMDATL);
 "76
-[; ;mcc_generated_files/calibration.c: 76:     DACBGRCAL = (uint8_t)(PMDATL);
 [e = _DACBGRCAL _PMDATL ]
+[; ;calibration.c: 79: PMADRL = 0x83;
 "79
-[; ;mcc_generated_files/calibration.c: 79:     PMADRL = 0x83;
 [e = _PMADRL -> -> 131 `i `uc ]
+[; ;calibration.c: 80: PMCON1bits.RD = 1;
 "80
-[; ;mcc_generated_files/calibration.c: 80:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 81: __nop();
 "81
-[; ;mcc_generated_files/calibration.c: 81:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 82: __nop();
 "82
-[; ;mcc_generated_files/calibration.c: 82:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 83: PDSCAL = (uint8_t)(PMDATH);
 "83
-[; ;mcc_generated_files/calibration.c: 83:     PDSCAL = (uint8_t)(PMDATH);
 [e = _PDSCAL _PMDATH ]
+[; ;calibration.c: 84: ADBT = (uint8_t)((PMDATL >> 4) & 0xF);
 "84
-[; ;mcc_generated_files/calibration.c: 84:     ADBT = (uint8_t)((PMDATL >> 4) & 0xF);
 [e = _ADBT -> & >> -> _PMDATL `i -> 4 `i -> 15 `i `uc ]
+[; ;calibration.c: 85: TTCAL = (uint8_t)(PMDATL & 0xF);
 "85
-[; ;mcc_generated_files/calibration.c: 85:     TTCAL = (uint8_t)(PMDATL & 0xF);
 [e = _TTCAL -> & -> _PMDATL `i -> 15 `i `uc ]
+[; ;calibration.c: 88: PMADRL = 0x84;
 "88
-[; ;mcc_generated_files/calibration.c: 88:     PMADRL = 0x84;
 [e = _PMADRL -> -> 132 `i `uc ]
+[; ;calibration.c: 89: PMCON1bits.RD = 1;
 "89
-[; ;mcc_generated_files/calibration.c: 89:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 90: __nop();
 "90
-[; ;mcc_generated_files/calibration.c: 90:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 91: __nop();
 "91
-[; ;mcc_generated_files/calibration.c: 91:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 92: TANA = (uint16_t)(PMDAT);
 "92
-[; ;mcc_generated_files/calibration.c: 92:     TANA = (uint16_t)(PMDAT);
 [e = _TANA -> _PMDAT `ui ]
+[; ;calibration.c: 95: PMADRL = 0x85;
 "95
-[; ;mcc_generated_files/calibration.c: 95:     PMADRL = 0x85;
 [e = _PMADRL -> -> 133 `i `uc ]
+[; ;calibration.c: 96: PMCON1bits.RD = 1;
 "96
-[; ;mcc_generated_files/calibration.c: 96:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 97: __nop();
 "97
-[; ;mcc_generated_files/calibration.c: 97:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 98: __nop();
 "98
-[; ;mcc_generated_files/calibration.c: 98:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 99: OSCCAL = (uint8_t)(PMDATL);
 "99
-[; ;mcc_generated_files/calibration.c: 99:     OSCCAL = (uint8_t)(PMDATL);
 [e = _OSCCAL _PMDATL ]
+[; ;calibration.c: 102: PMADRL = 0x86;
 "102
-[; ;mcc_generated_files/calibration.c: 102:     PMADRL = 0x86;
 [e = _PMADRL -> -> 134 `i `uc ]
+[; ;calibration.c: 103: PMCON1bits.RD = 1;
 "103
-[; ;mcc_generated_files/calibration.c: 103:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 104: __nop();
 "104
-[; ;mcc_generated_files/calibration.c: 104:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 105: __nop();
 "105
-[; ;mcc_generated_files/calibration.c: 105:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 106: EACAL2 = (uint8_t)(PMDATL);
 "106
-[; ;mcc_generated_files/calibration.c: 106:     EACAL2 = (uint8_t)(PMDATL);
 [e = _EACAL2 _PMDATL ]
+[; ;calibration.c: 109: PMADRL = 0x88;
 "109
-[; ;mcc_generated_files/calibration.c: 109:     PMADRL = 0x88;
 [e = _PMADRL -> -> 136 `i `uc ]
+[; ;calibration.c: 110: PMCON1bits.RD = 1;
 "110
-[; ;mcc_generated_files/calibration.c: 110:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 111: __nop();
 "111
-[; ;mcc_generated_files/calibration.c: 111:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 112: __nop();
 "112
-[; ;mcc_generated_files/calibration.c: 112:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 113: DACCAL2 = (uint8_t)(PMDATL);
 "113
-[; ;mcc_generated_files/calibration.c: 113:     DACCAL2 = (uint8_t)(PMDATL);
 [e = _DACCAL2 _PMDATL ]
+[; ;calibration.c: 116: PMADRL = 0x89;
 "116
-[; ;mcc_generated_files/calibration.c: 116:     PMADRL = 0x89;
 [e = _PMADRL -> -> 137 `i `uc ]
+[; ;calibration.c: 117: PMCON1bits.RD = 1;
 "117
-[; ;mcc_generated_files/calibration.c: 117:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 118: __nop();
 "118
-[; ;mcc_generated_files/calibration.c: 118:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 119: __nop();
 "119
-[; ;mcc_generated_files/calibration.c: 119:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 120: DACCAL1 = (uint8_t)(PMDATL);
 "120
-[; ;mcc_generated_files/calibration.c: 120:     DACCAL1 = (uint8_t)(PMDATL);
 [e = _DACCAL1 _PMDATL ]
+[; ;calibration.c: 123: PMADRL = 0x8A;
 "123
-[; ;mcc_generated_files/calibration.c: 123:     PMADRL = 0x8A;
 [e = _PMADRL -> -> 138 `i `uc ]
+[; ;calibration.c: 124: PMCON1bits.RD = 1;
 "124
-[; ;mcc_generated_files/calibration.c: 124:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 125: __nop();
 "125
-[; ;mcc_generated_files/calibration.c: 125:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 126: __nop();
 "126
-[; ;mcc_generated_files/calibration.c: 126:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 127: EACAL1 = (uint8_t)(PMDATL);
 "127
-[; ;mcc_generated_files/calibration.c: 127:     EACAL1 = (uint8_t)(PMDATL);
 [e = _EACAL1 _PMDATL ]
+[; ;calibration.c: 130: PMADRL = 0x8B;
 "130
-[; ;mcc_generated_files/calibration.c: 130:     PMADRL = 0x8B;
 [e = _PMADRL -> -> 139 `i `uc ]
+[; ;calibration.c: 131: PMCON1bits.RD = 1;
 "131
-[; ;mcc_generated_files/calibration.c: 131:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 132: __nop();
 "132
-[; ;mcc_generated_files/calibration.c: 132:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 133: __nop();
 "133
-[; ;mcc_generated_files/calibration.c: 133:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 134: GAIN1 = (uint16_t)(PMDAT & 0x3FF);
 "134
-[; ;mcc_generated_files/calibration.c: 134:     GAIN1 = (uint16_t)(PMDAT & 0x3FF);
 [e = _GAIN1 & -> _PMDAT `ui -> -> 1023 `i `ui ]
+[; ;calibration.c: 137: PMADRL = 0x8C;
 "137
-[; ;mcc_generated_files/calibration.c: 137:     PMADRL = 0x8C;
 [e = _PMADRL -> -> 140 `i `uc ]
+[; ;calibration.c: 138: PMCON1bits.RD = 1;
 "138
-[; ;mcc_generated_files/calibration.c: 138:     PMCON1bits.RD = 1;
 [e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+[; ;calibration.c: 139: __nop();
 "139
-[; ;mcc_generated_files/calibration.c: 139:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 140: __nop();
 "140
-[; ;mcc_generated_files/calibration.c: 140:     __nop();
 [e ( ___nop ..  ]
+[; ;calibration.c: 141: GAIN2 = (uint16_t)(PMDAT & 0x3FF);
 "141
-[; ;mcc_generated_files/calibration.c: 141:     GAIN2 = (uint16_t)(PMDAT & 0x3FF);
 [e = _GAIN2 & -> _PMDAT `ui -> -> 1023 `i `ui ]
+[; ;calibration.c: 144: }
 "144
-[; ;mcc_generated_files/calibration.c: 144: }
 [e :UE 209 ]
 }

@@ -59,6 +59,7 @@ void SYSTEM_Initialize(void)
     SYSTEM_CONFIGURATION_Initialize();
     OSCILLATOR_Initialize();
     VIN_Initialize();
+    TMR0_Initialize();
     IVOUT2_Initialize();
     IVOUT1_Initialize();
 }
@@ -83,6 +84,13 @@ void SYSTEM_CONFIGURATION_Initialize(void)
     PE1 = 0x0;
     // DRUVSEL disabled; 
     ABECON1 = 0x0;
+	
+    // When using interrupts, we need to set the Global and Peripheral Interrupt Enable bits
+    // Enable the Global Interrupts
+    INTERRUPT_GlobalInterruptEnable();
+
+    // Enable the Peripheral Interrupts
+    INTERRUPT_PeripheralInterruptEnable();
 }
 
 

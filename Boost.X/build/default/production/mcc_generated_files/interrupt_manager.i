@@ -1,14 +1,8 @@
 
-# 1 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/interrupt_manager.c"
 
-
-# 47
-#pragma config WDTE = OFF
-#pragma config PWRTE = OFF
-#pragma config MCLRE = ON
-#pragma config CP = OFF
-#pragma config BOREN = ON
-#pragma config WRT = OFF
+# 109 "mcc_generated_files/interrupt_manager.h"
+void interrupt INTERRUPT_InterruptManager(void);
 
 # 18 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\xc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -2744,10 +2738,7 @@ typedef uint16_t uintptr_t;
 # 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
 typedef unsigned char bool;
 
-# 109 "mcc_generated_files/interrupt_manager.h"
-void interrupt INTERRUPT_InterruptManager(void);
-
-# 13 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\stdbool.h"
+# 13
 typedef unsigned char bool;
 
 # 92 "mcc_generated_files/vin.h"
@@ -2813,44 +2804,19 @@ void OSCILLATOR_Initialize(void);
 # 98
 void SYSTEM_CONFIGURATION_Initialize(void);
 
-# 56 "mcc_generated_files/mcc.c"
-void SYSTEM_Initialize(void)
+# 50 "mcc_generated_files/interrupt_manager.c"
+void interrupt INTERRUPT_InterruptManager (void)
 {
-PIN_MANAGER_Initialize();
-SYSTEM_CONFIGURATION_Initialize();
-OSCILLATOR_Initialize();
-VIN_Initialize();
-TMR0_Initialize();
-IVOUT2_Initialize();
-IVOUT1_Initialize();
+
+
+
+if(INTCONbits.T0IE == 1 && INTCONbits.T0IF == 1)
+{
+TMR0_ISR();
 }
-
-void OSCILLATOR_Initialize(void)
+else
 {
 
-T2CON = 0x0;
-
-PR2 = 0x16;
-
-TMR2 = 0x0;
-
-
-T2CONbits.TMR2ON = 1;
 }
-
-void SYSTEM_CONFIGURATION_Initialize(void)
-{
-init_Calibration();
-
-PE1 = 0x0;
-
-ABECON1 = 0x0;
-
-
-
-(INTCONbits.GIE = 1);
-
-
-(INTCONbits.PEIE = 1);
 }
 

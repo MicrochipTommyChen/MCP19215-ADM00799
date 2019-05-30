@@ -58,6 +58,34 @@ TO MICROCHIP FOR THIS SOFTWARE.
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
+// get/set IO_RA6 aliases
+#define IO_RA6_TRIS               TRISGPAbits.TRISGPA6
+#define IO_RA6_LAT                PORTAbits.RA6
+#define IO_RA6_PORT               PORTAbits.RA6
+#define IO_RA6_WPU                WPUGPAbits.WPUGPA6
+#define IO_RA6_SetHigh()            do { PORTAbits.RA6 = 1; } while(0)
+#define IO_RA6_SetLow()             do { PORTAbits.RA6 = 0; } while(0)
+#define IO_RA6_Toggle()             do { PORTAbits.RA6 = ~(unsigned)PORTAbits.RA6; } while(0)
+#define IO_RA6_GetValue()           PORTAbits.RA6
+#define IO_RA6_SetDigitalInput()    do { TRISGPAbits.TRISGPA6 = 1; } while(0)
+#define IO_RA6_SetDigitalOutput()   do { TRISGPAbits.TRISGPA6 = 0; } while(0)
+#define IO_RA6_SetPullup()      do { WPUGPAbits.WPUGPA6 = 1; } while(0)
+#define IO_RA6_ResetPullup()    do { WPUGPAbits.WPUGPA6 = 0; } while(0)
+
+// get/set IO_RB7 aliases
+#define IO_RB7_TRIS               TRISGPBbits.TRISGPB7
+#define IO_RB7_LAT                PORTBbits.RB7
+#define IO_RB7_PORT               PORTBbits.RB7
+#define IO_RB7_WPU                WPUGPBbits.WPUGPB7
+#define IO_RB7_SetHigh()            do { PORTBbits.RB7 = 1; } while(0)
+#define IO_RB7_SetLow()             do { PORTBbits.RB7 = 0; } while(0)
+#define IO_RB7_Toggle()             do { PORTBbits.RB7 = ~(unsigned)PORTBbits.RB7; } while(0)
+#define IO_RB7_GetValue()           PORTBbits.RB7
+#define IO_RB7_SetDigitalInput()    do { TRISGPBbits.TRISGPB7 = 1; } while(0)
+#define IO_RB7_SetDigitalOutput()   do { TRISGPBbits.TRISGPB7 = 0; } while(0)
+#define IO_RB7_SetPullup()      do { WPUGPBbits.WPUGPB7 = 1; } while(0)
+#define IO_RB7_ResetPullup()    do { WPUGPBbits.WPUGPB7 = 0; } while(0)
+
 /**
    @Param
     none
