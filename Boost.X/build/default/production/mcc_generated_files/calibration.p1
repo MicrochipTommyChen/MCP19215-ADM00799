@@ -1,0 +1,615 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"3399 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3399:     struct {
+[s S166 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S166 . RD WR WREN . CALSEL ]
+"3398
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3398: typedef union {
+[u S165 `S166 1 ]
+[n S165 . . ]
+"3407
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3407: extern volatile PMCON1bits_t PMCON1bits __attribute__((address(0x190)));
+[v _PMCON1bits `VS165 ~T0 @X0 0 e@400 ]
+"3529
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3529: extern volatile unsigned char PMADRH __attribute__((address(0x193)));
+[v _PMADRH `Vuc ~T0 @X0 0 e@403 ]
+"3459
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3459: extern volatile unsigned char PMADRL __attribute__((address(0x192)));
+[v _PMADRL `Vuc ~T0 @X0 0 e@402 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"3800 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3800: extern volatile unsigned char DCSCAL1 __attribute__((address(0x198)));
+[v _DCSCAL1 `Vuc ~T0 @X0 0 e@408 ]
+"3652
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3652: extern volatile unsigned char PMDATH __attribute__((address(0x195)));
+[v _PMDATH `Vuc ~T0 @X0 0 e@405 ]
+"3722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3722: extern volatile unsigned char GMCAL1 __attribute__((address(0x196)));
+[v _GMCAL1 `Vuc ~T0 @X0 0 e@406 ]
+"3582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3582: extern volatile unsigned char PMDATL __attribute__((address(0x194)));
+[v _PMDATL `Vuc ~T0 @X0 0 e@404 ]
+"3846
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3846: extern volatile unsigned char DCSCAL2 __attribute__((address(0x199)));
+[v _DCSCAL2 `Vuc ~T0 @X0 0 e@409 ]
+"3774
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3774: extern volatile unsigned char GMCAL2 __attribute__((address(0x197)));
+[v _GMCAL2 `Vuc ~T0 @X0 0 e@407 ]
+"3985
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3985: extern volatile unsigned char VRCAL __attribute__((address(0x19D)));
+[v _VRCAL `Vuc ~T0 @X0 0 e@413 ]
+"3939
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3939: extern volatile unsigned char DACBGRCAL __attribute__((address(0x19B)));
+[v _DACBGRCAL `Vuc ~T0 @X0 0 e@411 ]
+"3965
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3965: extern volatile unsigned char PDSCAL __attribute__((address(0x19C)));
+[v _PDSCAL `Vuc ~T0 @X0 0 e@412 ]
+"3892
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3892: extern volatile unsigned char ADBT __attribute__((address(0x19A)));
+[v _ADBT `Vuc ~T0 @X0 0 e@410 ]
+"2151
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2151: extern volatile unsigned char TTCAL __attribute__((address(0x09B)));
+[v _TTCAL `Vuc ~T0 @X0 0 e@155 ]
+"3575
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3575: extern volatile unsigned short PMDAT __attribute__((address(0x194)));
+[v _PMDAT `Vus ~T0 @X0 0 e@404 ]
+"4005
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4005: extern volatile unsigned char OSCCAL __attribute__((address(0x19E)));
+[v _OSCCAL `Vuc ~T0 @X0 0 e@414 ]
+"3748
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3748: extern volatile unsigned char EACAL2 __attribute__((address(0x196)));
+[v _EACAL2 `Vuc ~T0 @X0 0 e@406 ]
+"3866
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3866: extern volatile unsigned char DACCAL2 __attribute__((address(0x199)));
+[v _DACCAL2 `Vuc ~T0 @X0 0 e@409 ]
+"3820
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3820: extern volatile unsigned char DACCAL1 __attribute__((address(0x198)));
+[v _DACCAL1 `Vuc ~T0 @X0 0 e@408 ]
+"3913
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3913: extern volatile unsigned char EACAL1 __attribute__((address(0x19A)));
+[v _EACAL1 `Vuc ~T0 @X0 0 e@410 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 168: __asm("PORTGPA equ 05h");
+[; <" PORTGPA equ 05h ;# ">
+"173
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 173: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"460
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 460: __asm("PORTGPB equ 06h");
+[; <" PORTGPB equ 06h ;# ">
+"465
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 465: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"638
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 638: __asm("PIR1 equ 07h");
+[; <" PIR1 equ 07h ;# ">
+"700
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 700: __asm("PIR2 equ 08h");
+[; <" PIR2 equ 08h ;# ">
+"752
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 752: __asm("PIR3 equ 09h");
+[; <" PIR3 equ 09h ;# ">
+"778
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 778: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"785
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 785: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"847
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 847: __asm("TMR1 equ 0Ch");
+[; <" TMR1 equ 0Ch ;# ">
+"854
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 854: __asm("TMR1L equ 0Ch");
+[; <" TMR1L equ 0Ch ;# ">
+"861
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 861: __asm("TMR1H equ 0Dh");
+[; <" TMR1H equ 0Dh ;# ">
+"868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 868: __asm("T1CON equ 0Eh");
+[; <" T1CON equ 0Eh ;# ">
+"916
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 916: __asm("TMR2 equ 0Fh");
+[; <" TMR2 equ 0Fh ;# ">
+"923
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 923: __asm("T2CON equ 010h");
+[; <" T2CON equ 010h ;# ">
+"949
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 949: __asm("PR2 equ 011h");
+[; <" PR2 equ 011h ;# ">
+"969
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 969: __asm("PCON equ 012h");
+[; <" PCON equ 012h ;# ">
+"976
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 976: __asm("PWM2PHL equ 013h");
+[; <" PWM2PHL equ 013h ;# ">
+"996
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 996: __asm("PWM2PHH equ 014h");
+[; <" PWM2PHH equ 014h ;# ">
+"1016
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1016: __asm("PWM2RL equ 015h");
+[; <" PWM2RL equ 015h ;# ">
+"1036
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1036: __asm("PWM2RH equ 016h");
+[; <" PWM2RH equ 016h ;# ">
+"1056
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1056: __asm("PWM1RL equ 017h");
+[; <" PWM1RL equ 017h ;# ">
+"1076
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1076: __asm("PWM1RH equ 018h");
+[; <" PWM1RH equ 018h ;# ">
+"1096
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1096: __asm("OSCTUNE equ 01Bh");
+[; <" OSCTUNE equ 01Bh ;# ">
+"1140
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1140: __asm("ADRES equ 01Ch");
+[; <" ADRES equ 01Ch ;# ">
+"1147
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1147: __asm("ADRESL equ 01Ch");
+[; <" ADRESL equ 01Ch ;# ">
+"1167
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1167: __asm("ADRESH equ 01Dh");
+[; <" ADRESH equ 01Dh ;# ">
+"1187
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1187: __asm("ADCON0 equ 01Eh");
+[; <" ADCON0 equ 01Eh ;# ">
+"1258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1258: __asm("ADCON1 equ 01Fh");
+[; <" ADCON1 equ 01Fh ;# ">
+"1300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1300: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1370
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1370: __asm("TRISGPA equ 085h");
+[; <" TRISGPA equ 085h ;# ">
+"1375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1375: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1482
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1482: __asm("TRISGPB equ 086h");
+[; <" TRISGPB equ 086h ;# ">
+"1487
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1487: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1582: __asm("PIE1 equ 087h");
+[; <" PIE1 equ 087h ;# ">
+"1644
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1644: __asm("PIE2 equ 088h");
+[; <" PIE2 equ 088h ;# ">
+"1696
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1696: __asm("PIE3 equ 089h");
+[; <" PIE3 equ 089h ;# ">
+"1722
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1722: __asm("VINUVLO equ 08Ch");
+[; <" VINUVLO equ 08Ch ;# ">
+"1742
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1742: __asm("VINOVLO equ 08Dh");
+[; <" VINOVLO equ 08Dh ;# ">
+"1762
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1762: __asm("VINCON equ 08Eh");
+[; <" VINCON equ 08Eh ;# ">
+"1824
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1824: __asm("CREFCON1 equ 08Fh");
+[; <" CREFCON1 equ 08Fh ;# ">
+"1844
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1844: __asm("CREFCON2 equ 090h");
+[; <" CREFCON2 equ 090h ;# ">
+"1864
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1864: __asm("VREFCON1 equ 091h");
+[; <" VREFCON1 equ 091h ;# ">
+"1884
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1884: __asm("VREFCON2 equ 092h");
+[; <" VREFCON2 equ 092h ;# ">
+"1904
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1904: __asm("CC1RL equ 093h");
+[; <" CC1RL equ 093h ;# ">
+"1924
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1924: __asm("CC1RH equ 094h");
+[; <" CC1RH equ 094h ;# ">
+"1944
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1944: __asm("CC2RL equ 095h");
+[; <" CC2RL equ 095h ;# ">
+"1964
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1964: __asm("CC2RH equ 096h");
+[; <" CC2RH equ 096h ;# ">
+"1984
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 1984: __asm("CCDCON equ 097h");
+[; <" CCDCON equ 097h ;# ">
+"2010
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2010: __asm("VDDCON equ 098h");
+[; <" VDDCON equ 098h ;# ">
+"2061
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2061: __asm("LOOPCON1 equ 099h");
+[; <" LOOPCON1 equ 099h ;# ">
+"2107
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2107: __asm("LOOPCON2 equ 09Ah");
+[; <" LOOPCON2 equ 09Ah ;# ">
+"2153
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2153: __asm("TTCAL equ 09Bh");
+[; <" TTCAL equ 09Bh ;# ">
+"2180
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2180: __asm("SLPCRCON1 equ 09Ch");
+[; <" SLPCRCON1 equ 09Ch ;# ">
+"2206
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2206: __asm("SLPCRCON2 equ 09Dh");
+[; <" SLPCRCON2 equ 09Dh ;# ">
+"2232
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2232: __asm("ICOACON equ 09Eh");
+[; <" ICOACON equ 09Eh ;# ">
+"2258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2258: __asm("ICLEBCON equ 09Fh");
+[; <" ICLEBCON equ 09Fh ;# ">
+"2284
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2284: __asm("WPUGPA equ 0105h");
+[; <" WPUGPA equ 0105h ;# ">
+"2386
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2386: __asm("WPUGPB equ 0106h");
+[; <" WPUGPB equ 0106h ;# ">
+"2476
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2476: __asm("PE1 equ 0107h");
+[; <" PE1 equ 0107h ;# ">
+"2527
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2527: __asm("ABECON1 equ 010Ch");
+[; <" ABECON1 equ 010Ch ;# ">
+"2598
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2598: __asm("ABECON2 equ 010Dh");
+[; <" ABECON2 equ 010Dh ;# ">
+"2632
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2632: __asm("SSPADD equ 0110h");
+[; <" SSPADD equ 0110h ;# ">
+"2652
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2652: __asm("SSPBUF equ 0111h");
+[; <" SSPBUF equ 0111h ;# ">
+"2672
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2672: __asm("SSPCON1 equ 0112h");
+[; <" SSPCON1 equ 0112h ;# ">
+"2742
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2742: __asm("SSPCON2 equ 0113h");
+[; <" SSPCON2 equ 0113h ;# ">
+"2804
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2804: __asm("SSPCON3 equ 0114h");
+[; <" SSPCON3 equ 0114h ;# ">
+"2866
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2866: __asm("SSPMSK equ 0115h");
+[; <" SSPMSK equ 0115h ;# ">
+"2886
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2886: __asm("SSPSTAT equ 0116h");
+[; <" SSPSTAT equ 0116h ;# ">
+"2948
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2948: __asm("SSPADD2 equ 0117h");
+[; <" SSPADD2 equ 0117h ;# ">
+"2968
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2968: __asm("SSPMSK2 equ 0118h");
+[; <" SSPMSK2 equ 0118h ;# ">
+"2988
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 2988: __asm("SPBRG equ 011Bh");
+[; <" SPBRG equ 011Bh ;# ">
+"3050
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3050: __asm("RCREG equ 011Ch");
+[; <" RCREG equ 011Ch ;# ">
+"3070
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3070: __asm("TXREG equ 011Dh");
+[; <" TXREG equ 011Dh ;# ">
+"3090
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3090: __asm("TXSTA equ 011Eh");
+[; <" TXSTA equ 011Eh ;# ">
+"3147
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3147: __asm("RCSTA equ 011Fh");
+[; <" RCSTA equ 011Fh ;# ">
+"3209
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3209: __asm("IOCA equ 0185h");
+[; <" IOCA equ 0185h ;# ">
+"3266
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3266: __asm("IOCB equ 0186h");
+[; <" IOCB equ 0186h ;# ">
+"3317
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3317: __asm("ANSELA equ 0187h");
+[; <" ANSELA equ 0187h ;# ">
+"3355
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3355: __asm("ANSELB equ 0188h");
+[; <" ANSELB equ 0188h ;# ">
+"3395
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3395: __asm("PMCON1 equ 0190h");
+[; <" PMCON1 equ 0190h ;# ">
+"3434
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3434: __asm("PMCON2 equ 0191h");
+[; <" PMCON2 equ 0191h ;# ">
+"3454
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3454: __asm("PMADR equ 0192h");
+[; <" PMADR equ 0192h ;# ">
+"3461
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3461: __asm("PMADRL equ 0192h");
+[; <" PMADRL equ 0192h ;# ">
+"3531
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3531: __asm("PMADRH equ 0193h");
+[; <" PMADRH equ 0193h ;# ">
+"3577
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3577: __asm("PMDAT equ 0194h");
+[; <" PMDAT equ 0194h ;# ">
+"3584
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3584: __asm("PMDATL equ 0194h");
+[; <" PMDATL equ 0194h ;# ">
+"3654
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3654: __asm("PMDATH equ 0195h");
+[; <" PMDATH equ 0195h ;# ">
+"3724
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3724: __asm("GMCAL1 equ 0196h");
+[; <" GMCAL1 equ 0196h ;# ">
+"3750
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3750: __asm("EACAL2 equ 0196h");
+[; <" EACAL2 equ 0196h ;# ">
+"3776
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3776: __asm("GMCAL2 equ 0197h");
+[; <" GMCAL2 equ 0197h ;# ">
+"3802
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3802: __asm("DCSCAL1 equ 0198h");
+[; <" DCSCAL1 equ 0198h ;# ">
+"3822
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3822: __asm("DACCAL1 equ 0198h");
+[; <" DACCAL1 equ 0198h ;# ">
+"3848
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3848: __asm("DCSCAL2 equ 0199h");
+[; <" DCSCAL2 equ 0199h ;# ">
+"3868
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3868: __asm("DACCAL2 equ 0199h");
+[; <" DACCAL2 equ 0199h ;# ">
+"3894
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3894: __asm("ADBT equ 019Ah");
+[; <" ADBT equ 019Ah ;# ">
+"3915
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3915: __asm("EACAL1 equ 019Ah");
+[; <" EACAL1 equ 019Ah ;# ">
+"3941
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3941: __asm("DACBGRCAL equ 019Bh");
+[; <" DACBGRCAL equ 019Bh ;# ">
+"3967
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3967: __asm("PDSCAL equ 019Ch");
+[; <" PDSCAL equ 019Ch ;# ">
+"3987
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 3987: __asm("VRCAL equ 019Dh");
+[; <" VRCAL equ 019Dh ;# ">
+"4007
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4007: __asm("OSCCAL equ 019Eh");
+[; <" OSCCAL equ 019Eh ;# ">
+"4027
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\mcp19215.h: 4027: __asm("ATSTCON equ 019Fh");
+[; <" ATSTCON equ 019Fh ;# ">
+"51 mcc_generated_files/calibration.h
+[; ;mcc_generated_files/calibration.h: 51: uint16_t TANA;
+[v _TANA `ui ~T0 @X0 1 e ]
+"52
+[; ;mcc_generated_files/calibration.h: 52: uint16_t GAIN1;
+[v _GAIN1 `ui ~T0 @X0 1 e ]
+"53
+[; ;mcc_generated_files/calibration.h: 53: uint16_t GAIN2;
+[v _GAIN2 `ui ~T0 @X0 1 e ]
+"48 mcc_generated_files/calibration.c
+[; ;mcc_generated_files/calibration.c: 48: void init_Calibration(void)
+[v _init_Calibration `(v ~T0 @X0 1 ef ]
+"49
+[; ;mcc_generated_files/calibration.c: 49: {
+{
+[e :U _init_Calibration ]
+[f ]
+"51
+[; ;mcc_generated_files/calibration.c: 51:  PMCON1bits.CALSEL = 1;
+[e = . . _PMCON1bits 0 4 -> -> 1 `i `uc ]
+"53
+[; ;mcc_generated_files/calibration.c: 53:     PMADRH = 0x20;
+[e = _PMADRH -> -> 32 `i `uc ]
+"55
+[; ;mcc_generated_files/calibration.c: 55:     PMADRL = 0x80;
+[e = _PMADRL -> -> 128 `i `uc ]
+"56
+[; ;mcc_generated_files/calibration.c: 56:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"57
+[; ;mcc_generated_files/calibration.c: 57:     __nop();
+[e ( ___nop ..  ]
+"58
+[; ;mcc_generated_files/calibration.c: 58:     __nop();
+[e ( ___nop ..  ]
+"59
+[; ;mcc_generated_files/calibration.c: 59:     DCSCAL1 = (uint8_t)(PMDATH);
+[e = _DCSCAL1 _PMDATH ]
+"60
+[; ;mcc_generated_files/calibration.c: 60:     GMCAL1 = (uint8_t)(PMDATL);
+[e = _GMCAL1 _PMDATL ]
+"63
+[; ;mcc_generated_files/calibration.c: 63:     PMADRL = 0x81;
+[e = _PMADRL -> -> 129 `i `uc ]
+"64
+[; ;mcc_generated_files/calibration.c: 64:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"65
+[; ;mcc_generated_files/calibration.c: 65:     __nop();
+[e ( ___nop ..  ]
+"66
+[; ;mcc_generated_files/calibration.c: 66:     __nop();
+[e ( ___nop ..  ]
+"67
+[; ;mcc_generated_files/calibration.c: 67:     DCSCAL2 = (uint8_t)(PMDATH);
+[e = _DCSCAL2 _PMDATH ]
+"68
+[; ;mcc_generated_files/calibration.c: 68:     GMCAL2 = (uint8_t)(PMDATL);
+[e = _GMCAL2 _PMDATL ]
+"71
+[; ;mcc_generated_files/calibration.c: 71:     PMADRL = 0x82;
+[e = _PMADRL -> -> 130 `i `uc ]
+"72
+[; ;mcc_generated_files/calibration.c: 72:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"73
+[; ;mcc_generated_files/calibration.c: 73:     __nop();
+[e ( ___nop ..  ]
+"74
+[; ;mcc_generated_files/calibration.c: 74:     __nop();
+[e ( ___nop ..  ]
+"75
+[; ;mcc_generated_files/calibration.c: 75:     VRCAL = (uint8_t)(PMDATH);
+[e = _VRCAL _PMDATH ]
+"76
+[; ;mcc_generated_files/calibration.c: 76:     DACBGRCAL = (uint8_t)(PMDATL);
+[e = _DACBGRCAL _PMDATL ]
+"79
+[; ;mcc_generated_files/calibration.c: 79:     PMADRL = 0x83;
+[e = _PMADRL -> -> 131 `i `uc ]
+"80
+[; ;mcc_generated_files/calibration.c: 80:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"81
+[; ;mcc_generated_files/calibration.c: 81:     __nop();
+[e ( ___nop ..  ]
+"82
+[; ;mcc_generated_files/calibration.c: 82:     __nop();
+[e ( ___nop ..  ]
+"83
+[; ;mcc_generated_files/calibration.c: 83:     PDSCAL = (uint8_t)(PMDATH);
+[e = _PDSCAL _PMDATH ]
+"84
+[; ;mcc_generated_files/calibration.c: 84:     ADBT = (uint8_t)((PMDATL >> 4) & 0xF);
+[e = _ADBT -> & >> -> _PMDATL `i -> 4 `i -> 15 `i `uc ]
+"85
+[; ;mcc_generated_files/calibration.c: 85:     TTCAL = (uint8_t)(PMDATL & 0xF);
+[e = _TTCAL -> & -> _PMDATL `i -> 15 `i `uc ]
+"88
+[; ;mcc_generated_files/calibration.c: 88:     PMADRL = 0x84;
+[e = _PMADRL -> -> 132 `i `uc ]
+"89
+[; ;mcc_generated_files/calibration.c: 89:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"90
+[; ;mcc_generated_files/calibration.c: 90:     __nop();
+[e ( ___nop ..  ]
+"91
+[; ;mcc_generated_files/calibration.c: 91:     __nop();
+[e ( ___nop ..  ]
+"92
+[; ;mcc_generated_files/calibration.c: 92:     TANA = (uint16_t)(PMDAT);
+[e = _TANA -> _PMDAT `ui ]
+"95
+[; ;mcc_generated_files/calibration.c: 95:     PMADRL = 0x85;
+[e = _PMADRL -> -> 133 `i `uc ]
+"96
+[; ;mcc_generated_files/calibration.c: 96:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"97
+[; ;mcc_generated_files/calibration.c: 97:     __nop();
+[e ( ___nop ..  ]
+"98
+[; ;mcc_generated_files/calibration.c: 98:     __nop();
+[e ( ___nop ..  ]
+"99
+[; ;mcc_generated_files/calibration.c: 99:     OSCCAL = (uint8_t)(PMDATL);
+[e = _OSCCAL _PMDATL ]
+"102
+[; ;mcc_generated_files/calibration.c: 102:     PMADRL = 0x86;
+[e = _PMADRL -> -> 134 `i `uc ]
+"103
+[; ;mcc_generated_files/calibration.c: 103:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"104
+[; ;mcc_generated_files/calibration.c: 104:     __nop();
+[e ( ___nop ..  ]
+"105
+[; ;mcc_generated_files/calibration.c: 105:     __nop();
+[e ( ___nop ..  ]
+"106
+[; ;mcc_generated_files/calibration.c: 106:     EACAL2 = (uint8_t)(PMDATL);
+[e = _EACAL2 _PMDATL ]
+"109
+[; ;mcc_generated_files/calibration.c: 109:     PMADRL = 0x88;
+[e = _PMADRL -> -> 136 `i `uc ]
+"110
+[; ;mcc_generated_files/calibration.c: 110:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"111
+[; ;mcc_generated_files/calibration.c: 111:     __nop();
+[e ( ___nop ..  ]
+"112
+[; ;mcc_generated_files/calibration.c: 112:     __nop();
+[e ( ___nop ..  ]
+"113
+[; ;mcc_generated_files/calibration.c: 113:     DACCAL2 = (uint8_t)(PMDATL);
+[e = _DACCAL2 _PMDATL ]
+"116
+[; ;mcc_generated_files/calibration.c: 116:     PMADRL = 0x89;
+[e = _PMADRL -> -> 137 `i `uc ]
+"117
+[; ;mcc_generated_files/calibration.c: 117:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"118
+[; ;mcc_generated_files/calibration.c: 118:     __nop();
+[e ( ___nop ..  ]
+"119
+[; ;mcc_generated_files/calibration.c: 119:     __nop();
+[e ( ___nop ..  ]
+"120
+[; ;mcc_generated_files/calibration.c: 120:     DACCAL1 = (uint8_t)(PMDATL);
+[e = _DACCAL1 _PMDATL ]
+"123
+[; ;mcc_generated_files/calibration.c: 123:     PMADRL = 0x8A;
+[e = _PMADRL -> -> 138 `i `uc ]
+"124
+[; ;mcc_generated_files/calibration.c: 124:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"125
+[; ;mcc_generated_files/calibration.c: 125:     __nop();
+[e ( ___nop ..  ]
+"126
+[; ;mcc_generated_files/calibration.c: 126:     __nop();
+[e ( ___nop ..  ]
+"127
+[; ;mcc_generated_files/calibration.c: 127:     EACAL1 = (uint8_t)(PMDATL);
+[e = _EACAL1 _PMDATL ]
+"130
+[; ;mcc_generated_files/calibration.c: 130:     PMADRL = 0x8B;
+[e = _PMADRL -> -> 139 `i `uc ]
+"131
+[; ;mcc_generated_files/calibration.c: 131:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"132
+[; ;mcc_generated_files/calibration.c: 132:     __nop();
+[e ( ___nop ..  ]
+"133
+[; ;mcc_generated_files/calibration.c: 133:     __nop();
+[e ( ___nop ..  ]
+"134
+[; ;mcc_generated_files/calibration.c: 134:     GAIN1 = (uint16_t)(PMDAT & 0x3FF);
+[e = _GAIN1 & -> _PMDAT `ui -> -> 1023 `i `ui ]
+"137
+[; ;mcc_generated_files/calibration.c: 137:     PMADRL = 0x8C;
+[e = _PMADRL -> -> 140 `i `uc ]
+"138
+[; ;mcc_generated_files/calibration.c: 138:     PMCON1bits.RD = 1;
+[e = . . _PMCON1bits 0 0 -> -> 1 `i `uc ]
+"139
+[; ;mcc_generated_files/calibration.c: 139:     __nop();
+[e ( ___nop ..  ]
+"140
+[; ;mcc_generated_files/calibration.c: 140:     __nop();
+[e ( ___nop ..  ]
+"141
+[; ;mcc_generated_files/calibration.c: 141:     GAIN2 = (uint16_t)(PMDAT & 0x3FF);
+[e = _GAIN2 & -> _PMDAT `ui -> -> 1023 `i `ui ]
+"144
+[; ;mcc_generated_files/calibration.c: 144: }
+[e :UE 209 ]
+}
