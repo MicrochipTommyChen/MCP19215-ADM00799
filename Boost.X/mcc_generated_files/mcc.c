@@ -59,6 +59,7 @@ void SYSTEM_Initialize(void)
     SYSTEM_CONFIGURATION_Initialize();
     OSCILLATOR_Initialize();
     VIN_Initialize();
+    ADC_Initialize();
     TMR0_Initialize();
     IVOUT2_Initialize();
     IVOUT1_Initialize();

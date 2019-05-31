@@ -72,6 +72,20 @@ TO MICROCHIP FOR THIS SOFTWARE.
 #define IO_RA6_SetPullup()      do { WPUGPAbits.WPUGPA6 = 1; } while(0)
 #define IO_RA6_ResetPullup()    do { WPUGPAbits.WPUGPA6 = 0; } while(0)
 
+// get/set channel_AN4 aliases
+#define channel_AN4_TRIS               TRISGPBbits.TRISGPB1
+#define channel_AN4_LAT                PORTBbits.RB1
+#define channel_AN4_PORT               PORTBbits.RB1
+#define channel_AN4_WPU                WPUGPBbits.WPUGPB1
+#define channel_AN4_SetHigh()            do { PORTBbits.RB1 = 1; } while(0)
+#define channel_AN4_SetLow()             do { PORTBbits.RB1 = 0; } while(0)
+#define channel_AN4_Toggle()             do { PORTBbits.RB1 = ~(unsigned)PORTBbits.RB1; } while(0)
+#define channel_AN4_GetValue()           PORTBbits.RB1
+#define channel_AN4_SetDigitalInput()    do { TRISGPBbits.TRISGPB1 = 1; } while(0)
+#define channel_AN4_SetDigitalOutput()   do { TRISGPBbits.TRISGPB1 = 0; } while(0)
+#define channel_AN4_SetPullup()      do { WPUGPBbits.WPUGPB1 = 1; } while(0)
+#define channel_AN4_ResetPullup()    do { WPUGPBbits.WPUGPB1 = 0; } while(0)
+
 // get/set IO_RB7 aliases
 #define IO_RB7_TRIS               TRISGPBbits.TRISGPB7
 #define IO_RB7_LAT                PORTBbits.RB7

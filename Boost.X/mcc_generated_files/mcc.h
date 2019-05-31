@@ -49,10 +49,11 @@ TO MICROCHIP FOR THIS SOFTWARE.
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
+#include "tmr0.h"
+#include "adc.h"
 #include "vin.h"
 #include "ivout2.h"
 #include "ivout1.h"
-#include "tmr0.h"
 
 #define _XTAL_FREQ  8000000
 

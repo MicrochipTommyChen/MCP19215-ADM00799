@@ -46,6 +46,14 @@ TO MICROCHIP FOR THIS SOFTWARE.
 /*
                          Main application
  */
+
+adc_result_t TEMP_SNS = 0;
+adc_result_t Reference_1024mV = 0;
+adc_result_t PWM1_EA1_Current_loop_reference_voltage = 0;
+adc_result_t PWM1_EA2_Voltage_loop_reference_voltage = 0;
+adc_result_t PWM1_VFB1_pin_voltage = 0;
+adc_result_t ADC_channel_AN4 = 0;
+
 void main(void)
 {
     // initialize the device
@@ -69,6 +77,15 @@ void main(void)
     while (1)
     {
         // Add your application code
+        
+        // ADC conversion
+        TEMP_SNS = ADC_GetConversion(channel_TEMP_SNS_temperature_sensor_voltage_measurement);
+        Reference_1024mV = ADC_GetConversion(channel_Reference_1024_mV_adjust);
+        PWM1_EA1_Current_loop_reference_voltage = ADC_GetConversion(channel_PWM1_EA1_Current_loop_reference_voltage);
+        PWM1_EA2_Voltage_loop_reference_voltage = ADC_GetConversion(channel_PWM1_EA2_Voltage_loop_reference_voltage);
+        PWM1_VFB1_pin_voltage = ADC_GetConversion(channel_PWM1_VFB1_pin_voltage);
+        ADC_channel_AN4 = ADC_GetConversion(channel_AN4);
+        
     }
 }
 /**

@@ -3,14 +3,92 @@
 [d edition pro ]
 [d chip MCP19215 ]
 [d frameptr 6 ]
+"82 C:\Work\MCP19215-ADM00799\Boost.X\main.c
+[e E1464 . `uc
+channel_PWM1_EA1_Current_loop_reference_voltage 0
+channel_PWM1_EA2_Voltage_loop_reference_voltage 1
+channel_PWM1_Error_Amplifier_output_voltage 2
+channel_PWM1_VFB1_pin_voltage 3
+channel_PWM1_Slope_Compensation_reference_voltage 4
+channel_PWM1_IP1_signal_offset_reference_voltage 5
+channel_PWM1_PWM_Comparator_negative_input 6
+channel_PWM1_PWM_Comparator_positive_input 7
+channel_PWM2_EA1_Current_loop_reference_voltage 8
+channel_PWM2_EA2_Voltage_loop_reference_voltage 9
+channel_PWM2_Error_Amplifier_output_voltage 10
+channel_PWM2_VFB2_pin_voltage 11
+channel_PWM2_Slope_Compensation_reference_voltage 12
+channel_PWM2_IP2_signal_offset_reference_voltage 13
+channel_PWM2_PWM_Comparator_negative_input 14
+channel_PWM2_PWM_Comparator_positive_input 15
+channel_PWM1_A1_Current_Sense_Amplifier_output 16
+channel_Reference_1024_mV_adjust 17
+channel_PWM2_A1_Current_Sense_Amplifier_output 18
+channel_Internal_VDD_for_analog_circuitry 19
+channel_Internal_VDD_for_digital_circuitry 20
+channel_Reference_4096_mV 21
+channel_Reference_2048_mV 22
+channel_PWM2_ISN2_pin_voltage 23
+channel_Reference_1024_mV 24
+channel_Bandgap_Reference_Voltage 25
+channel_VIN_div_voltage 26
+channel_VIN_UVLO_Threshold 27
+channel_VIN_OVLO_Threshold 28
+channel_VDR_div_MOSFET_drivers_supply_voltage 29
+channel_VDD_UVLO_voltage 30
+channel_TEMP_SNS_temperature_sensor_voltage_measurement 31
+channel_Internal_GND_node 32
+channel_AN4 60
+]
+"82 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/adc.c
+[e E1482 . `uc
+channel_PWM1_EA1_Current_loop_reference_voltage 0
+channel_PWM1_EA2_Voltage_loop_reference_voltage 1
+channel_PWM1_Error_Amplifier_output_voltage 2
+channel_PWM1_VFB1_pin_voltage 3
+channel_PWM1_Slope_Compensation_reference_voltage 4
+channel_PWM1_IP1_signal_offset_reference_voltage 5
+channel_PWM1_PWM_Comparator_negative_input 6
+channel_PWM1_PWM_Comparator_positive_input 7
+channel_PWM2_EA1_Current_loop_reference_voltage 8
+channel_PWM2_EA2_Voltage_loop_reference_voltage 9
+channel_PWM2_Error_Amplifier_output_voltage 10
+channel_PWM2_VFB2_pin_voltage 11
+channel_PWM2_Slope_Compensation_reference_voltage 12
+channel_PWM2_IP2_signal_offset_reference_voltage 13
+channel_PWM2_PWM_Comparator_negative_input 14
+channel_PWM2_PWM_Comparator_positive_input 15
+channel_PWM1_A1_Current_Sense_Amplifier_output 16
+channel_Reference_1024_mV_adjust 17
+channel_PWM2_A1_Current_Sense_Amplifier_output 18
+channel_Internal_VDD_for_analog_circuitry 19
+channel_Internal_VDD_for_digital_circuitry 20
+channel_Reference_4096_mV 21
+channel_Reference_2048_mV 22
+channel_PWM2_ISN2_pin_voltage 23
+channel_Reference_1024_mV 24
+channel_Bandgap_Reference_Voltage 25
+channel_VIN_div_voltage 26
+channel_VIN_UVLO_Threshold 27
+channel_VIN_OVLO_Threshold 28
+channel_VDR_div_MOSFET_drivers_supply_voltage 29
+channel_VDD_UVLO_voltage 30
+channel_TEMP_SNS_temperature_sensor_voltage_measurement 31
+channel_Internal_GND_node 32
+channel_AN4 60
+]
 "5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"49 C:\Work\MCP19215-ADM00799\Boost.X\main.c
+"57 C:\Work\MCP19215-ADM00799\Boost.X\main.c
 [v _main main `(v  1 e 1 0 ]
+"63 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"110
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
 "48 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/calibration.c
 [v _init_Calibration init_Calibration `(v  1 e 1 0 ]
 "50 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/interrupt_manager.c
@@ -25,9 +103,9 @@
 [v _IVOUT2_SetOutput IVOUT2_SetOutput `(v  1 e 1 0 ]
 "56 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"67
+"68
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"80
+"81
 [v _SYSTEM_CONFIGURATION_Initialize SYSTEM_CONFIGURATION_Initialize `(v  1 e 1 0 ]
 "50 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
@@ -45,7 +123,7 @@
 [v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
 "166
 [v _PORTGPA PORTGPA `VEuc  1 e 1 @5 ]
-[s S452 . 1 `uc 1 GPA0 1 0 :1:0 
+[s S449 . 1 `uc 1 GPA0 1 0 :1:0 
 `uc 1 GPA1 1 0 :1:1 
 `uc 1 GPA2 1 0 :1:2 
 `uc 1 GPA3 1 0 :1:3 
@@ -55,7 +133,7 @@
 `uc 1 GPA7 1 0 :1:7 
 ]
 "348
-[s S461 . 1 `uc 1 GPIO0 1 0 :1:0 
+[s S458 . 1 `uc 1 GPIO0 1 0 :1:0 
 `uc 1 GPIO1 1 0 :1:1 
 `uc 1 GPIO2 1 0 :1:2 
 `uc 1 GPIO3 1 0 :1:3 
@@ -64,7 +142,7 @@
 `uc 1 GPIO6 1 0 :1:6 
 `uc 1 GPIO7 1 0 :1:7 
 ]
-[s S470 . 1 `uc 1 RA0 1 0 :1:0 
+[s S467 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -73,11 +151,11 @@
 `uc 1 RA6 1 0 :1:6 
 `uc 1 RA7 1 0 :1:7 
 ]
-[u S479 . 1 `S452 1 . 1 0 `S461 1 . 1 0 `S470 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES479  1 e 1 @5 ]
+[u S476 . 1 `S449 1 . 1 0 `S458 1 . 1 0 `S467 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES476  1 e 1 @5 ]
 "458
 [v _PORTGPB PORTGPB `VEuc  1 e 1 @6 ]
-[s S366 . 1 `uc 1 UVLOIF 1 0 :1:0 
+[s S370 . 1 `uc 1 UVLOIF 1 0 :1:0 
 `uc 1 OVLOIF 1 0 :1:1 
 `uc 1 DRUVIF 1 0 :1:2 
 `uc 1 VDDUVIF 1 0 :1:3 
@@ -87,9 +165,9 @@
 `uc 1 IVGD1IF 1 0 :1:7 
 ]
 "715
-[u S375 . 1 `S366 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES375  1 e 1 @8 ]
-[s S112 . 1 `uc 1 IOCF 1 0 :1:0 
+[u S379 . 1 `S370 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES379  1 e 1 @8 ]
+[s S116 . 1 `uc 1 IOCF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 IOCE 1 0 :1:3 
@@ -99,18 +177,18 @@
 `uc 1 GIE 1 0 :1:7 
 ]
 "800
-[u S121 . 1 `S112 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES121  1 e 1 @11 ]
+[u S125 . 1 `S116 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES125  1 e 1 @11 ]
 "914
 [v _TMR2 TMR2 `VEuc  1 e 1 @15 ]
 "921
 [v _T2CON T2CON `VEuc  1 e 1 @16 ]
-[s S100 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S104 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 ]
 "932
-[u S103 . 1 `S100 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES103  1 e 1 @16 ]
+[u S107 . 1 `S104 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES107  1 e 1 @16 ]
 "947
 [v _PR2 PR2 `VEuc  1 e 1 @17 ]
 "974
@@ -119,9 +197,32 @@
 [v _PWM2RL PWM2RL `VEuc  1 e 1 @21 ]
 "1054
 [v _PWM1RL PWM1RL `VEuc  1 e 1 @23 ]
+"1145
+[v _ADRESL ADRESL `VEuc  1 e 1 @28 ]
+"1165
+[v _ADRESH ADRESH `VEuc  1 e 1 @29 ]
+"1185
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @30 ]
+[s S626 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :6:2 
+]
+"1206
+[s S630 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+[u S638 . 1 `S626 1 . 1 0 `S630 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES638  1 e 1 @30 ]
+"1256
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @31 ]
 "1298
 [v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
-[s S153 . 1 `uc 1 PS 1 0 :3:0 
+[s S157 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
@@ -129,12 +230,12 @@
 `uc 1 nRAPUI 1 0 :1:7 
 ]
 "1318
-[s S160 . 1 `uc 1 PS0 1 0 :1:0 
+[s S164 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S164 . 1 `S153 1 . 1 0 `S160 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES164  1 e 1 @129 ]
+[u S168 . 1 `S157 1 . 1 0 `S164 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES168  1 e 1 @129 ]
 "1368
 [v _TRISGPA TRISGPA `VEuc  1 e 1 @133 ]
 "1480
@@ -163,25 +264,25 @@
 [v _SLPCRCON1 SLPCRCON1 `VEuc  1 e 1 @156 ]
 "2204
 [v _SLPCRCON2 SLPCRCON2 `VEuc  1 e 1 @157 ]
-[s S186 . 1 `uc 1 IC2OAC 1 0 :4:0 
+[s S190 . 1 `uc 1 IC2OAC 1 0 :4:0 
 `uc 1 IC1OAC 1 0 :4:4 
 ]
 "2241
-[u S189 . 1 `S186 1 . 1 0 ]
-[v _ICOACONbits ICOACONbits `VES189  1 e 1 @158 ]
-[s S195 . 1 `uc 1 IC2LEBC 1 0 :2:0 
+[u S193 . 1 `S190 1 . 1 0 ]
+[v _ICOACONbits ICOACONbits `VES193  1 e 1 @158 ]
+[s S199 . 1 `uc 1 IC2LEBC 1 0 :2:0 
 `uc 1 IC1LEBC 1 0 :2:2 
 ]
 "2267
-[u S198 . 1 `S195 1 . 1 0 ]
-[v _ICLEBCONbits ICLEBCONbits `VES198  1 e 1 @159 ]
+[u S202 . 1 `S199 1 . 1 0 ]
+[v _ICLEBCONbits ICLEBCONbits `VES202  1 e 1 @159 ]
 "2282
 [v _WPUGPA WPUGPA `VEuc  1 e 1 @261 ]
 "2384
 [v _WPUGPB WPUGPB `VEuc  1 e 1 @262 ]
 "2474
 [v _PE1 PE1 `VEuc  1 e 1 @263 ]
-[s S206 . 1 `uc 1 LDO_LP 1 0 :1:0 
+[s S210 . 1 `uc 1 LDO_LP 1 0 :1:0 
 `uc 1 LDO_LV 1 0 :1:1 
 `uc 1 IS2PUEN 1 0 :1:2 
 `uc 1 IS1PUEN 1 0 :1:3 
@@ -190,11 +291,11 @@
 `uc 1 PDRV1EN 1 0 :1:7 
 ]
 "2490
-[u S214 . 1 `S206 1 . 1 0 ]
-[v _PE1bits PE1bits `VES214  1 e 1 @263 ]
+[u S218 . 1 `S210 1 . 1 0 ]
+[v _PE1bits PE1bits `VES218  1 e 1 @263 ]
 "2525
 [v _ABECON1 ABECON1 `VEuc  1 e 1 @268 ]
-[s S225 . 1 `uc 1 ANAOEN 1 0 :1:0 
+[s S229 . 1 `uc 1 ANAOEN 1 0 :1:0 
 `uc 1 EA2DIS1 1 0 :1:1 
 `uc 1 EA1DIS1 1 0 :1:2 
 `uc 1 DRUVSEL 1 0 :1:3 
@@ -203,21 +304,21 @@
 `uc 1 DIGOEN 1 0 :1:7 
 ]
 "2546
-[s S233 . 1 `uc 1 . 1 0 :4:0 
+[s S237 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 DCHSEL0 1 0 :1:4 
 `uc 1 DCHSEL1 1 0 :1:5 
 ]
-[u S237 . 1 `S225 1 . 1 0 `S233 1 . 1 0 ]
-[v _ABECON1bits ABECON1bits `VES237  1 e 1 @268 ]
-[s S321 . 1 `uc 1 . 1 0 :1:0 
+[u S241 . 1 `S229 1 . 1 0 `S237 1 . 1 0 ]
+[v _ABECON1bits ABECON1bits `VES241  1 e 1 @268 ]
+[s S325 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 EA2DIS2 1 0 :1:1 
 `uc 1 EA1DIS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 DSEL 1 0 :3:4 
 ]
 "2610
-[u S327 . 1 `S321 1 . 1 0 ]
-[v _ABECON2bits ABECON2bits `VES327  1 e 1 @269 ]
+[u S331 . 1 `S325 1 . 1 0 ]
+[v _ABECON2bits ABECON2bits `VES331  1 e 1 @269 ]
 [s S22 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
@@ -263,6 +364,18 @@
 [v _VRCAL VRCAL `VEuc  1 e 1 @413 ]
 "4005
 [v _OSCCAL OSCCAL `VEuc  1 e 1 @414 ]
+"50 C:\Work\MCP19215-ADM00799\Boost.X\main.c
+[v _TEMP_SNS TEMP_SNS `ui  1 e 2 0 ]
+"51
+[v _Reference_1024mV Reference_1024mV `ui  1 e 2 0 ]
+"52
+[v _PWM1_EA1_Current_loop_reference_voltage PWM1_EA1_Current_loop_reference_voltage `ui  1 e 2 0 ]
+"53
+[v _PWM1_EA2_Voltage_loop_reference_voltage PWM1_EA2_Voltage_loop_reference_voltage `ui  1 e 2 0 ]
+"54
+[v _PWM1_VFB1_pin_voltage PWM1_VFB1_pin_voltage `ui  1 e 2 0 ]
+"55
+[v _ADC_channel_AN4 ADC_channel_AN4 `ui  1 e 2 0 ]
 "51 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/calibration.h
 [v _TANA TANA `ui  1 e 2 0 ]
 "52
@@ -273,15 +386,15 @@
 [v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
 "52
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.27(v  1 e 1 0 ]
-"49 C:\Work\MCP19215-ADM00799\Boost.X\main.c
+"57 C:\Work\MCP19215-ADM00799\Boost.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"73
+"90
 } 0
 "56 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"65
+"66
 } 0
 "56 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/vin.c
 [v _VIN_Initialize VIN_Initialize `(v  1 e 1 0 ]
@@ -301,10 +414,10 @@
 [v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.27(v  1 a 1 5 ]
 "122
 } 0
-"80 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
+"81 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
 [v _SYSTEM_CONFIGURATION_Initialize SYSTEM_CONFIGURATION_Initialize `(v  1 e 1 0 ]
 {
-"94
+"95
 } 0
 "48 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/calibration.c
 [v _init_Calibration init_Calibration `(v  1 e 1 0 ]
@@ -316,10 +429,10 @@
 {
 "71
 } 0
-"67 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
+"68 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"78
+"79
 } 0
 "58 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/ivout2.c
 [v _IVOUT2_Initialize IVOUT2_Initialize `(v  1 e 1 0 ]
@@ -333,11 +446,11 @@
 {
 [v IVOUT2_SetOutput@outputTarget outputTarget `uc  1 a 1 wreg ]
 "139
-[v IVOUT2_SetOutput@firstStep_361 firstStep `uc  1 a 1 14 ]
+[v IVOUT2_SetOutput@firstStep_365 firstStep `uc  1 a 1 14 ]
 "129
-[v IVOUT2_SetOutput@firstStep_360 firstStep `uc  1 a 1 13 ]
+[v IVOUT2_SetOutput@firstStep_364 firstStep `uc  1 a 1 13 ]
 "115
-[v IVOUT2_SetOutput@firstStep_358 firstStep `uc  1 a 1 12 ]
+[v IVOUT2_SetOutput@firstStep_362 firstStep `uc  1 a 1 12 ]
 "105
 [v IVOUT2_SetOutput@firstStep firstStep `uc  1 a 1 11 ]
 "125
@@ -362,11 +475,11 @@
 {
 [v IVOUT1_SetOutput@outputTarget outputTarget `uc  1 a 1 wreg ]
 "137
-[v IVOUT1_SetOutput@firstStep_294 firstStep `uc  1 a 1 14 ]
+[v IVOUT1_SetOutput@firstStep_298 firstStep `uc  1 a 1 14 ]
 "127
-[v IVOUT1_SetOutput@firstStep_293 firstStep `uc  1 a 1 13 ]
+[v IVOUT1_SetOutput@firstStep_297 firstStep `uc  1 a 1 13 ]
 "113
-[v IVOUT1_SetOutput@firstStep_291 firstStep `uc  1 a 1 12 ]
+[v IVOUT1_SetOutput@firstStep_295 firstStep `uc  1 a 1 12 ]
 "103
 [v IVOUT1_SetOutput@firstStep firstStep `uc  1 a 1 11 ]
 "123
@@ -389,6 +502,20 @@
 [v ___awmod@divisor divisor `i  1 p 2 0 ]
 [v ___awmod@dividend dividend `i  1 p 2 2 ]
 "34
+} 0
+"63 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"79
+} 0
+"110
+[v _ADC_GetConversion ADC_GetConversion `(ui  1 e 2 0 ]
+{
+[v ADC_GetConversion@channel channel `E1482  1 a 1 wreg ]
+[v ADC_GetConversion@channel channel `E1482  1 a 1 wreg ]
+"113
+[v ADC_GetConversion@channel channel `E1482  1 a 1 1 ]
+"131
 } 0
 "50 C:\Work\MCP19215-ADM00799\Boost.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]

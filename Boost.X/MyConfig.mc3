@@ -1,12 +1,16 @@
 <config configVersion="1.1" device="MCP19215" coreVersion="4.65">
    <usedClasses class="java.util.HashMap">
       <entry>
+         <string>TMR0</string>
+         <string>class com.microchip.mcc.mcp19xxx.modules.tmr0.TMR0</string>
+      </entry>
+      <entry>
          <string>System Module</string>
          <string>class com.microchip.mcc.mcp19xxx.systemManager.SystemManager</string>
       </entry>
       <entry>
-         <string>TMR0</string>
-         <string>class com.microchip.mcc.mcp19xxx.modules.tmr0.TMR0</string>
+         <string>ADC</string>
+         <string>class com.microchip.mcc.mcp19xxx.modules.adc.ADC</string>
       </entry>
       <entry>
          <string>IVOUT1</string>
@@ -25,12 +29,12 @@
          <string>class com.microchip.mcc.mcp19xxx.pinManager.PinManager</string>
       </entry>
       <entry>
-         <string>VIN</string>
-         <string>class com.microchip.mcc.mcp19xxx.modules.vinProt.VinProt</string>
-      </entry>
-      <entry>
          <string>SYSTEM_CONFIGURATION</string>
          <string>class com.microchip.mcc.mcp19xxx.systemManager.pwrsys.Pwrsys</string>
+      </entry>
+      <entry>
+         <string>VIN</string>
+         <string>class com.microchip.mcc.mcp19xxx.modules.vinProt.VinProt</string>
       </entry>
       <entry>
          <string>RESET</string>
@@ -102,6 +106,10 @@
          <value>set</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADRESH"/>
+         <value>0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS" alias="1:128"/>
          <value>6</value>
       </entry>
@@ -134,16 +142,20 @@
          <value>analog</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Reference_1024_mV_adjust"/>
+         <value>17</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ANSELB" settingAlias="ANSB4" alias="analog"/>
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="18.29 mV/us"/>
-         <value>19</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ICOACON" settingAlias="ICOAC" alias="700 mV"/>
          <value>14</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="18.29 mV/us"/>
+         <value>19</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ABECON" settingAlias="EA1DIS" alias="disabled"/>
@@ -164,6 +176,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="21.22 mV/us"/>
          <value>21</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_Error_Amplifier_output_voltage"/>
+         <value>10</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="22.63V"/>
@@ -188,6 +204,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="nWPUEN" alias="enabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON0"/>
+         <value>225</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL_OSCILLATOR" name="tfExternalClock"/>
@@ -234,6 +254,10 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="validateSignal"/>
+         <value/>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="iocUserSet RB6"/>
          <value>disabled</value>
       </entry>
@@ -250,12 +274,20 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON1"/>
+         <value>16</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="14.40V"/>
          <value>23</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ICOACON" settingAlias="ICOAC" alias="250 mV"/>
          <value>5</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_VFB2_pin_voltage"/>
+         <value>channel_PWM2_VFB2_pin_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="reqSoftSettleTime"/>
@@ -306,12 +338,20 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="VIN_UVLO_Threshold"/>
+         <value>27</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR0" name="tickerFactor"/>
          <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG" settingAlias="MCLRE" alias="ON"/>
          <value>32</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_A1_Current_Sense_Amplifier_output"/>
+         <value>channel_PWM1_A1_Current_Sense_Amplifier_output</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINCON" settingAlias="UVLOEN" alias="disabled"/>
@@ -334,6 +374,10 @@
          <value>0[V]</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="VDD_UVLO_voltage"/>
+         <value>30</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCA" settingAlias="IOCA7" alias="enabled"/>
          <value>1</value>
       </entry>
@@ -342,12 +386,28 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN7"/>
+         <value>63</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG" settingAlias="WRT" alias="ALL"/>
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN4"/>
+         <value>60</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN3"/>
+         <value>59</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VIN" registerAlias="VINCON" settingAlias="UVLOINTP"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN6"/>
+         <value>62</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="196.40 mV/us"/>
@@ -356,6 +416,22 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="INTEDG" alias="falling"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN5"/>
+         <value>61</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN0"/>
+         <value>56</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN2"/>
+         <value>58</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="AN1"/>
+         <value>57</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SYSTEM_CONFIGURATION" registerAlias="PE1" settingAlias="IS2PUEN"/>
@@ -368,6 +444,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCA" settingAlias="IOCA2"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_IP1_signal_offset_reference_voltage"/>
+         <value>5</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="IVOUT1" registerAlias="ABECON" settingAlias="EA2DIS"/>
@@ -514,6 +594,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="VIN_OVLO_Threshold"/>
+         <value>channel_VIN_OVLO_Threshold</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="330.11 mV/us"/>
          <value>58</value>
       </entry>
@@ -576,6 +660,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB7"/>
          <value>output</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="ADON" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="7.96V"/>
@@ -806,8 +894,16 @@
          <value>2</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Reference_1024_mV"/>
+         <value>24</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="LOOPCON" settingAlias="IVLRES" alias="disabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_A1_Current_Sense_Amplifier_output"/>
+         <value>channel_PWM2_A1_Current_Sense_Amplifier_output</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="SYSTEM_CONFIGURATION" registerAlias="PE1" settingAlias="LDO_LP" alias="enabled"/>
@@ -818,6 +914,10 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_PWM_Comparator_negative_input"/>
+         <value>channel_PWM2_PWM_Comparator_negative_input</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS" alias="1:2"/>
          <value>0</value>
       </entry>
@@ -826,16 +926,24 @@
          <value>clear</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_EA1_Current_loop_reference_voltage"/>
+         <value>8</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_Slope_Compensation_reference_voltage"/>
+         <value>channel_PWM2_Slope_Compensation_reference_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="26.06V"/>
          <value>44</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="Soft ramp validator max"/>
-         <value>0.478</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="refActualSoftRampSlope"/>
          <value>0.031[V/ms]</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="Soft ramp validator max"/>
+         <value>0.478</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPB" settingAlias="WPUGPB7" alias="clear"/>
@@ -846,8 +954,16 @@
          <value>61</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="VDR_div_MOSFET_drivers_supply_voltage"/>
+         <value>channel_VDR_div_MOSFET_drivers_supply_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="35.66 mV/us"/>
          <value>28</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="182.36 mV/us"/>
+         <value>50</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMPEN"/>
@@ -856,10 +972,6 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="80.64 mV/us"/>
          <value>39</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="182.36 mV/us"/>
-         <value>50</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="VIN" registerAlias="VINCON"/>
@@ -954,8 +1066,16 @@
          <value>9</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_EA1_Current_loop_reference_voltage"/>
+         <value>channel_PWM1_EA1_Current_loop_reference_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="VOUTCDSIDIS"/>
          <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="VIN_OVLO_Threshold"/>
+         <value>28</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="TMRCS" alias="T0CKI"/>
@@ -964,6 +1084,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="PowerDac_Intermodule"/>
          <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Internal_VDD_for_analog_circuitry"/>
+         <value>channel_Internal_VDD_for_analog_circuitry</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="38.41 mV/us"/>
@@ -1018,12 +1142,24 @@
          <value>18</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_EA2_Voltage_loop_reference_voltage"/>
+         <value>channel_PWM1_EA2_Voltage_loop_reference_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="8.71 mV/us"/>
          <value>9</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SYSTEM_CONFIGURATION" registerAlias="OTI" settingAlias="enable"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="FOSC/4"/>
+         <value>4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="FOSC/8"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="IVOUT2" registerAlias="PWMPHL" settingAlias="PWMPHL"/>
@@ -1070,6 +1206,10 @@
          <value>0.000128</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="FOSC/16"/>
+         <value>5</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="reqSoftRampInitialValue"/>
          <value>0</value>
       </entry>
@@ -1090,6 +1230,14 @@
          <value>60</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_Slope_Compensation_reference_voltage"/>
+         <value>channel_PWM1_Slope_Compensation_reference_voltage</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="GO_nDONE"/>
+         <value>stop</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="43.33V"/>
          <value>62</value>
       </entry>
@@ -1108,6 +1256,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="LOOPCON" settingAlias="IVGDINTN" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_PWM_Comparator_negative_input"/>
+         <value>14</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="35.66 mV/us"/>
@@ -1154,6 +1306,14 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="conversionTime"/>
+         <value>11.5 us</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="FOSC/32"/>
+         <value>2</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SYSTEM_CONFIGURATION" registerAlias="VDDUVI" settingAlias="flag"/>
          <value>disabled</value>
       </entry>
@@ -1164,6 +1324,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="12.16V"/>
          <value>17</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="ADON"/>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG" settingAlias="PWRTE"/>
@@ -1184,6 +1348,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="VREF"/>
          <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_PWM_Comparator_positive_input"/>
+         <value>7</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB4"/>
@@ -1210,12 +1378,16 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="64.55 mV/us"/>
+         <value>36</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="22.85 mV/us"/>
          <value>22</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="64.55 mV/us"/>
-         <value>36</value>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_Error_Amplifier_output_voltage"/>
+         <value>channel_PWM1_Error_Amplifier_output_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="10.56V"/>
@@ -1254,12 +1426,16 @@
          <value>enabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="21.22 mV/us"/>
+         <value>21</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="125.85 mV/us"/>
          <value>45</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="21.22 mV/us"/>
-         <value>21</value>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="TEMP_SNS_temperature_sensor_voltage_measurement"/>
+         <value>31</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR0" registerAlias="OPTION_REG"/>
@@ -1276,6 +1452,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="116.85 mV/us"/>
          <value>44</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="VIN_div_voltage"/>
+         <value>26</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="10.10 mV/us"/>
@@ -1310,6 +1490,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS"/>
+         <value>AN0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ICOACON" settingAlias="ICOAC" alias="350 mV"/>
          <value>7</value>
       </entry>
@@ -1320,6 +1504,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB5"/>
          <value>input</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="FOSC/64"/>
+         <value>6</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="25.33V"/>
@@ -1350,8 +1538,16 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_ISN2_pin_voltage"/>
+         <value>channel_PWM2_ISN2_pin_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPA" settingAlias="WPUGPA0" alias="set"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AquisitionTime"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINCON" settingAlias="UVLOINTP" alias="enabled"/>
@@ -1384,6 +1580,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="17.79V"/>
          <value>57</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Internal_GND_node"/>
+         <value>32</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="86.85 mV/us"/>
@@ -1422,6 +1622,10 @@
          <value>25</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="ADC_ADIISRFunction"/>
+         <value>ISR</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VIN" registerAlias="VINCON" settingAlias="UVLOINTN"/>
          <value>disabled</value>
       </entry>
@@ -1442,8 +1646,12 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="GO_nDONE" alias="start"/>
+         <value>1</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB1"/>
-         <value/>
+         <value>channel_AN4</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPA" settingAlias="WPUGPA2" alias="set"/>
@@ -1506,6 +1714,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="chkEnableSoftTacq"/>
+         <value>enabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="42.12V"/>
          <value>61</value>
       </entry>
@@ -1518,8 +1730,16 @@
          <value>14</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_Slope_Compensation_reference_voltage"/>
+         <value>4</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="6.10V"/>
          <value>19</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_VFB2_pin_voltage"/>
+         <value>11</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="IVOUT1" registerAlias="PWMRL" settingAlias="PWMRL"/>
@@ -1594,6 +1814,10 @@
          <value>50</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_EA2_Voltage_loop_reference_voltage"/>
+         <value>1</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="OPTION_REG" settingAlias="nWPUEN" alias="disabled"/>
          <value>1</value>
       </entry>
@@ -1610,16 +1834,24 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_PWM_Comparator_positive_input"/>
+         <value>channel_PWM1_PWM_Comparator_positive_input</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB0"/>
          <value>input</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="6.97 mV/us"/>
+         <value>6</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="refReqDutyMax"/>
          <value>82</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="6.97 mV/us"/>
-         <value>6</value>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS"/>
+         <value>FOSC/8</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUGPB" settingAlias="WPUGPB6"/>
@@ -1646,8 +1878,16 @@
          <value>46</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADRESL"/>
+         <value>0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTGPB" settingAlias="PORTGPB0" alias="set"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_Error_Amplifier_output_voltage"/>
+         <value>2</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="reqSoftRampInitRegValue"/>
@@ -1656,6 +1896,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="47.98 mV/us"/>
          <value>32</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="VDD_UVLO_voltage"/>
+         <value>channel_VDD_UVLO_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="SYSTEM_CONFIGURATION" registerAlias="PE1" settingAlias="LDO_LP"/>
@@ -1700,6 +1944,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ICOACON" settingAlias="ICOAC" alias="400 mV"/>
          <value>8</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PrechargeTime"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPA" settingAlias="WPUGPA3" alias="clear"/>
@@ -1754,6 +2002,14 @@
          <value>46</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Reference_1024_mV_adjust"/>
+         <value>channel_Reference_1024_mV_adjust</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Reference_4096_mV"/>
+         <value>21</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPA" settingAlias="WPUGPA3" alias="set"/>
          <value>1</value>
       </entry>
@@ -1780,6 +2036,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VIN" registerAlias="VINUVI" settingAlias="order"/>
          <value>-1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="dependentModuleKey"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="18.30V"/>
@@ -1812,6 +2072,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTGPB" settingAlias="PORTGPB1" alias="set"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="VIN_div_voltage"/>
+         <value>channel_VIN_div_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PSA"/>
@@ -1856,6 +2120,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPA" settingAlias="WPUGPA5" alias="set"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_PWM_Comparator_negative_input"/>
+         <value>channel_PWM1_PWM_Comparator_negative_input</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINCON" settingAlias="OVLOINTP" alias="enabled"/>
@@ -1914,6 +2182,10 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Internal_GND_node"/>
+         <value>channel_Internal_GND_node</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="INTEDG"/>
          <value>rising</value>
       </entry>
@@ -1964,6 +2236,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="refReqRef"/>
          <value>1.595</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_EA1_Current_loop_reference_voltage"/>
+         <value>channel_PWM2_EA1_Current_loop_reference_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSA0" alias="digital"/>
@@ -2018,6 +2294,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_Slope_Compensation_reference_voltage"/>
+         <value>12</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT2" name="voutRegType"/>
          <value>uint8_t</value>
       </entry>
@@ -2046,6 +2326,10 @@
          <value>22</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Reference_4096_mV"/>
+         <value>channel_Reference_4096_mV</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSA2" alias="digital"/>
          <value>0</value>
       </entry>
@@ -2070,11 +2354,19 @@
          <value>49.986[ms]</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Reference_1024_mV"/>
+         <value>channel_Reference_1024_mV</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="182.36 mV/us"/>
          <value>50</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="12.50V"/>
+         <value>18</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_A1_Current_Sense_Amplifier_output"/>
          <value>18</value>
       </entry>
       <entry>
@@ -2088,6 +2380,14 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSA1" alias="digital"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PrechargeCount"/>
+         <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Bandgap_Reference_Voltage"/>
+         <value>channel_Bandgap_Reference_Voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUGPB" settingAlias="WPUGPB1"/>
@@ -2120,6 +2420,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RB5"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADI" settingAlias="flag"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="28.55 mV/us"/>
@@ -2178,6 +2482,10 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_IP2_signal_offset_reference_voltage"/>
+         <value>channel_PWM2_IP2_signal_offset_reference_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="PS" alias="1:256"/>
          <value>7</value>
       </entry>
@@ -2198,6 +2506,10 @@
          <value>5</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_ISN2_pin_voltage"/>
+         <value>23</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCA" settingAlias="IOCA3" alias="disabled"/>
          <value>0</value>
       </entry>
@@ -2210,12 +2522,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="4.47 mV/us"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="IVOUT1" registerAlias="PWMRL"/>
          <value>20</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="4.47 mV/us"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="51.67 mV/us"/>
@@ -2228,6 +2540,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="IVOUT2" registerAlias="PWMRL"/>
          <value>18</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Reference_2048_mV"/>
+         <value>22</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="IVOUT1_VOUTIVGDIISRFunction"/>
@@ -2244,6 +2560,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL_OSCILLATOR" name="CurrentCpuDivString"/>
          <value/>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADRESL" settingAlias="ADRESL"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="WPUGPB" settingAlias="WPUGPB6" alias="set"/>
@@ -2310,6 +2630,10 @@
          <value>7</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="tadValue"/>
+         <value>1.0 us</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPA" settingAlias="TRISGPA2" alias="input"/>
          <value>1</value>
       </entry>
@@ -2328,6 +2652,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ICLEBCON" settingAlias="ICLEBC" alias="50 ns"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_Error_Amplifier_output_voltage"/>
+         <value>channel_PWM2_Error_Amplifier_output_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ICOACON" settingAlias="ICOAC" alias="250 mV"/>
@@ -2422,8 +2750,16 @@
          <value>48</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="TEMP_SNS_temperature_sensor_voltage_measurement"/>
+         <value>channel_TEMP_SNS_temperature_sensor_voltage_measurement</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB0" alias="input"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADCS" alias="Frc"/>
+         <value>7</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ABECON" settingAlias="EA2DIS" alias="enabled"/>
@@ -2442,6 +2778,10 @@
          <value>30</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADRESH" settingAlias="ADRESH"/>
+         <value>0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPA" settingAlias="TRISGPA1" alias="output"/>
          <value>0</value>
       </entry>
@@ -2450,8 +2790,16 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN1"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTGPB" settingAlias="PORTGPB7" alias="clear"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN0"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="478.33 mV/us"/>
@@ -2462,12 +2810,40 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN5"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG" settingAlias="CP" alias="ON"/>
          <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ABECON" settingAlias="EA1DIS" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN4"/>
+         <value>enabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN3"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN2"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_A1_Current_Sense_Amplifier_output"/>
+         <value>16</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN7"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AN6"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPA" settingAlias="TRISGPA1" alias="input"/>
@@ -2560,6 +2936,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="refActualSoftRampStep"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="enableInterrupt"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="100.74 mV/us"/>
@@ -2714,6 +3094,10 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="softAcqTimeField"/>
+         <value>11.5</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="145.98 mV/us"/>
          <value>47</value>
       </entry>
@@ -2744,6 +3128,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="PORTGPA" settingAlias="PORTGPA2"/>
          <value>clear</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="ADON" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="LOOPCON" settingAlias="IV_DOM" alias="disabled"/>
@@ -2814,6 +3202,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_PWM_Comparator_positive_input"/>
+         <value>channel_PWM2_PWM_Comparator_positive_input</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="TRISGPA" settingAlias="TRISGPA7"/>
          <value>input</value>
       </entry>
@@ -2838,8 +3230,16 @@
          <value/>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Reference_2048_mV"/>
+         <value>channel_Reference_2048_mV</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSA0"/>
          <value>analog</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADI" settingAlias="enable"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="4.00V"/>
@@ -2880,6 +3280,14 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="ICOACON" settingAlias="ICOAC" alias="650 mV"/>
          <value>13</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="VDR_div_MOSFET_drivers_supply_voltage"/>
+         <value>29</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_EA1_Current_loop_reference_voltage"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="74.88 mV/us"/>
@@ -2926,6 +3334,10 @@
          <value>1:1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Internal_VDD_for_analog_circuitry"/>
+         <value>19</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VIN" registerAlias="VINUVI" settingAlias="flag"/>
          <value>disabled</value>
       </entry>
@@ -2936,6 +3348,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="VIN" name="VIN_VINUVIISRFunction"/>
          <value>UV_ISR</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Internal_VDD_for_digital_circuitry"/>
+         <value>20</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="validateSignal"/>
@@ -2994,6 +3410,10 @@
          <value>clear</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_VFB1_pin_voltage"/>
+         <value>channel_PWM1_VFB1_pin_voltage</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="ANSELB" settingAlias="ANSB1" alias="analog"/>
          <value>1</value>
       </entry>
@@ -3016,6 +3436,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="WPUGPB"/>
          <value>243</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="sysClock"/>
+         <value>8000000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB7" alias="input"/>
@@ -3052,6 +3476,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="15.77 mV/us"/>
          <value>17</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM2_EA2_Voltage_loop_reference_voltage"/>
+         <value>channel_PWM2_EA2_Voltage_loop_reference_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="59.94 mV/us"/>
@@ -3190,6 +3618,10 @@
          <value>enabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_EA2_Voltage_loop_reference_voltage"/>
+         <value>9</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="TRISGPB"/>
          <value>115</value>
       </entry>
@@ -3214,6 +3646,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADI" settingAlias="order"/>
+         <value>-1</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="INTERNAL_OSCILLATOR" registerAlias="TCON" settingAlias="TMRON" alias="off"/>
          <value>0</value>
       </entry>
@@ -3226,6 +3662,10 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_PWM_Comparator_negative_input"/>
+         <value>6</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB4" alias="output"/>
          <value>0</value>
       </entry>
@@ -3234,12 +3674,12 @@
          <value>29</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ICOACON" settingAlias="ICOAC" alias="700 mV"/>
-         <value>14</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="refActualRef"/>
          <value>1.592[V]</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ICOACON" settingAlias="ICOAC" alias="700 mV"/>
+         <value>14</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="TRISGPB" settingAlias="TRISGPB6" alias="input"/>
@@ -3358,6 +3798,10 @@
          <value>1</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="clockFreq"/>
+         <value>8000000</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="IOCB" settingAlias="IOCB0"/>
          <value>disabled</value>
       </entry>
@@ -3406,12 +3850,20 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="GO_nDONE" alias="stop"/>
+         <value>0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="TRISGPA"/>
          <value>175</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="11.33V"/>
          <value>41</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_PWM_Comparator_positive_input"/>
+         <value>15</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="iocUserSet RA3"/>
@@ -3430,12 +3882,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ABECON" settingAlias="EA2DIS" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="22.85 mV/us"/>
          <value>22</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="ABECON" settingAlias="EA2DIS" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="iocUserSet RA7"/>
@@ -3476,6 +3928,14 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINUVLO" settingAlias="UVLO" alias="5.45V"/>
          <value>15</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="VIN_UVLO_Threshold"/>
+         <value>channel_VIN_UVLO_Threshold</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="Internal_VDD_for_digital_circuitry"/>
+         <value>channel_Internal_VDD_for_digital_circuitry</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="9.38 mV/us"/>
@@ -3614,6 +4074,10 @@
          <value>20</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM2_IP2_signal_offset_reference_voltage"/>
+         <value>13</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR0" registerAlias="OPTION_REG" settingAlias="TMRSE"/>
          <value>Increment_hi_lo</value>
       </entry>
@@ -3642,6 +4106,10 @@
          <value>disabled</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="AquisitionCount"/>
+         <value>0</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="IOCA" settingAlias="IOCA5" alias="enabled"/>
          <value>1</value>
       </entry>
@@ -3664,6 +4132,10 @@
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="LOOPCON" settingAlias="IVLRES" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="PWM1_VFB1_pin_voltage"/>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VIN" registerAlias="VINOVLO" settingAlias="OVLO" alias="10.86V"/>
@@ -3694,6 +4166,10 @@
          <value>0</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="samplingFrequency"/>
+         <value>43.4783 kHz</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT1" registerAlias="SLPCRCON" settingAlias="RMP" alias="125.85 mV/us"/>
          <value>45</value>
       </entry>
@@ -3706,12 +4182,20 @@
          <value>36</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC" registerAlias="ADCON0" settingAlias="CHS" alias="Bandgap_Reference_Voltage"/>
+         <value>25</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="IVOUT2" registerAlias="SLPCRCON" settingAlias="RMP" alias="33.11 mV/us"/>
          <value>27</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="IVOUT1" name="refReqPriority"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC" name="PWM1_IP1_signal_offset_reference_voltage"/>
+         <value>channel_PWM1_IP1_signal_offset_reference_voltage</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELA"/>
@@ -3724,24 +4208,24 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>cbd3650cfbe10c7614263a7c97789620b4c1786f9a428dab3ee9d3d3016b729d</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>1f9fd2b521cc3db10b1a83e2e3c2152b677c6a9addd239b6c9830745ee9926c6</hash>
+         <hash>a9e21c3b297419fc998434ca73dee124ca41c9396a02d46964c114fc8482ad6a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\calibration.h</file>
          <hash>52efe3c2f684476af12929278a4f174cbe9797dd82b54ccc484d8a2cf9457c16</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\calibration.c</file>
-         <hash>63f4044f45ee768fa93aef6cfee23f5b37dd639aa2728ca5f2bd9df38f03fcb1</hash>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>cbd3650cfbe10c7614263a7c97789620b4c1786f9a428dab3ee9d3d3016b729d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr0.h</file>
          <hash>2761cddad2458ed99fbe92d3ca3f388c3192fad9daca49e9be3547de0e5a7eb4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\calibration.c</file>
+         <hash>63f4044f45ee768fa93aef6cfee23f5b37dd639aa2728ca5f2bd9df38f03fcb1</hash>
       </entry>
       <entry>
          <file>main.c</file>
@@ -3749,7 +4233,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>0abfaaa309fcd3c77bd18f011c508bc3348011a556a1d54597848b371ca61f5e</hash>
+         <hash>513d602e96048c00749832f644ba3c6ddc05536e6899115a0948e735e14846a8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\adc.h</file>
+         <hash>d1d8cfe88c2a7ec9ca75b53474cccbd1303e241e577ca40f4ca13b563266fe0d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\vin.c</file>
@@ -3784,12 +4272,16 @@
          <hash>6d7609e9ab1b5ea036446dbda5a3d8d3e289e5d8841eb1e64782e2a83773ea3d</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>81c1c572495d740419e23b3bc7c4a574a814ed9c13d3cad5589026c9880b4a11</hash>
+         <file>mcc_generated_files\adc.c</file>
+         <hash>2f4d928a75ca31fb0d3a05e33dad67a27290f614075ebe89eaa81ed965ba89b1</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>57699d015db9d5c314e4acb7a2fd411f25ad4090af634a31a1c6003144f48f5b</hash>
+         <hash>f8b3f51f35028f09156d195debbe0c3d14ccf2002eaa2c78082c4b8fa74c1a77</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>81c1c572495d740419e23b3bc7c4a574a814ed9c13d3cad5589026c9880b4a11</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
